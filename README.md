@@ -28,6 +28,10 @@ The dashboard works without an API key; only the AI brief and chat need one. Ful
 
 Sources include DOSM, Sabah Parks, Marine Parks, OpenStreetMap, Google Trends and Wikipedia pageviews. Check each source's licence before reusing the data.
 
+## Licence
+
+Code is MIT, see [LICENSE](LICENSE). The datasets in `data/` keep their original sources' terms and are not covered by it.
+
 ## Team
 
 **Spark Surge**, Universiti Tun Hussein Onn Malaysia (UTHM).
