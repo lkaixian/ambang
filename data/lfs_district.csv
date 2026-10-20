@@ -1,0 +1,376 @@
+destination,state,district,date,lf,lf_employed,lf_unemployed,lf_outside,p_rate,u_rate,ep_ratio
+Terengganu marine parks,Terengganu,Besut,2018-01-01,62.1,58.8,3.2,41.6,59.9,5.2,56.7
+Terengganu marine parks,Terengganu,Besut,2019-01-01,64.7,62.3,2.4,41.5,60.9,3.7,58.7
+Terengganu marine parks,Terengganu,Besut,2020-01-01,59.3,56.9,2.4,39.2,60.2,4.1,57.8
+Terengganu marine parks,Terengganu,Besut,2021-01-01,58.8,56.2,2.6,41.5,58.6,4.5,56.0
+Terengganu marine parks,Terengganu,Besut,2022-01-01,60.4,58.1,2.4,41.9,59.0,3.9,56.8
+Terengganu marine parks,Terengganu,Besut,2023-01-01,62.1,59.7,2.4,42.8,59.2,3.8,56.9
+Terengganu marine parks,Terengganu,Besut,2024-01-01,64.1,61.8,2.2,42.9,59.9,3.5,57.8
+Terengganu marine parks,Terengganu,Dungun,2018-01-01,73.0,69.5,3.5,52.6,58.1,4.7,55.3
+Terengganu marine parks,Terengganu,Dungun,2019-01-01,74.4,71.7,2.7,51.5,59.1,3.6,56.9
+Terengganu marine parks,Terengganu,Dungun,2020-01-01,59.6,57.2,2.5,45.6,56.7,4.1,54.4
+Terengganu marine parks,Terengganu,Dungun,2021-01-01,60.5,58.2,2.4,46.2,56.7,4.0,54.5
+Terengganu marine parks,Terengganu,Dungun,2022-01-01,61.7,59.6,2.1,46.3,57.1,3.5,55.2
+Terengganu marine parks,Terengganu,Dungun,2023-01-01,63.1,60.9,2.1,47.0,57.3,3.4,55.3
+Terengganu marine parks,Terengganu,Dungun,2024-01-01,65.1,63.1,2.0,47.1,58.0,3.1,56.2
+Terengganu marine parks,Terengganu,Hulu Terengganu,2018-01-01,30.3,28.9,1.4,22.7,57.1,4.7,54.5
+Terengganu marine parks,Terengganu,Hulu Terengganu,2019-01-01,31.0,29.8,1.2,22.7,57.7,3.8,55.5
+Terengganu marine parks,Terengganu,Hulu Terengganu,2020-01-01,26.1,25.1,1.0,20.2,56.3,3.7,54.2
+Terengganu marine parks,Terengganu,Hulu Terengganu,2021-01-01,25.8,24.8,1.0,21.5,54.6,4.0,52.4
+Terengganu marine parks,Terengganu,Hulu Terengganu,2022-01-01,26.2,25.2,1.0,21.4,55.0,3.8,52.9
+Terengganu marine parks,Terengganu,Hulu Terengganu,2023-01-01,26.8,25.8,1.0,21.8,55.1,3.7,53.1
+Terengganu marine parks,Terengganu,Hulu Terengganu,2024-01-01,27.4,26.5,0.9,21.7,55.8,3.3,54.0
+Terengganu marine parks,Terengganu,Kemaman,2018-01-01,83.3,79.4,3.8,43.9,65.5,4.6,62.4
+Terengganu marine parks,Terengganu,Kemaman,2019-01-01,85.5,82.7,2.8,43.1,66.5,3.3,64.3
+Terengganu marine parks,Terengganu,Kemaman,2020-01-01,92.5,88.8,3.7,46.6,66.5,4.0,63.8
+Terengganu marine parks,Terengganu,Kemaman,2021-01-01,94.0,90.5,3.5,47.8,66.3,3.8,63.8
+Terengganu marine parks,Terengganu,Kemaman,2022-01-01,96.7,93.8,2.9,48.5,66.6,3.0,64.6
+Terengganu marine parks,Terengganu,Kemaman,2023-01-01,100.2,97.3,2.9,49.8,66.8,2.9,64.9
+Terengganu marine parks,Terengganu,Kemaman,2024-01-01,104.6,101.8,2.7,50.3,67.5,2.6,65.7
+Terengganu marine parks,Terengganu,Kuala Nerus,2018-01-01,,,,,,,
+Terengganu marine parks,Terengganu,Kuala Nerus,2019-01-01,,,,,,,
+Terengganu marine parks,Terengganu,Kuala Nerus,2020-01-01,59.5,56.7,2.8,40.8,59.3,4.7,56.5
+Terengganu marine parks,Terengganu,Kuala Nerus,2021-01-01,59.6,57.2,2.4,43.1,58.0,4.1,55.7
+Terengganu marine parks,Terengganu,Kuala Nerus,2022-01-01,60.7,58.5,2.2,43.2,58.4,3.7,56.3
+Terengganu marine parks,Terengganu,Kuala Nerus,2023-01-01,61.7,59.5,2.2,43.7,58.6,3.6,56.5
+Terengganu marine parks,Terengganu,Kuala Nerus,2024-01-01,63.4,61.3,2.1,43.5,59.3,3.3,57.3
+Terengganu marine parks,Terengganu,Kuala Terengganu,2018-01-01,151.2,144.0,7.1,103.4,59.4,4.7,56.6
+Terengganu marine parks,Terengganu,Kuala Terengganu,2019-01-01,159.7,154.3,5.4,104.7,60.4,3.4,58.4
+Terengganu marine parks,Terengganu,Kuala Terengganu,2020-01-01,90.6,86.3,4.2,62.2,59.3,4.7,56.5
+Terengganu marine parks,Terengganu,Kuala Terengganu,2021-01-01,89.3,85.6,3.7,64.5,58.0,4.1,55.7
+Terengganu marine parks,Terengganu,Kuala Terengganu,2022-01-01,90.7,87.3,3.3,64.5,58.4,3.7,56.2
+Terengganu marine parks,Terengganu,Kuala Terengganu,2023-01-01,92.0,88.7,3.3,65.1,58.6,3.6,56.5
+Terengganu marine parks,Terengganu,Kuala Terengganu,2024-01-01,94.4,91.3,3.1,64.8,59.3,3.3,57.3
+Terengganu marine parks,Terengganu,Marang,2018-01-01,43.7,41.6,2.1,32.5,57.4,4.7,54.6
+Terengganu marine parks,Terengganu,Marang,2019-01-01,45.4,43.7,1.7,32.7,58.2,3.7,56.0
+Terengganu marine parks,Terengganu,Marang,2020-01-01,43.0,41.5,1.6,32.9,56.7,3.6,54.7
+Terengganu marine parks,Terengganu,Marang,2021-01-01,44.1,42.4,1.7,33.8,56.6,3.8,54.4
+Terengganu marine parks,Terengganu,Marang,2022-01-01,45.3,43.9,1.4,34.0,57.1,3.0,55.4
+Terengganu marine parks,Terengganu,Marang,2023-01-01,46.5,45.1,1.4,34.7,57.3,3.0,55.5
+Terengganu marine parks,Terengganu,Marang,2024-01-01,48.1,46.8,1.3,34.9,58.0,2.6,56.4
+Terengganu marine parks,Terengganu,Setiu,2018-01-01,26.9,25.5,1.3,14.5,65.0,4.9,61.6
+Terengganu marine parks,Terengganu,Setiu,2019-01-01,27.3,26.3,1.0,14.2,65.8,3.7,63.4
+Terengganu marine parks,Terengganu,Setiu,2020-01-01,25.0,23.7,1.2,13.5,64.9,4.9,61.6
+Terengganu marine parks,Terengganu,Setiu,2021-01-01,24.7,23.5,1.3,14.4,63.3,5.1,60.1
+Terengganu marine parks,Terengganu,Setiu,2022-01-01,25.5,24.4,1.0,14.4,63.8,4.0,61.2
+Terengganu marine parks,Terengganu,Setiu,2023-01-01,26.2,25.2,1.0,14.8,64.0,3.9,61.5
+Terengganu marine parks,Terengganu,Setiu,2024-01-01,27.3,26.3,1.0,14.9,64.7,3.6,62.3
+Cameron Highlands,Pahang,Cameron Highland,2018-01-01,20.9,20.4,0.5,9.0,69.9,2.2,68.2
+Cameron Highlands,Pahang,Cameron Highland,2019-01-01,21.4,20.9,0.5,8.5,71.4,2.3,69.9
+Cameron Highlands,Pahang,Cameron Highland,2020-01-01,19.6,19.0,0.7,7.2,73.0,3.3,70.9
+Cameron Highlands,Pahang,Cameron Highlands,2021-01-01,18.8,18.3,0.5,7.8,70.6,2.6,68.8
+Cameron Highlands,Pahang,Cameron Highlands,2022-01-01,19.5,19.2,0.3,8.0,71.0,1.6,69.8
+Cameron Highlands,Pahang,Cameron Highlands,2023-01-01,21.0,20.7,0.3,8.3,71.6,1.5,70.6
+Cameron Highlands,Pahang,Cameron Highlands,2024-01-01,23.7,23.3,0.3,9.3,71.8,1.5,70.6
+Pahang marine parks,Pahang,Bentong,2018-01-01,60.5,58.8,1.7,30.8,66.3,2.8,64.4
+Pahang marine parks,Pahang,Bentong,2019-01-01,60.3,58.4,1.9,31.6,65.6,3.2,63.5
+Pahang marine parks,Pahang,Bentong,2020-01-01,52.5,50.7,1.8,26.8,66.2,3.4,63.9
+Pahang marine parks,Pahang,Bentong,2021-01-01,51.5,50.0,1.4,27.5,65.2,2.8,63.3
+Pahang marine parks,Pahang,Bentong,2022-01-01,52.8,51.8,1.1,28.0,65.4,2.1,64.1
+Pahang marine parks,Pahang,Bentong,2023-01-01,55.7,54.9,0.8,28.6,66.1,1.5,65.1
+Pahang marine parks,Pahang,Bentong,2024-01-01,57.4,56.5,0.9,29.1,66.3,1.5,65.3
+Pahang marine parks,Pahang,Bera,2018-01-01,42.5,41.4,1.1,27.0,61.1,2.5,59.6
+Pahang marine parks,Pahang,Bera,2019-01-01,43.3,42.1,1.2,26.9,61.7,2.8,60.0
+Pahang marine parks,Pahang,Bera,2020-01-01,35.2,33.9,1.3,29.2,54.7,3.8,52.6
+Pahang marine parks,Pahang,Bera,2021-01-01,34.2,32.9,1.3,30.7,52.7,3.9,50.7
+Pahang marine parks,Pahang,Bera,2022-01-01,35.2,34.3,1.0,31.2,53.0,2.8,51.7
+Pahang marine parks,Pahang,Bera,2023-01-01,36.7,35.7,1.0,31.7,53.6,2.8,52.2
+Pahang marine parks,Pahang,Bera,2024-01-01,37.8,36.7,1.1,32.3,53.9,2.8,52.4
+Pahang marine parks,Pahang,Cameron Highland,2018-01-01,20.9,20.4,0.5,9.0,69.9,2.2,68.2
+Pahang marine parks,Pahang,Cameron Highland,2019-01-01,21.4,20.9,0.5,8.5,71.4,2.3,69.9
+Pahang marine parks,Pahang,Cameron Highland,2020-01-01,19.6,19.0,0.7,7.2,73.0,3.3,70.9
+Pahang marine parks,Pahang,Cameron Highlands,2021-01-01,18.8,18.3,0.5,7.8,70.6,2.6,68.8
+Pahang marine parks,Pahang,Cameron Highlands,2022-01-01,19.5,19.2,0.3,8.0,71.0,1.6,69.8
+Pahang marine parks,Pahang,Cameron Highlands,2023-01-01,21.0,20.7,0.3,8.3,71.6,1.5,70.6
+Pahang marine parks,Pahang,Cameron Highlands,2024-01-01,23.7,23.3,0.3,9.3,71.8,1.5,70.6
+Pahang marine parks,Pahang,Jerantut,2018-01-01,44.8,43.6,1.2,23.2,65.9,2.7,64.1
+Pahang marine parks,Pahang,Jerantut,2019-01-01,44.8,43.5,1.3,24.0,65.1,3.0,63.2
+Pahang marine parks,Pahang,Jerantut,2020-01-01,41.5,39.9,1.6,21.4,66.0,3.9,63.4
+Pahang marine parks,Pahang,Jerantut,2021-01-01,39.5,37.9,1.6,23.5,62.7,4.0,60.2
+Pahang marine parks,Pahang,Jerantut,2022-01-01,40.6,39.4,1.2,23.9,63.0,2.9,61.1
+Pahang marine parks,Pahang,Jerantut,2023-01-01,42.1,40.9,1.2,24.3,63.5,2.8,61.6
+Pahang marine parks,Pahang,Jerantut,2024-01-01,43.4,42.2,1.2,24.7,63.7,2.8,62.0
+Pahang marine parks,Pahang,Kuantan,2018-01-01,239.5,233.3,6.2,103.3,69.9,2.6,68.1
+Pahang marine parks,Pahang,Kuantan,2019-01-01,241.6,234.5,7.1,102.7,70.2,2.9,68.1
+Pahang marine parks,Pahang,Kuantan,2020-01-01,265.2,257.5,7.7,108.6,70.9,2.9,68.9
+Pahang marine parks,Pahang,Kuantan,2021-01-01,266.9,258.3,8.5,114.4,70.0,3.2,67.7
+Pahang marine parks,Pahang,Kuantan,2022-01-01,271.3,265.1,6.2,114.3,70.4,2.3,68.8
+Pahang marine parks,Pahang,Kuantan,2023-01-01,279.4,274.2,5.2,114.7,70.9,1.9,69.6
+Pahang marine parks,Pahang,Kuantan,2024-01-01,285.0,279.7,5.3,115.7,71.1,1.9,69.8
+Pahang marine parks,Pahang,Lipis,2018-01-01,41.9,40.8,1.1,25.0,62.6,2.5,61.0
+Pahang marine parks,Pahang,Lipis,2019-01-01,41.6,40.4,1.2,26.2,61.3,2.9,59.6
+Pahang marine parks,Pahang,Lipis,2020-01-01,36.2,35.2,1.0,28.8,55.7,2.8,54.2
+Pahang marine parks,Pahang,Lipis,2021-01-01,35.0,34.1,0.9,30.3,53.6,2.5,52.2
+Pahang marine parks,Pahang,Lipis,2022-01-01,35.9,35.3,0.5,31.0,53.7,1.4,52.8
+Pahang marine parks,Pahang,Lipis,2023-01-01,37.6,37.2,0.4,31.7,54.3,1.2,53.7
+Pahang marine parks,Pahang,Lipis,2024-01-01,39.2,38.7,0.5,32.7,54.5,1.2,53.8
+Pahang marine parks,Pahang,Maran,2018-01-01,54.5,53.4,1.1,28.2,65.9,2.0,64.6
+Pahang marine parks,Pahang,Maran,2019-01-01,54.5,53.2,1.3,29.5,64.9,2.4,63.3
+Pahang marine parks,Pahang,Maran,2020-01-01,46.3,45.1,1.1,25.4,64.6,2.5,62.9
+Pahang marine parks,Pahang,Maran,2021-01-01,47.0,45.5,1.5,25.9,64.4,3.1,62.4
+Pahang marine parks,Pahang,Maran,2022-01-01,48.1,47.0,1.1,26.5,64.5,2.2,63.0
+Pahang marine parks,Pahang,Maran,2023-01-01,50.4,49.5,0.9,27.0,65.1,1.8,64.0
+Pahang marine parks,Pahang,Maran,2024-01-01,52.3,51.4,0.9,27.7,65.4,1.8,64.2
+Pahang marine parks,Pahang,Pekan,2018-01-01,51.8,50.5,1.4,26.1,66.5,2.6,64.8
+Pahang marine parks,Pahang,Pekan,2019-01-01,52.6,51.1,1.5,26.5,66.5,2.8,64.6
+Pahang marine parks,Pahang,Pekan,2020-01-01,58.1,56.3,1.8,27.2,68.1,3.1,66.0
+Pahang marine parks,Pahang,Pekan,2021-01-01,55.2,53.4,1.9,30.8,64.2,3.4,62.1
+Pahang marine parks,Pahang,Pekan,2022-01-01,55.6,54.2,1.4,30.8,64.3,2.5,62.7
+Pahang marine parks,Pahang,Pekan,2023-01-01,57.1,56.0,1.1,31.1,64.7,2.0,63.5
+Pahang marine parks,Pahang,Pekan,2024-01-01,58.2,57.1,1.2,31.4,65.0,2.0,63.7
+Pahang marine parks,Pahang,Raub,2018-01-01,45.2,44.1,1.1,24.3,65.0,2.5,63.5
+Pahang marine parks,Pahang,Raub,2019-01-01,45.2,43.9,1.3,25.1,64.3,2.9,62.4
+Pahang marine parks,Pahang,Raub,2020-01-01,41.1,39.6,1.5,22.7,64.4,3.7,62.1
+Pahang marine parks,Pahang,Raub,2021-01-01,40.0,38.6,1.4,24.3,62.2,3.6,60.0
+Pahang marine parks,Pahang,Raub,2022-01-01,41.2,40.1,1.1,24.7,62.5,2.7,60.8
+Pahang marine parks,Pahang,Raub,2023-01-01,43.3,42.1,1.1,25.4,63.0,2.6,61.3
+Pahang marine parks,Pahang,Raub,2024-01-01,44.7,43.6,1.2,26.0,63.3,2.6,61.7
+Pahang marine parks,Pahang,Rompin,2018-01-01,53.2,51.6,1.5,29.8,64.1,2.9,62.2
+Pahang marine parks,Pahang,Rompin,2019-01-01,54.2,52.4,1.7,30.9,63.7,3.2,61.6
+Pahang marine parks,Pahang,Rompin,2020-01-01,40.1,39.0,1.1,26.0,60.6,2.8,59.0
+Pahang marine parks,Pahang,Rompin,2021-01-01,39.9,38.6,1.3,28.0,58.8,3.2,56.8
+Pahang marine parks,Pahang,Rompin,2022-01-01,39.7,38.8,0.9,27.5,59.1,2.3,57.7
+Pahang marine parks,Pahang,Rompin,2023-01-01,40.4,39.7,0.8,27.4,59.6,1.9,58.6
+Pahang marine parks,Pahang,Rompin,2024-01-01,41.1,40.3,0.8,27.6,59.8,1.9,58.7
+Pahang marine parks,Pahang,Temerloh,2018-01-01,80.8,78.6,2.2,42.3,65.6,2.7,63.9
+Pahang marine parks,Pahang,Temerloh,2019-01-01,81.6,79.2,2.4,43.1,65.4,2.9,63.5
+Pahang marine parks,Pahang,Temerloh,2020-01-01,67.5,65.1,2.5,40.0,62.8,3.6,60.6
+Pahang marine parks,Pahang,Temerloh,2021-01-01,66.7,64.4,2.3,41.8,61.5,3.5,59.4
+Pahang marine parks,Pahang,Temerloh,2022-01-01,68.9,67.1,1.8,42.5,61.9,2.6,60.2
+Pahang marine parks,Pahang,Temerloh,2023-01-01,72.0,70.1,1.8,43.4,62.4,2.5,60.7
+Pahang marine parks,Pahang,Temerloh,2024-01-01,74.7,72.8,1.9,44.6,62.6,2.5,61.0
+Kedah marine parks,Kedah,Baling,2018-01-01,68.6,66.9,1.7,32.5,67.9,2.4,66.2
+Kedah marine parks,Kedah,Baling,2019-01-01,70.5,68.9,1.6,33.3,67.9,2.3,66.4
+Kedah marine parks,Kedah,Baling,2020-01-01,63.2,60.8,2.4,30.4,67.5,3.8,65.0
+Kedah marine parks,Kedah,Baling,2021-01-01,63.9,61.9,2.0,30.4,67.8,3.1,65.6
+Kedah marine parks,Kedah,Baling,2022-01-01,64.7,63.2,1.4,30.1,68.2,2.2,66.7
+Kedah marine parks,Kedah,Baling,2023-01-01,66.4,64.9,1.4,29.3,69.4,2.2,67.8
+Kedah marine parks,Kedah,Baling,2024-01-01,68.2,67.0,1.2,28.7,70.4,1.8,69.1
+Kedah marine parks,Kedah,Bandar Baharu,2018-01-01,21.6,21.0,0.6,10.0,68.4,2.7,66.5
+Kedah marine parks,Kedah,Bandar Baharu,2019-01-01,22.6,22.0,0.6,10.4,68.4,2.6,66.7
+Kedah marine parks,Kedah,Bandar Baharu,2020-01-01,20.6,19.7,0.9,8.7,70.3,4.6,67.2
+Kedah marine parks,Kedah,Bandar Baharu,2021-01-01,20.6,19.7,0.9,8.9,69.9,4.3,66.8
+Kedah marine parks,Kedah,Bandar Baharu,2022-01-01,20.9,20.3,0.6,8.8,70.5,3.1,68.4
+Kedah marine parks,Kedah,Bandar Baharu,2023-01-01,21.5,20.9,0.6,8.5,71.7,3.0,69.7
+Kedah marine parks,Kedah,Bandar Baharu,2024-01-01,21.9,21.4,0.5,8.6,71.8,2.5,70.2
+Kedah marine parks,Kedah,Kota Setar,2018-01-01,169.6,163.3,6.4,105.2,61.7,3.8,59.4
+Kedah marine parks,Kedah,Kota Setar,2019-01-01,171.4,165.3,6.1,106.9,61.6,3.5,59.4
+Kedah marine parks,Kedah,Kota Setar,2020-01-01,154.2,146.3,7.9,93.9,62.2,5.1,59.0
+Kedah marine parks,Kedah,Kota Setar,2021-01-01,154.0,146.7,7.3,95.6,61.7,4.7,58.8
+Kedah marine parks,Kedah,Kota Setar,2022-01-01,155.5,149.7,5.8,94.8,62.1,3.7,59.8
+Kedah marine parks,Kedah,Kota Setar,2023-01-01,159.3,153.4,5.8,92.8,63.2,3.7,60.8
+Kedah marine parks,Kedah,Kota Setar,2024-01-01,162.6,157.4,5.3,92.1,63.8,3.2,61.8
+Kedah marine parks,Kedah,Kuala Muda,2018-01-01,214.6,208.9,5.8,137.4,61.0,2.7,59.3
+Kedah marine parks,Kedah,Kuala Muda,2019-01-01,214.7,209.1,5.6,140.6,60.4,2.6,58.9
+Kedah marine parks,Kedah,Kuala Muda,2020-01-01,223.9,215.6,8.3,146.1,60.5,3.7,58.3
+Kedah marine parks,Kedah,Kuala Muda,2021-01-01,226.3,218.6,7.8,144.3,61.1,3.4,59.0
+Kedah marine parks,Kedah,Kuala Muda,2022-01-01,229.8,223.9,5.9,144.1,61.5,2.6,59.9
+Kedah marine parks,Kedah,Kuala Muda,2023-01-01,238.0,232.1,6.0,142.7,62.5,2.5,61.0
+Kedah marine parks,Kedah,Kuala Muda,2024-01-01,244.5,239.1,5.5,144.9,62.8,2.2,61.4
+Kedah marine parks,Kedah,Kubang Pasu,2018-01-01,100.2,97.6,2.6,64.5,60.8,2.6,59.3
+Kedah marine parks,Kedah,Kubang Pasu,2019-01-01,102.3,99.9,2.4,65.8,60.8,2.3,59.4
+Kedah marine parks,Kedah,Kubang Pasu,2020-01-01,97.6,93.8,3.8,59.0,62.3,3.9,59.9
+Kedah marine parks,Kedah,Kubang Pasu,2021-01-01,101.7,98.0,3.7,61.7,62.2,3.7,60.0
+Kedah marine parks,Kedah,Kubang Pasu,2022-01-01,103.5,100.6,2.9,60.8,63.0,2.8,61.2
+Kedah marine parks,Kedah,Kubang Pasu,2023-01-01,106.1,103.2,2.9,59.5,64.1,2.7,62.3
+Kedah marine parks,Kedah,Kubang Pasu,2024-01-01,109.4,106.8,2.6,58.3,65.3,2.4,63.7
+Kedah marine parks,Kedah,Kulim,2018-01-01,151.0,147.6,3.4,72.6,67.5,2.2,66.0
+Kedah marine parks,Kedah,Kulim,2019-01-01,153.9,150.8,3.1,73.3,67.7,2.0,66.4
+Kedah marine parks,Kedah,Kulim,2020-01-01,152.2,146.9,5.4,78.8,65.9,3.5,63.6
+Kedah marine parks,Kedah,Kulim,2021-01-01,155.0,150.1,4.9,76.9,66.8,3.1,64.7
+Kedah marine parks,Kedah,Kulim,2022-01-01,156.9,153.5,3.5,76.5,67.2,2.2,65.8
+Kedah marine parks,Kedah,Kulim,2023-01-01,162.0,158.4,3.5,74.9,68.4,2.2,66.9
+Kedah marine parks,Kedah,Kulim,2024-01-01,166.4,163.2,3.2,74.8,69.0,1.9,67.7
+Kedah marine parks,Kedah,Langkawi,2018-01-01,50.6,48.7,1.9,23.4,68.3,3.8,65.8
+Kedah marine parks,Kedah,Langkawi,2019-01-01,51.3,49.4,1.9,24.0,68.1,3.7,65.6
+Kedah marine parks,Kedah,Langkawi,2020-01-01,43.8,40.8,3.0,19.8,68.9,6.9,64.2
+Kedah marine parks,Kedah,Langkawi,2021-01-01,44.4,41.1,3.3,19.4,69.5,7.3,64.4
+Kedah marine parks,Kedah,Langkawi,2022-01-01,45.0,42.4,2.6,19.3,70.0,5.8,65.9
+Kedah marine parks,Kedah,Langkawi,2023-01-01,46.3,43.7,2.6,18.8,71.2,5.7,67.1
+Kedah marine parks,Kedah,Langkawi,2024-01-01,48.1,45.7,2.4,18.1,72.6,4.9,69.0
+Kedah marine parks,Kedah,Padang Terap,2018-01-01,30.5,29.6,1.0,15.6,66.2,3.2,64.2
+Kedah marine parks,Kedah,Padang Terap,2019-01-01,31.7,30.7,1.0,16.8,65.3,3.0,63.3
+Kedah marine parks,Kedah,Padang Terap,2020-01-01,28.5,27.4,1.2,14.5,66.3,4.0,63.7
+Kedah marine parks,Kedah,Padang Terap,2021-01-01,29.3,28.2,1.1,14.3,67.2,3.6,64.7
+Kedah marine parks,Kedah,Padang Terap,2022-01-01,29.5,28.6,0.9,14.1,67.7,3.0,65.6
+Kedah marine parks,Kedah,Padang Terap,2023-01-01,30.2,29.3,0.9,13.7,68.9,3.0,66.7
+Kedah marine parks,Kedah,Padang Terap,2024-01-01,31.3,30.5,0.8,13.2,70.3,2.5,68.5
+Kedah marine parks,Kedah,Pendang,2018-01-01,44.3,43.0,1.3,25.3,63.6,2.9,61.8
+Kedah marine parks,Kedah,Pendang,2019-01-01,45.6,44.3,1.3,26.1,63.6,4.2,61.8
+Kedah marine parks,Kedah,Pendang,2020-01-01,41.9,39.9,2.0,22.6,64.9,4.7,61.9
+Kedah marine parks,Kedah,Pendang,2021-01-01,41.8,39.5,2.3,23.1,64.4,5.5,60.9
+Kedah marine parks,Kedah,Pendang,2022-01-01,42.3,40.5,1.8,23.0,64.8,4.3,62.0
+Kedah marine parks,Kedah,Pendang,2023-01-01,43.4,41.5,1.8,22.4,65.9,4.2,63.1
+Kedah marine parks,Kedah,Pendang,2024-01-01,44.6,43.0,1.6,22.0,66.9,3.5,64.6
+Kedah marine parks,Kedah,Pokok Sena,2018-01-01,23.6,22.9,0.7,13.8,63.2,3.1,61.2
+Kedah marine parks,Kedah,Pokok Sena,2019-01-01,24.0,23.3,0.7,13.6,63.8,3.1,62.0
+Kedah marine parks,Kedah,Pokok Sena,2020-01-01,22.0,20.9,1.0,10.9,66.9,4.7,63.5
+Kedah marine parks,Kedah,Pokok Sena,2021-01-01,22.1,21.2,0.9,11.0,66.7,4.1,64.0
+Kedah marine parks,Kedah,Pokok Sena,2022-01-01,22.3,21.6,0.7,10.9,67.2,3.1,65.1
+Kedah marine parks,Kedah,Pokok Sena,2023-01-01,22.8,22.1,0.7,10.6,68.3,3.0,66.2
+Kedah marine parks,Kedah,Pokok Sena,2024-01-01,23.5,22.9,0.6,10.3,69.4,2.5,67.8
+Kedah marine parks,Kedah,Sik,2018-01-01,32.1,31.1,1.1,19.0,62.8,3.3,60.9
+Kedah marine parks,Kedah,Sik,2019-01-01,31.8,30.8,1.0,20.2,61.1,3.2,59.2
+Kedah marine parks,Kedah,Sik,2020-01-01,27.3,26.5,0.9,17.1,61.5,3.1,59.7
+Kedah marine parks,Kedah,Sik,2021-01-01,27.5,26.6,0.9,17.3,61.4,3.3,59.4
+Kedah marine parks,Kedah,Sik,2022-01-01,27.8,27.1,0.7,17.2,61.8,2.4,60.2
+Kedah marine parks,Kedah,Sik,2023-01-01,28.5,27.9,0.7,16.8,62.9,2.3,61.6
+Kedah marine parks,Kedah,Sik,2024-01-01,29.4,28.8,0.6,16.5,64.0,2.0,62.7
+Kedah marine parks,Kedah,Yan,2018-01-01,29.9,28.8,1.2,19.7,60.4,4.0,58.1
+Kedah marine parks,Kedah,Yan,2019-01-01,30.3,29.2,1.1,20.2,60.0,3.8,57.8
+Kedah marine parks,Kedah,Yan,2020-01-01,29.2,28.4,0.8,18.7,60.9,2.7,59.3
+Kedah marine parks,Kedah,Yan,2021-01-01,29.3,28.4,0.9,19.0,60.7,3.1,58.8
+Kedah marine parks,Kedah,Yan,2022-01-01,29.8,29.1,0.7,18.9,61.1,2.3,59.8
+Kedah marine parks,Kedah,Yan,2023-01-01,30.6,29.9,0.7,18.6,62.2,2.2,60.8
+Kedah marine parks,Kedah,Yan,2024-01-01,31.4,30.8,0.6,18.4,63.0,1.9,61.8
+Johor marine parks,Johor,Batu Pahat,2018-01-01,207.1,203.1,4.0,94.4,68.7,1.9,67.4
+Johor marine parks,Johor,Batu Pahat,2019-01-01,213.6,209.8,3.7,90.4,70.3,1.7,69.0
+Johor marine parks,Johor,Batu Pahat,2020-01-01,253.3,247.8,5.5,105.2,70.6,2.2,69.1
+Johor marine parks,Johor,Batu Pahat,2021-01-01,250.2,244.5,5.7,109.5,69.6,2.3,68.0
+Johor marine parks,Johor,Batu Pahat,2022-01-01,253.3,248.8,4.5,107.2,70.3,1.8,69.0
+Johor marine parks,Johor,Batu Pahat,2023-01-01,258.7,255.0,3.7,108.4,70.5,1.4,69.5
+Johor marine parks,Johor,Batu Pahat,2024-01-01,263.6,260.2,3.4,108.2,70.9,1.3,70.0
+Johor marine parks,Johor,Johor Bahru,2018-01-01,768.4,742.8,25.6,301.3,71.8,3.3,69.4
+Johor marine parks,Johor,Johor Bahru,2019-01-01,792.4,767.8,24.6,293.7,73.0,3.1,70.7
+Johor marine parks,Johor,Johor Bahru,2020-01-01,853.8,819.0,34.9,311.1,73.3,4.1,70.3
+Johor marine parks,Johor,Johor Bahru,2021-01-01,855.7,820.4,35.3,307.5,73.6,4.1,70.5
+Johor marine parks,Johor,Johor Bahru,2022-01-01,869.7,838.5,31.3,302.3,74.2,3.6,71.5
+Johor marine parks,Johor,Johor Bahru,2023-01-01,897.3,871.2,26.1,308.5,74.4,2.9,72.3
+Johor marine parks,Johor,Johor Bahru,2024-01-01,921.3,896.3,25.0,314.1,74.6,2.7,72.6
+Johor marine parks,Johor,Kluang,2018-01-01,159.3,153.2,6.2,69.5,69.6,3.9,66.9
+Johor marine parks,Johor,Kluang,2019-01-01,166.1,160.5,5.6,66.9,71.3,3.4,68.9
+Johor marine parks,Johor,Kluang,2020-01-01,165.4,158.4,7.0,65.5,71.6,4.2,68.6
+Johor marine parks,Johor,Kluang,2021-01-01,167.1,159.6,7.5,65.2,71.9,4.5,68.7
+Johor marine parks,Johor,Kluang,2022-01-01,167.9,161.3,6.6,64.1,72.4,3.9,69.5
+Johor marine parks,Johor,Kluang,2023-01-01,172.5,167.0,5.5,65.2,72.6,3.2,70.3
+Johor marine parks,Johor,Kluang,2024-01-01,176.6,171.6,5.0,66.6,72.6,2.8,70.6
+Johor marine parks,Johor,Kota Tinggi,2018-01-01,94.7,91.9,2.8,44.8,67.9,3.0,65.9
+Johor marine parks,Johor,Kota Tinggi,2019-01-01,100.7,98.0,2.8,43.8,69.7,2.7,67.8
+Johor marine parks,Johor,Kota Tinggi,2020-01-01,110.7,106.9,3.8,47.2,70.1,3.4,67.7
+Johor marine parks,Johor,Kota Tinggi,2021-01-01,111.5,107.2,4.3,46.6,70.5,3.9,67.8
+Johor marine parks,Johor,Kota Tinggi,2022-01-01,113.4,109.6,3.9,45.6,71.3,3.4,68.9
+Johor marine parks,Johor,Kota Tinggi,2023-01-01,116.2,113.0,3.2,46.2,71.5,2.8,69.6
+Johor marine parks,Johor,Kota Tinggi,2024-01-01,119.6,116.7,2.9,46.3,72.1,2.4,70.3
+Johor marine parks,Johor,Kulai,2018-01-01,129.7,125.9,3.8,70.5,64.8,2.9,62.9
+Johor marine parks,Johor,Kulai,2019-01-01,131.7,128.1,3.6,66.7,66.4,3.5,64.6
+Johor marine parks,Johor,Kulai,2020-01-01,161.1,155.6,5.5,79.6,66.9,3.4,64.6
+Johor marine parks,Johor,Kulai,2021-01-01,157.1,151.3,5.7,81.8,65.8,3.6,63.3
+Johor marine parks,Johor,Kulai,2022-01-01,159.1,154.0,5.1,80.9,66.3,3.2,64.2
+Johor marine parks,Johor,Kulai,2023-01-01,165.9,161.6,4.3,83.6,66.5,2.6,64.8
+Johor marine parks,Johor,Kulai,2024-01-01,173.3,169.4,3.9,86.2,66.8,2.3,65.3
+Johor marine parks,Johor,Mersing,2018-01-01,32.2,31.4,0.8,22.4,59.0,2.5,57.5
+Johor marine parks,Johor,Mersing,2019-01-01,33.2,32.4,0.8,21.8,60.4,2.4,58.9
+Johor marine parks,Johor,Mersing,2020-01-01,33.8,32.6,1.1,21.6,61.0,3.3,58.8
+Johor marine parks,Johor,Mersing,2021-01-01,33.2,32.0,1.2,22.4,59.7,3.5,57.6
+Johor marine parks,Johor,Mersing,2022-01-01,33.6,32.6,1.0,22.2,60.3,2.9,58.4
+Johor marine parks,Johor,Mersing,2023-01-01,34.3,33.5,0.8,22.4,60.4,2.4,59.1
+Johor marine parks,Johor,Mersing,2024-01-01,35.4,34.7,0.7,22.3,61.3,2.0,60.1
+Johor marine parks,Johor,Muar,2018-01-01,120.7,118.6,2.1,63.4,65.6,1.8,64.4
+Johor marine parks,Johor,Muar,2019-01-01,126.4,124.3,2.1,60.7,67.5,1.7,66.4
+Johor marine parks,Johor,Muar,2020-01-01,151.6,148.1,3.5,71.5,68.0,2.3,66.4
+Johor marine parks,Johor,Muar,2021-01-01,152.5,148.7,3.9,71.6,68.0,2.5,66.4
+Johor marine parks,Johor,Muar,2022-01-01,153.6,150.1,3.5,69.7,68.8,2.3,67.2
+Johor marine parks,Johor,Muar,2023-01-01,157.7,154.8,2.9,70.9,69.0,1.8,67.7
+Johor marine parks,Johor,Muar,2024-01-01,161.4,158.7,2.6,71.2,69.4,1.6,68.2
+Johor marine parks,Johor,Pontian,2018-01-01,74.1,71.7,2.4,40.4,64.7,3.2,62.6
+Johor marine parks,Johor,Pontian,2019-01-01,77.2,74.8,2.4,39.5,66.2,3.1,64.1
+Johor marine parks,Johor,Pontian,2020-01-01,82.0,78.7,3.3,41.1,66.6,4.0,63.9
+Johor marine parks,Johor,Pontian,2021-01-01,80.9,77.2,3.7,42.6,65.5,4.5,62.5
+Johor marine parks,Johor,Pontian,2022-01-01,81.5,78.6,2.9,41.8,66.1,3.6,63.7
+Johor marine parks,Johor,Pontian,2023-01-01,83.1,80.7,2.4,42.3,66.3,2.9,64.4
+Johor marine parks,Johor,Pontian,2024-01-01,84.4,82.2,2.1,42.4,66.6,2.5,64.8
+Johor marine parks,Johor,Segamat,2018-01-01,96.7,94.0,2.7,43.7,68.9,2.8,66.9
+Johor marine parks,Johor,Segamat,2019-01-01,100.1,97.6,2.6,42.1,70.4,2.6,68.6
+Johor marine parks,Johor,Segamat,2020-01-01,103.2,99.5,3.7,42.6,70.8,3.6,68.2
+Johor marine parks,Johor,Segamat,2021-01-01,101.9,97.9,4.0,43.3,70.2,3.9,67.4
+Johor marine parks,Johor,Segamat,2022-01-01,103.3,99.7,3.6,43.1,70.6,3.5,68.1
+Johor marine parks,Johor,Segamat,2023-01-01,105.9,102.9,3.0,43.7,70.8,2.9,68.8
+Johor marine parks,Johor,Segamat,2024-01-01,108.9,106.2,2.8,43.9,71.3,2.5,69.5
+Johor marine parks,Johor,Tangkak,2018-01-01,62.1,60.6,1.5,37.7,62.2,2.3,60.8
+Johor marine parks,Johor,Tangkak,2019-01-01,64.3,62.9,1.4,36.0,64.1,2.1,62.7
+Johor marine parks,Johor,Tangkak,2020-01-01,76.0,73.9,2.1,41.6,64.6,2.8,62.8
+Johor marine parks,Johor,Tangkak,2021-01-01,76.7,74.3,2.3,41.6,64.8,3.0,62.8
+Johor marine parks,Johor,Tangkak,2022-01-01,77.9,76.0,1.9,41.5,65.2,2.4,63.7
+Johor marine parks,Johor,Tangkak,2023-01-01,79.9,78.3,1.5,42.2,65.4,1.9,64.1
+Johor marine parks,Johor,Tangkak,2024-01-01,82.0,80.6,1.4,42.3,65.9,1.7,64.8
+Sipadan / Mabul,Sabah,Semporna,2018-01-01,79.4,74.6,4.8,45.7,63.5,6.1,59.6
+Sipadan / Mabul,Sabah,Semporna,2019-01-01,83.4,78.1,5.2,47.5,63.7,6.3,59.7
+Sipadan / Mabul,Sabah,Semporna,2020-01-01,,23.3,6.8,41.2,64.5,9.1,
+Sipadan / Mabul,Sabah,Semporna,2021-01-01,73.5,66.5,7.1,38.7,65.5,9.6,59.3
+Sipadan / Mabul,Sabah,Semporna,2022-01-01,76.8,70.2,6.6,39.0,66.3,8.6,60.6
+Sipadan / Mabul,Sabah,Semporna,2023-01-01,88.6,81.2,7.5,41.9,67.9,8.4,62.2
+Sipadan / Mabul,Sabah,Semporna,2024-01-01,96.9,88.8,8.1,43.1,69.2,8.4,63.4
+Tunku Abdul Rahman Park,Sabah,Kota Kinabalu,2018-01-01,289.5,274.4,15.2,118.4,71.0,5.2,67.3
+Tunku Abdul Rahman Park,Sabah,Kota Kinabalu,2019-01-01,305.6,290.0,15.6,112.8,73.0,5.1,69.3
+Tunku Abdul Rahman Park,Sabah,Kota Kinabalu,2020-01-01,,235.7,13.4,87.9,73.9,5.4,
+Tunku Abdul Rahman Park,Sabah,Kota Kinabalu,2021-01-01,254.1,238.1,16.0,85.1,74.9,6.3,70.2
+Tunku Abdul Rahman Park,Sabah,Kota Kinabalu,2022-01-01,258.9,243.9,15.0,86.5,75.0,5.8,70.6
+Tunku Abdul Rahman Park,Sabah,Kota Kinabalu,2023-01-01,276.5,260.7,15.9,89.0,75.7,5.7,71.3
+Tunku Abdul Rahman Park,Sabah,Kota Kinabalu,2024-01-01,292.0,274.6,17.3,91.0,76.2,5.9,71.7
+Kinabalu / Kundasang,Sabah,Ranau,2018-01-01,55.4,52.4,3.0,23.2,70.5,5.4,66.7
+Kinabalu / Kundasang,Sabah,Ranau,2019-01-01,58.7,55.5,3.2,22.8,72.0,5.5,68.1
+Kinabalu / Kundasang,Sabah,Ranau,2020-01-01,,39.0,3.5,16.9,67.6,9.8,
+Kinabalu / Kundasang,Sabah,Ranau,2021-01-01,36.5,32.5,3.9,17.3,67.9,10.7,60.4
+Kinabalu / Kundasang,Sabah,Ranau,2022-01-01,37.3,33.9,3.4,17.1,68.5,9.1,62.3
+Kinabalu / Kundasang,Sabah,Ranau,2023-01-01,39.0,35.5,3.5,17.0,69.7,9.1,63.4
+Kinabalu / Kundasang,Sabah,Ranau,2024-01-01,40.3,36.6,3.7,17.1,70.2,9.3,63.8
+Langkawi,Kedah,Langkawi,2018-01-01,50.6,48.7,1.9,23.4,68.3,3.8,65.8
+Langkawi,Kedah,Langkawi,2019-01-01,51.3,49.4,1.9,24.0,68.1,3.7,65.6
+Langkawi,Kedah,Langkawi,2020-01-01,43.8,40.8,3.0,19.8,68.9,6.9,64.2
+Langkawi,Kedah,Langkawi,2021-01-01,44.4,41.1,3.3,19.4,69.5,7.3,64.4
+Langkawi,Kedah,Langkawi,2022-01-01,45.0,42.4,2.6,19.3,70.0,5.8,65.9
+Langkawi,Kedah,Langkawi,2023-01-01,46.3,43.7,2.6,18.8,71.2,5.7,67.1
+Langkawi,Kedah,Langkawi,2024-01-01,48.1,45.7,2.4,18.1,72.6,4.9,69.0
+Pangkor,Perak,Manjung,2021-01-01,117.6,112.2,5.4,53.6,68.7,4.6,65.5
+Pangkor,Perak,Manjung,2022-01-01,118.5,113.7,4.8,52.1,69.5,4.1,66.6
+Pangkor,Perak,Manjung,2023-01-01,122.0,117.8,4.2,51.8,70.2,3.4,67.8
+Pangkor,Perak,Manjung,2024-01-01,125.4,121.5,3.8,51.3,71.0,3.1,68.8
+Fraser's Hill,Pahang,Raub,2018-01-01,45.2,44.1,1.1,24.3,65.0,2.5,63.5
+Fraser's Hill,Pahang,Raub,2019-01-01,45.2,43.9,1.3,25.1,64.3,2.9,62.4
+Fraser's Hill,Pahang,Raub,2020-01-01,41.1,39.6,1.5,22.7,64.4,3.7,62.1
+Fraser's Hill,Pahang,Raub,2021-01-01,40.0,38.6,1.4,24.3,62.2,3.6,60.0
+Fraser's Hill,Pahang,Raub,2022-01-01,41.2,40.1,1.1,24.7,62.5,2.7,60.8
+Fraser's Hill,Pahang,Raub,2023-01-01,43.3,42.1,1.1,25.4,63.0,2.6,61.3
+Fraser's Hill,Pahang,Raub,2024-01-01,44.7,43.6,1.2,26.0,63.3,2.6,61.7
+Miri,Sarawak,Miri,2018-01-01,162.5,157.0,5.4,82.3,66.4,3.4,64.1
+Miri,Sarawak,Miri,2019-01-01,164.2,158.6,5.5,82.6,66.5,3.4,64.3
+Miri,Sarawak,Miri,2020-01-01,124.6,120.4,4.2,58.4,68.1,3.4,65.8
+Miri,Sarawak,Miri,2021-01-01,129.2,124.6,4.6,55.3,70.0,3.6,67.5
+Miri,Sarawak,Miri,2022-01-01,130.7,127.0,3.7,54.5,70.6,2.8,68.6
+Miri,Sarawak,Miri,2023-01-01,135.8,133.7,3.5,52.2,72.4,2.6,71.1
+Miri,Sarawak,Miri,2024-01-01,138.5,134.8,3.7,51.4,72.9,2.7,71.0
+Besut parks,Terengganu,Besut,2018-01-01,62.1,58.8,3.2,41.6,59.9,5.2,56.7
+Besut parks,Terengganu,Besut,2019-01-01,64.7,62.3,2.4,41.5,60.9,3.7,58.7
+Besut parks,Terengganu,Besut,2020-01-01,59.3,56.9,2.4,39.2,60.2,4.1,57.8
+Besut parks,Terengganu,Besut,2021-01-01,58.8,56.2,2.6,41.5,58.6,4.5,56.0
+Besut parks,Terengganu,Besut,2022-01-01,60.4,58.1,2.4,41.9,59.0,3.9,56.8
+Besut parks,Terengganu,Besut,2023-01-01,62.1,59.7,2.4,42.8,59.2,3.8,56.9
+Besut parks,Terengganu,Besut,2024-01-01,64.1,61.8,2.2,42.9,59.9,3.5,57.8
+Dungun parks,Terengganu,Dungun,2018-01-01,73.0,69.5,3.5,52.6,58.1,4.7,55.3
+Dungun parks,Terengganu,Dungun,2019-01-01,74.4,71.7,2.7,51.5,59.1,3.6,56.9
+Dungun parks,Terengganu,Dungun,2020-01-01,59.6,57.2,2.5,45.6,56.7,4.1,54.4
+Dungun parks,Terengganu,Dungun,2021-01-01,60.5,58.2,2.4,46.2,56.7,4.0,54.5
+Dungun parks,Terengganu,Dungun,2022-01-01,61.7,59.6,2.1,46.3,57.1,3.5,55.2
+Dungun parks,Terengganu,Dungun,2023-01-01,63.1,60.9,2.1,47.0,57.3,3.4,55.3
+Dungun parks,Terengganu,Dungun,2024-01-01,65.1,63.1,2.0,47.1,58.0,3.1,56.2
+Rompin parks,Pahang,Rompin,2018-01-01,53.2,51.6,1.5,29.8,64.1,2.9,62.2
+Rompin parks,Pahang,Rompin,2019-01-01,54.2,52.4,1.7,30.9,63.7,3.2,61.6
+Rompin parks,Pahang,Rompin,2020-01-01,40.1,39.0,1.1,26.0,60.6,2.8,59.0
+Rompin parks,Pahang,Rompin,2021-01-01,39.9,38.6,1.3,28.0,58.8,3.2,56.8
+Rompin parks,Pahang,Rompin,2022-01-01,39.7,38.8,0.9,27.5,59.1,2.3,57.7
+Rompin parks,Pahang,Rompin,2023-01-01,40.4,39.7,0.8,27.4,59.6,1.9,58.6
+Rompin parks,Pahang,Rompin,2024-01-01,41.1,40.3,0.8,27.6,59.8,1.9,58.7
+Mersing parks,Johor,Mersing,2018-01-01,32.2,31.4,0.8,22.4,59.0,2.5,57.5
+Mersing parks,Johor,Mersing,2019-01-01,33.2,32.4,0.8,21.8,60.4,2.4,58.9
+Mersing parks,Johor,Mersing,2020-01-01,33.8,32.6,1.1,21.6,61.0,3.3,58.8
+Mersing parks,Johor,Mersing,2021-01-01,33.2,32.0,1.2,22.4,59.7,3.5,57.6
+Mersing parks,Johor,Mersing,2022-01-01,33.6,32.6,1.0,22.2,60.3,2.9,58.4
+Mersing parks,Johor,Mersing,2023-01-01,34.3,33.5,0.8,22.4,60.4,2.4,59.1
+Mersing parks,Johor,Mersing,2024-01-01,35.4,34.7,0.7,22.3,61.3,2.0,60.1
+Kota Setar parks,Kedah,Kota Setar,2018-01-01,169.6,163.3,6.4,105.2,61.7,3.8,59.4
+Kota Setar parks,Kedah,Kota Setar,2019-01-01,171.4,165.3,6.1,106.9,61.6,3.5,59.4
+Kota Setar parks,Kedah,Kota Setar,2020-01-01,154.2,146.3,7.9,93.9,62.2,5.1,59.0
+Kota Setar parks,Kedah,Kota Setar,2021-01-01,154.0,146.7,7.3,95.6,61.7,4.7,58.8
+Kota Setar parks,Kedah,Kota Setar,2022-01-01,155.5,149.7,5.8,94.8,62.1,3.7,59.8
+Kota Setar parks,Kedah,Kota Setar,2023-01-01,159.3,153.4,5.8,92.8,63.2,3.7,60.8
+Kota Setar parks,Kedah,Kota Setar,2024-01-01,162.6,157.4,5.3,92.1,63.8,3.2,61.8

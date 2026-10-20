@@ -1,0 +1,180 @@
+{
+ "Perhentian": {
+  "season": {
+   "v": 0.405,
+   "src": "Department of Marine Park Malaysia monthly visitors, Terengganu, 2017 (spread over 7.5 effective months of 12; state level, one year)"
+  },
+  "occ": {
+   "v": 0.44,
+   "src": "Tourism Malaysia hotel occupancy, Terengganu, 2015 to 2019 average 44.0% (state level)"
+  },
+  "accom": {
+   "v": 0.97,
+   "src": "OpenStreetMap: 64 tourist accommodation features in a box around Perhentian (log-scaled to the busiest island; OSM undercounts, small resorts are often untagged)"
+  }
+ },
+ "Redang": {
+  "season": {
+   "v": 0.405,
+   "src": "Department of Marine Park Malaysia monthly visitors, Terengganu, 2017 (spread over 7.5 effective months of 12; state level, one year)"
+  },
+  "occ": {
+   "v": 0.44,
+   "src": "Tourism Malaysia hotel occupancy, Terengganu, 2015 to 2019 average 44.0% (state level)"
+  },
+  "accom": {
+   "v": 0.535,
+   "src": "OpenStreetMap: 9 tourist accommodation features in a box around Redang (log-scaled to the busiest island; OSM undercounts, small resorts are often untagged)"
+  }
+ },
+ "Lang Tengah": {
+  "season": {
+   "v": 0.405,
+   "src": "Department of Marine Park Malaysia monthly visitors, Terengganu, 2017 (spread over 7.5 effective months of 12; state level, one year)"
+  },
+  "occ": {
+   "v": 0.44,
+   "src": "Tourism Malaysia hotel occupancy, Terengganu, 2015 to 2019 average 44.0% (state level)"
+  },
+  "accom": {
+   "v": 0.255,
+   "src": "OpenStreetMap: 2 tourist accommodation features in a box around Lang Tengah (log-scaled to the busiest island; OSM undercounts, small resorts are often untagged)"
+  }
+ },
+ "Kapas": {
+  "season": {
+   "v": 0.405,
+   "src": "Department of Marine Park Malaysia monthly visitors, Terengganu, 2017 (spread over 7.5 effective months of 12; state level, one year)"
+  },
+  "occ": {
+   "v": 0.44,
+   "src": "Tourism Malaysia hotel occupancy, Terengganu, 2015 to 2019 average 44.0% (state level)"
+  },
+  "accom": {
+   "v": 0.535,
+   "src": "OpenStreetMap: 9 tourist accommodation features in a box around Kapas (log-scaled to the busiest island; OSM undercounts, small resorts are often untagged)"
+  }
+ },
+ "Tioman": {
+  "season": {
+   "v": 0.376,
+   "src": "Department of Marine Park Malaysia monthly visitors, Pahang, 2017 (spread over 7.9 effective months of 12; state level, one year)"
+  },
+  "occ": {
+   "v": 0.776,
+   "src": "Tourism Malaysia hotel occupancy, Pahang, 2015 to 2019 average 77.6% (state level)"
+  },
+  "accom": {
+   "v": 1.0,
+   "src": "OpenStreetMap: 73 tourist accommodation features in a box around Tioman (log-scaled to the busiest island; OSM undercounts, small resorts are often untagged)"
+  }
+ },
+ "Tulai": {
+  "season": {
+   "v": 0.376,
+   "src": "Department of Marine Park Malaysia monthly visitors, Pahang, 2017 (spread over 7.9 effective months of 12; state level, one year)"
+  },
+  "occ": {
+   "v": 0.776,
+   "src": "Tourism Malaysia hotel occupancy, Pahang, 2015 to 2019 average 77.6% (state level)"
+  }
+ },
+ "Sembilang": {
+  "season": {
+   "v": 0.376,
+   "src": "Department of Marine Park Malaysia monthly visitors, Pahang, 2017 (spread over 7.9 effective months of 12; state level, one year)"
+  },
+  "occ": {
+   "v": 0.776,
+   "src": "Tourism Malaysia hotel occupancy, Pahang, 2015 to 2019 average 77.6% (state level)"
+  }
+ },
+ "Cameron Highlands": {
+  "occ": {
+   "v": 0.776,
+   "src": "Tourism Malaysia hotel occupancy, Pahang, 2015 to 2019 average 77.6% (state level)"
+  }
+ },
+ "Payar": {
+  "season": {
+   "v": 0.103,
+   "src": "Department of Marine Park Malaysia monthly visitors, Kedah, 2017 (spread over 10.9 effective months of 12; state level, one year)"
+  },
+  "occ": {
+   "v": 0.573,
+   "src": "Tourism Malaysia hotel occupancy, Kedah, 2015 to 2019 average 57.3% (state level)"
+  }
+ },
+ "Lembu": {
+  "season": {
+   "v": 0.103,
+   "src": "Department of Marine Park Malaysia monthly visitors, Kedah, 2017 (spread over 10.9 effective months of 12; state level, one year)"
+  },
+  "occ": {
+   "v": 0.573,
+   "src": "Tourism Malaysia hotel occupancy, Kedah, 2015 to 2019 average 57.3% (state level)"
+  }
+ },
+ "Kaca": {
+  "season": {
+   "v": 0.103,
+   "src": "Department of Marine Park Malaysia monthly visitors, Kedah, 2017 (spread over 10.9 effective months of 12; state level, one year)"
+  },
+  "occ": {
+   "v": 0.573,
+   "src": "Tourism Malaysia hotel occupancy, Kedah, 2015 to 2019 average 57.3% (state level)"
+  }
+ },
+ "Sibu": {
+  "season": {
+   "v": 0.199,
+   "src": "Department of Marine Park Malaysia monthly visitors, Johor, 2017 (spread over 9.8 effective months of 12; state level, one year)"
+  },
+  "occ": {
+   "v": 0.596,
+   "src": "Tourism Malaysia hotel occupancy, Johor, 2015 to 2019 average 59.6% (state level)"
+  },
+  "accom": {
+   "v": 0.416,
+   "src": "OpenStreetMap: 5 tourist accommodation features in a box around Sibu (log-scaled to the busiest island; OSM undercounts, small resorts are often untagged)"
+  }
+ },
+ "Tinggi": {
+  "season": {
+   "v": 0.199,
+   "src": "Department of Marine Park Malaysia monthly visitors, Johor, 2017 (spread over 9.8 effective months of 12; state level, one year)"
+  },
+  "occ": {
+   "v": 0.596,
+   "src": "Tourism Malaysia hotel occupancy, Johor, 2015 to 2019 average 59.6% (state level)"
+  },
+  "accom": {
+   "v": 0.161,
+   "src": "OpenStreetMap: 1 tourist accommodation features in a box around Tinggi (log-scaled to the busiest island; OSM undercounts, small resorts are often untagged)"
+  }
+ },
+ "Besar": {
+  "season": {
+   "v": 0.199,
+   "src": "Department of Marine Park Malaysia monthly visitors, Johor, 2017 (spread over 9.8 effective months of 12; state level, one year)"
+  },
+  "occ": {
+   "v": 0.596,
+   "src": "Tourism Malaysia hotel occupancy, Johor, 2015 to 2019 average 59.6% (state level)"
+  },
+  "accom": {
+   "v": 0.374,
+   "src": "OpenStreetMap: 4 tourist accommodation features in a box around Besar (log-scaled to the busiest island; OSM undercounts, small resorts are often untagged)"
+  }
+ },
+ "Rawa": {
+  "season": {
+   "v": 0.199,
+   "src": "Department of Marine Park Malaysia monthly visitors, Johor, 2017 (spread over 9.8 effective months of 12; state level, one year)"
+  },
+  "occ": {
+   "v": 0.596,
+   "src": "Tourism Malaysia hotel occupancy, Johor, 2015 to 2019 average 59.6% (state level)"
+  }
+ }
+}

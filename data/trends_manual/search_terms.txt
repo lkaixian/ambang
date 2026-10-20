@@ -1,0 +1,71 @@
+GOOGLE TRENDS EXPORTS FOR AMBANG: HOW TO DO THEM
+=================================================
+
+WHAT THIS IS FOR
+  The dashboard's Seasonality calendar shows which months people search for each place. Google Trends has no usable API from
+  this machine, so the curves are exported by hand from the website (about 1 minute per place) and imported by a script.
+
+WHY MALAY AND ENGLISH TOGETHER
+  Malaysians search in Malay ("Pulau Redang"); foreign travellers search in English ("Redang Island"). The two differ in volume
+  and in season, so one language alone gives a wrong curve. Put both in the SAME chart (step 2).
+
+THE STEPS (repeat for each row in the lists below)
+  1. Open https://trends.google.com/trends/explore
+     Set Location = Malaysia and Time range = Past 5 years.
+  2. Type the first term from the row. Click "+ Compare" and add the other terms from the same row (up to 5 in total).
+     All terms must be in ONE chart. That puts them on one shared 0-100 scale so they can be added together fairly.
+     If you export each term on its own, each is scaled to its own peak and they cannot be combined.
+  3. Click the download arrow under "Interest over time". You get a file called multiTimeline.csv.
+  4. Rename it to the name in the SAVE AS column and move it into this folder (data/trends_manual/).
+  5. When you have finished a batch, run these two commands from the project folder:
+         python scripts/import_trends_csv.py
+         python scripts/build_pending.py
+     Then reopen AMBANG_Dashboard_Prototype.html and check the Early warning > Seasonality tab.
+
+HOW TO READ THE RESULT
+  Trends scales every export to its own peak of 100. Compare the shape across months, never the height between places.
+  Places with very few searches come out as mostly zeros. The importer flags those as low volume.
+
+------------------------------------------------------------------------------------------------
+ALREADY DONE (files exist in this folder; redo only if the terms were not combined in one chart)
+------------------------------------------------------------------------------------------------
+  Perhentian.csv   Redang.csv   Tioman.csv   Kapas.csv   Langkawi.csv   Pangkor.csv   Cameron Highlands.csv
+  Note: Redang.csv currently holds the single term "Redang Island". Re-export it with the Malay term added.
+
+------------------------------------------------------------------------------------------------
+STILL TO DO, PRIORITY 1
+------------------------------------------------------------------------------------------------
+TERMS (all in one chart)                                         SAVE AS
+Bukit Fraser | Fraser's Hill                                     Fraser's Hill.csv
+Pulau Sipadan | Sipadan Island | Pulau Mabul                      Sipadan - Mabul.csv
+
+------------------------------------------------------------------------------------------------
+STILL TO DO, PRIORITY 2 (small places: may be mostly zeros)
+------------------------------------------------------------------------------------------------
+Pulau Lang Tengah | Lang Tengah                                  Lang Tengah.csv
+Pulau Sibu | Sibu Island                                         Sibu.csv
+Pulau Tinggi | Tinggi Island                                     Tinggi.csv
+Pulau Besar Mersing | Besar Island Mersing                       Besar.csv
+Pulau Rawa | Rawa Island                                         Rawa.csv
+Pulau Payar | Payar Island                                       Payar.csv
+Taman Tunku Abdul Rahman | Tunku Abdul Rahman Park | Manukan      Tunku Abdul Rahman Park.csv
+Terumbu Karang Miri | Miri Sibuti Coral Reef                      Miri.csv
+
+------------------------------------------------------------------------------------------------
+OPTIONAL
+------------------------------------------------------------------------------------------------
+Gunung Kinabalu | Mount Kinabalu                                  Kinabalu - Kundasang.csv
+  Skip it if you like: the dashboard already uses real monthly climber counts from Sabah Parks, which are better than searches.
+
+NO EXPORT NEEDED
+  Tulai and Sembilang reuse Tioman's curve. Lembu and Kaca reuse Payar's.
+  The 33 parks added from the Coral Triangle Atlas have no seasonality; the importer does not read files for them yet.
+
+TIP FOR EACH PLACE
+  Before exporting, search the bare name and the "Pulau ..." form on their own and see which is bigger. If a third spelling
+  (for example just "Redang") is clearly larger than both, add it to the same chart.
+
+IF SOMETHING GOES WRONG
+  - The importer says a file is missing or has an unknown name: check the SAVE AS name matches exactly, including capitals and spaces.
+  - The curve looks flat or empty: the place is too small for Trends. Leave it; the dashboard will show no seasonality for it.
+  - A name with a slash cannot be a filename, so the list uses " - " instead (for example "Sipadan - Mabul.csv").

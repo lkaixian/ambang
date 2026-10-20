@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="assets/logos/favicon.png">
+<link rel="apple-touch-icon" href="assets/logos/apple-touch.png">
+<title>AMBANG: carrying-capacity early warning</title>
+<!-- Content-Security-Policy: browser-enforced allowlist for this page's own network/script surface.
+     Two tradeoffs worth being explicit about:
+     1. 'unsafe-inline' is needed for script-src/style-src because the whole app (including the
+        AI/chat features) is one inline <script> and inline style="" attributes -- there's no build
+        step here to hash or nonce them. A CSP with unsafe-inline still blocks loading ANY script
+        from a host not in this list (so a compromised/injected <script src> tag from elsewhere
+        would be refused), it just doesn't stop inline script that's already in this file.
+     2. connect-src is 'self' only: the page may talk to nothing but its own server. The LLM provider and
+        its API key live server-side (scripts/server.js), so no third-party API host is listed here. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<link rel="preload" as="script" href="core.js?v=56"><link rel="preload" as="script" href="ai.js?v=56"><link rel="preload" as="script" href="app.js?v=56">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" integrity="sha384-bs/nf9FbdNouRbMiFcrcZfLXYPKiPaGVGplVbv7dLGECccEXDW+S3zjqSKR5ZEaD" crossorigin="anonymous"></script>
+<script>
+(function(){var t="light",q=/[?&]theme=(dark|light)/.exec(location.search);try{t=localStorage.getItem("ambangTheme")==="dark"?"dark":"light"}catch(e){}if(q)t=q[1];document.documentElement.dataset.theme=t})();
+var _thc={}; function TH(n){return _thc[n]||(_thc[n]=getComputedStyle(document.documentElement).getPropertyValue(n).trim())} // theme token -> value; cache is cleared on a theme switch
+</script>
+<link rel="stylesheet" href="style.css?v=56">
+</head>
+<body>
+
+<div class="flag"><div class="wrap">
+  <b class="mockTag">Mock view</b><span class="flagTxt" title="A preview for review, not an official release. Indicators marked &quot;confirmed real&quot; come from fetched Malaysian open data; the rest are illustrative placeholders and are labelled as such on each page.">Preview, not an official release. Real indicators come from Malaysian open data; the rest are labelled placeholders.</span>
+  <div class="logos" aria-label="Partners">
+    <a class="logo" href="https://www.uthm.edu.my" target="_blank" rel="noopener" aria-label="UTHM (opens in a new tab)" data-src="assets/logos/uthm.png" data-name="UTHM"></a>
+    <a class="logo" href="https://www.ilmu.ai/" target="_blank" rel="noopener" aria-label="ILMUChat (opens in a new tab)" data-src="assets/logos/ilmuchat.png" data-name="ILMUChat"></a>
+    <a class="logo" href="https://www.dosm.gov.my/portal-main/home" target="_blank" rel="noopener" aria-label="DOSM (opens in a new tab)" data-src="assets/logos/dosm.png" data-name="DOSM"></a>
+  </div>
+</div></div>
+
+<header><div class="wrap">
+  <div class="brand">
+    <h1><a href="#" id="homeLink" aria-label="AMBANG, go to National overview"><img class="onLight" src="assets/logos/ambang-header.png" alt="AMBANG" width="1000" height="238"><img class="onDark" src="assets/logos/ambang-header-dark.png" alt="" aria-hidden="true" width="1000" height="238"></a></h1>
+  </div>
+  <div class="navRow">
+  <nav role="tablist">
+    <button role="tab" aria-selected="true" data-p="p1">National overview</button>
+    <button role="tab" aria-selected="false" data-p="p2">Destination detail</button>
+    <button role="tab" aria-selected="false" data-p="p3">Early warning</button>
+    <button role="tab" aria-selected="false" data-p="p4">Method</button>
+    <button role="tab" aria-selected="false" data-p="p5">Data quality</button>
+  </nav>
+  <div class="wbar"><div class="grp"><a class="vbtn" href="/"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="transform:scaleX(-1)"><path d="M5 12h14M13 6l6 6-6 6"/></svg>New view</a></div><div class="grp"><span class="wlab" id="tlab">Theme</span>
+    <button type="button" class="tgl" id="tbtn" role="switch" aria-checked="false" aria-labelledby="tlab" title="Switch light / dark">
+      <svg class="ic sun" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <svg class="ic moon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button></div>
+    <div class="grp"><span class="wlab" id="wlab">Weights</span>
+    <div class="seg" id="wseg" role="group" aria-labelledby="wlab">
+      <button type="button" data-w="ewm" aria-pressed="true" title="Pressure weights trained from the data (entropy method): indicators that differ more between places count for more">Trained (EWM)</button>
+      <button type="button" data-w="equal" aria-pressed="false" title="Every pressure indicator counts the same">Equal</button>
+    </div>
+    <select id="wscheme" hidden aria-hidden="true"><option value="ewm" selected>EWM</option><option value="equal">Equal</option></select>
+  </div></div>
+  </div>
+</div></header>
+
+<main><div class="wrap">
+
+<!-- ============ PAGE 1 ============ -->
+<section class="page" id="p1">
+  <h2>Which regions are closest to their limit</h2>
+  <p class="sub">Each region's colour is the average AMBANG score of its tracked destinations. 50 is the threshold, where visitor pressure equals what the place can absorb. Click a region to zoom to its islands.</p>
+
+  <div class="grid g4" style="margin-bottom:18px">
+    <div class="card kpi"><div class="v num" id="kpiCount">–</div><div class="l" id="kpiCountL">Destinations scored</div></div>
+    <div class="card kpi"><div class="v num" id="kpiAbove" style="color:var(--coral)">–</div><div class="l">Above threshold (score over 50)</div></div>
+    <div class="card kpi"><div class="v num" id="kpiWatch" style="color:var(--amber)">–</div><div class="l">Warning or worse now</div></div>
+    <div class="card kpi"><div class="v num" id="kpiRose">–</div><div class="l">Moved up a band since 2018</div></div>
+  </div>
+
+  <div class="card">
+    <div class="chooserTop">
+      <h3 id="ovTitle">All regions</h3>
+      <label class="unsToggle"><input type="checkbox" class="unsChk"><span>Show parks with no score (<span class="unsN"></span>)</span></label>
+      <button id="ovBack" class="btn backbtn" type="button" hidden><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>All regions</button>
+    </div>
+    <svg id="ovMap" viewBox="0 0 1040 420" role="group" aria-label="Map of Malaysia with each region coloured by its average AMBANG score"></svg>
+    <div class="ovLegend" role="img" aria-label="Score bands: Normal below 45, Warning 45 to 60, Alert 60 to 75, Critical 75 and up">
+      <div id="ovLegendBar"><i style="left:30%"></i><i style="left:60%"></i><i style="left:90%"></i></div>
+      <div class="ovCuts"><span style="left:30%">45</span><span style="left:60%">60</span><span style="left:90%">75</span></div>
+      <div class="ovSegs"><span style="left:15%;color:var(--teal)">Normal</span><span style="left:45%;color:var(--amber)">Warning</span><span style="left:75%;color:var(--coral)">Alert</span><span style="left:100%;transform:translateX(-100%);color:var(--crit)">Critical</span></div>
+    </div>
+    <p class="note" style="margin-bottom:0;max-width:none">Colour is the mean of a region's destination scores, so one hot island can sit inside a mild region: zoom in to see them. Grey regions have tracked destinations but no score yet (not enough real data). Unshaded regions are not tracked.</p>
+  </div>
+
+  <div class="grid g2" style="margin-top:16px">
+    <div class="card" id="ovListCard"><h3 id="ovListTitle">Regions by average score</h3><div id="ovList"></div></div>
+    <div class="card" id="ovTrendCard" hidden>
+      <h3 id="ovTrendTitle">Average score over time</h3>
+      <div class="chart"><canvas id="c1"></canvas></div>
+      <p class="note" id="ovTrendNote"></p>
+    </div>
+  </div>
+  <div id="aiBriefOv" style="margin-top:16px"></div>
+</section>
+
+<!-- ============ PAGE 2 ============ -->
+<section class="page" id="p2" hidden>
+  <div class="p2head">
+    <div>
+      <h2>What is driving one destination's score</h2>
+      <p class="sub">Each destination is a single island (Cameron Highlands stays district-level, nothing smaller to split there). Reef cover is the only indicator measured per island; the rest is apportioned from state totals, see Method.</p>
+    </div>
+  </div>
+
+  <div class="card" id="chooser">
+    <div class="chooserTop">
+      <h3>Choose a destination</h3>
+      <label class="unsToggle"><input type="checkbox" class="unsChk"><span>Show parks with no score (<span class="unsN"></span>)</span></label>
+      <div class="seg" role="group" aria-label="How to choose">
+        <button type="button" id="modeMap" aria-pressed="true">Interactive</button>
+        <button type="button" id="modeList" aria-pressed="false">Simplified</button>
+      </div>
+    </div>
+    <div id="mapMode">
+      <div class="triFilter geoZoom" role="group" aria-label="Map area"><button type="button" class="triF" data-z="all" aria-pressed="true">Whole country</button><button type="button" class="triF" data-z="pen" aria-pressed="false">Peninsular</button><button type="button" class="triF" data-z="bor" aria-pressed="false">Sabah and Sarawak</button></div>
+      <svg id="geoMap" viewBox="0 0 1040 340" role="group" aria-label="Map of Malaysia with one pin per destination"></svg>
+      <div id="peekBar" class="peekBar" hidden aria-live="polite"></div>
+      <p class="note" style="margin:8px 0 0;max-width:none">Shaded states have tracked destinations. Pin colour is the current band. Pins on neighbouring islands are nudged apart so each can be clicked; pins sit on the island outline where the source has one; the Payar group, Rawa and Sembilang have none there, so those are approximate. Boundaries: OpenStreetMap contributors via geoBoundaries (ODbL), simplified.</p>
+    </div>
+    <div id="listMode" hidden>
+      <label class="fl" for="dsrch">Search destinations</label>
+      <div class="dbox"><input type="search" id="dsrch" class="dsrch" placeholder="Type a name or state, e.g. Redang, Sabah" autocomplete="off" aria-controls="dlist">
+      <div id="dlist" class="dlist" aria-live="polite" hidden></div></div>
+      <select id="dsel" hidden aria-hidden="true" tabindex="-1"><option value="" disabled selected>Choose a destination…</option></select>
+    </div>
+    <p class="note" style="margin-bottom:0" id="chooseHint">Nothing chosen yet. Click a pin to open that destination; the map is replaced by its detail, with a Back to map button at the top.</p>
+  </div>
+
+  <div id="detail" hidden>
+  <div class="backbar"><button id="backBtn" class="btn backbtn" type="button"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg><span id="backLabel">Back to map</span></button></div>
+  <div id="scoredView">
+  <div class="card" style="margin-bottom:16px"><h3 id="detailTitle" style="font-size:18px;margin-bottom:10px"></h3><div id="picked" aria-live="polite"></div></div>
+  <div class="grid g2">
+    <div class="card">
+      <h3>Pressure indicators</h3>
+      <div class="bars" id="pbars"></div>
+      <p class="note">Normalised 0–1. Every pressure value is apportioned to the island from state (Cameron: district) data, not measured on the island itself. Weight (%) is entropy-trained, not hand-set, see Method.</p>
+      <p class="note" id="pweighted"></p>
+    </div>
+    <div class="card">
+      <h3>Capacity indicators</h3>
+      <div class="bars" id="cbars"></div>
+      <p class="note">Waste, water and resident base are state-level and shared by every island in the cluster; live coral cover is the one indicator genuinely measured per island.</p>
+      <p class="note" id="cweighted"></p>
+    </div>
+  </div>
+
+  <div class="grid g2" style="margin-top:16px">
+    <div class="card">
+      <h3 id="reeftitle">Live coral cover by island</h3>
+      <div class="chart"><canvas id="c3"></canvas></div>
+      <p class="note" id="reefnote">Source: Reef Check Malaysia annual surveys. This is the direct ecological measurement, not a proxy, and the strongest evidence in the project for Goal 14.</p>
+    </div>
+    <div class="card">
+      <h3 id="trajTitle">AMBANG composite score trajectory</h3>
+      <p class="note" id="trajWhat" style="margin:0 0 10px"></p>
+      <div id="integrityFlag" class="anomBadge" hidden></div>
+      <div class="chart"><canvas id="c4"></canvas></div>
+      <p class="note" id="p2note"></p>
+    </div>
+  </div>
+  </div><!-- /#scoredView -->
+  <div id="pendingView" hidden>
+    <div class="card" style="margin-bottom:16px">
+      <h3 id="pvTitle" style="font-size:18px;margin-bottom:6px"></h3>
+      <div id="pvBanner" class="anomBadge" style="margin:8px 0 0"></div>
+    </div>
+    <div class="card" id="pvProv" style="margin-bottom:16px" hidden></div>
+    <div class="card" id="pvVisCard" style="margin-bottom:16px" hidden>
+      <h3 id="pvVisTitle"></h3>
+      <div class="chart" style="height:210px"><canvas id="c7"></canvas></div>
+      <p class="note" id="pvVisNote"></p>
+    </div>
+    <div class="grid g2">
+      <div class="card"><h3>Real data we have</h3><div class="table-wrap"><table><thead><tr><th>Indicator</th><th>Value</th><th>Year</th></tr></thead><tbody id="pvReal"></tbody></table></div>
+        <p class="note">Each source and its geographic level is listed under the value. State and district figures are shown as they are published, not apportioned to the destination.</p></div>
+      <div class="card"><h3>Missing before it can be scored</h3><ul id="pvGaps" style="margin:0;padding-left:18px"></ul></div>
+    </div>
+    <div class="card" id="pvRepCard" style="margin-top:16px" hidden><h3>Reported constraints, not scored</h3>
+      <p class="note" style="margin-top:0">Cited news or study findings about this place. They carry no visitor or limit figure, so they do not enter any score.</p>
+      <ul id="pvRep" style="margin:0;padding-left:18px"></ul></div>
+    <div class="card" id="pvSeasonCard" style="margin-top:16px" hidden>
+      <h3>Seasonality of public interest</h3>
+      <div class="chart" style="height:200px"><canvas id="c6"></canvas></div>
+      <p class="note" id="pvSeasonNote"></p>
+    </div>
+  </div><!-- /#pendingView -->
+  <div id="aiBriefDest" style="margin-top:16px"></div>
+  </div><!-- /#detail -->
+</section>
+
+<!-- ============ PAGE 3 ============ -->
+<section class="page" id="p3" hidden>
+  <h2>What needs attention, and what would change it</h2>
+  <p class="sub">Pick a view: who is closest to a limit, what would move a score, or when interest in each place peaks.</p>
+
+  <div class="seg" role="tablist" aria-label="Early warning views" id="ewTabs" style="margin-bottom:16px">
+    <button type="button" role="tab" id="ewT1" aria-selected="true" aria-controls="ewP1" data-ew="ewP1">Triage board <span class="pill p-amber" id="ewCount" style="margin-left:6px"></span></button>
+    <button type="button" role="tab" id="ewT2" aria-selected="false" aria-controls="ewP2" data-ew="ewP2" tabindex="-1">What-if</button>
+    <button type="button" role="tab" id="ewT3" aria-selected="false" aria-controls="ewP3" data-ew="ewP3" tabindex="-1">Seasonality</button>
+  </div>
+
+  <div id="ewP1" role="tabpanel" aria-labelledby="ewT1">
+  <div class="triage" id="triage"></div>
+  <p class="note" id="triNote" style="max-width:none;margin-bottom:4px">Each sparkline is the score history, 2010 to 2023, with the dashed line at the threshold (50). Earlier years are rescaled from state-level series to the latest reading, so read the direction, not the exact past values.</p>
+  <p class="note" id="triProv" style="max-width:none;margin-top:0"></p>
+    <div id="aiBriefEw" style="margin-top:16px"></div>
+
+  </div>
+
+  <div id="ewP2" role="tabpanel" aria-labelledby="ewT2" hidden>
+  <div class="card">
+    <div class="chooserTop">
+      <h3>What would move the score</h3>
+      <div><label class="fl" for="wiSel" style="display:inline;margin-right:8px">Destination</label><select id="wiSel"></select></div>
+    </div>
+    <div class="wiGrid">
+      <div>
+        <div id="wiLevers"></div>
+        <button id="wiReset" class="btn" type="button" style="margin-top:4px">Reset</button>
+      </div>
+      <div id="wiResult" aria-live="polite"></div>
+    </div>
+    <h3 style="margin:18px 0 6px;font-size:15px">Score as visitors change</h3>
+    <div class="chart wi" style="height:320px"><canvas id="c8"></canvas></div>
+    <p class="note" style="max-width:none">The line uses your capacity levers above. The dashed lines are the band boundaries (Warning 45, Alert 60, Critical 75); the large dot is the visitor level you have set. It shows how far visitors would have to fall for this destination to drop a band.</p>
+    <p class="note" style="margin-bottom:0;max-width:none">Same formula and weights as Destination detail. The visitor lever scales the normalised visitor indicator by that percentage (it is a min-max scale, so this is approximate); capacity levers add to the 0 to 1 indicator, capped at 0.95. Some indicator values are still illustrative, so read the size of each move, not the exact score.</p>
+  </div>
+
+  </div>
+
+  <div id="ewP3" role="tabpanel" aria-labelledby="ewT3" hidden>
+  <div class="card">
+    <div class="chooserTop">
+      <h3>When interest peaks</h3>
+      <div><label class="fl" for="calSel" style="display:inline;margin-right:8px">Destination</label><select id="calSel"></select></div>
+    </div>
+    <div class="chart" style="height:220px"><canvas id="c9"></canvas></div>
+    <p class="note" id="calChartNote" style="max-width:none"></p>
+    <p class="calHint">Pick a destination above, or click its row in the calendar.</p>
+    <div class="table-wrap"><table class="cal" id="calTbl"></table></div>
+    <div class="calLegend"><span><i class="calSw" style="background:rgba(21,127,108,.12)"></i>Quieter month</span><span><i class="calSw" style="background:rgba(21,127,108,.7)"></i>Busier month</span><span><i class="calSw calHatch"></i>× Typical resort closure, Nov to Feb</span></div>
+    <p class="note" id="calNote" style="margin-bottom:0;max-width:none"></p>
+  </div>
+  </div>
+</section>
+
+<!-- ============ PAGE 4 ============ -->
+<section class="page" id="p4" hidden>
+  <h2>How the score is built</h2>
+  <p class="sub">One ratio of pressure to capacity, built from open Malaysian data. Every indicator is labelled real or illustrative here and on each destination page.</p>
+  <p class="sdgRow"><span class="pill sdg">SDG 14 Life Below Water</span><span class="pill sdg">SDG 12 Responsible Consumption and Production</span><span class="pill sdg">SDG 8 Decent Work and Economic Growth (extension)</span></p>
+
+  <div class="seg" role="tablist" aria-label="Method views" id="mtTabs" style="margin:16px 0">
+    <button type="button" role="tab" id="mtT1" aria-selected="true" aria-controls="mtP1" data-mt="mtP1">The score</button>
+    <button type="button" role="tab" id="mtT3" aria-selected="false" aria-controls="mtP3" data-mt="mtP3" tabindex="-1">Limits</button>
+  </div>
+
+  <!-- ===== The score ===== -->
+  <div id="mtP1" role="tabpanel" aria-labelledby="mtT1">
+    <div class="card">
+      <h3>The index</h3>
+      <div class="eq">AMBANG = 100 &times; P / (P + C)</div>
+      <div class="miniGrid">
+        <div class="mini"><b>P &middot; Pressure</b><p>Weighted geometric mean of six indicators, each scaled 0 to 1: visitors, accommodation, hotel arrivals, cost of living, seasonality and occupancy.</p></div>
+        <div class="mini"><b>C &middot; Capacity</b><p>Geometric mean of the capacity indicators, equal-weighted today: waste handling, water headroom, resident base and live coral cover (river water quality for Cameron Highlands).</p></div>
+        <div class="mini"><b>50 &middot; Threshold</b><p>At 50, pressure equals what the place can absorb. Above it, the load exceeds capacity.</p></div>
+      </div>
+      <div class="table-wrap"><table style="margin-top:14px">
+        <thead><tr><th>Band</th><th>Range</th><th>What it means</th><th>Indicated response</th></tr></thead>
+        <tbody>
+          <tr><td><span class="pill p-green">Normal</span></td><td class="num">&lt; 45</td><td>Comfortable headroom</td><td>Promote; absorb demand redirected from stressed sites</td></tr>
+          <tr><td><span class="pill p-amber">Warning</span></td><td class="num">45 to 60</td><td>Threshold Vicinity</td><td>Monitor monthly; prepare staged permit release</td></tr>
+          <tr><td><span class="pill p-red">Alert</span></td><td class="num">60 to 75</td><td>Load exceeds capacity</td><td>Apply quota or pricing; prioritise infrastructure</td></tr>
+          <tr><td><span class="pill p-crit">Critical</span></td><td class="num">75 and up</td><td>Sustained exceedance</td><td>Consider closure, moratorium, ecological assessment</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <h3>Pressure weights</h3>
+      <p class="note" style="margin-top:0">Entropy Weight Method: an indicator that varies more across destinations carries more discriminating information and earns more weight. Higher weight means more discriminating, not more important in a policy sense.</p>
+      <div id="wBars"></div>
+      <p class="note">Caveat: trained on a mix of real and illustrative values, so treat the weights as a working pipeline, not a finding.</p>
+      <details class="dtl"><summary>How the weights were trained</summary>
+        <p><code>python scripts/train_weights.py</code>, n = 15 destinations &times; 6 indicators. Re-run on 2026-09-22 after marine park visitors became real data for the 14 marine islands: its weight rose from 22.9% to 45.3%, because the real spread between islands (Kedah's near 0.03, Terengganu's near 0.95) is far wider than the old placeholders. A hand-set 3/2/1 priority scheme was used before there were enough destinations to train on.</p></details>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <h3>Design choices</h3>
+      <details class="dtl"><summary>Why a geometric mean</summary>
+        <p>So one binding constraint, such as no sewage treatment on a small island, cannot be offset by abundance elsewhere. Each destination names its lowest capacity indicator as its binding constraint, the same bottleneck logic (Liebig's law of the minimum) used by tourism carrying-capacity frameworks such as UNWTO/UNEP PAP-RAC and Cifuentes.</p></details>
+      <details class="dtl"><summary>Why entropy weights, and not a supervised model or expert panel</summary>
+        <p>The score is derived from these same indicators, so there is no independent target to train a model against; fitting one would only fit noise back onto itself. AHP or Delphi expert weighting needs external panels and several consensus rounds, which do not fit a hackathon timeline. Published Malaysian AHP weights exist for Perhentian and Tioman (Nasir, 2022) and are used as the reference in the capacity research report.</p></details>
+      <details class="dtl"><summary>Why capacity weights are equal</summary>
+        <p>Most capacity indicators are state-level, so every island in a state shares the same value. Entropy weighting would give those near-zero weight and reward only coral cover, which is the wrong way round for a weakest-link design. The research report proposes domain weights (ecological 0.35, infrastructure 0.45, resident 0.20) as the next step; they are our assumptions and are not applied yet.</p></details>
+      <details class="dtl"><summary>Normalisation</summary>
+        <p>Bounds are computed across the pooled destination-year panel and stored, so new years are scored against fixed history instead of rescaling the past.</p></details>
+    </div>
+  </div>
+
+  <!-- ===== Limits ===== -->
+  <div id="mtP3" role="tabpanel" aria-labelledby="mtT3" hidden>
+    <div class="miniGrid lim">
+      <div class="mini"><b>Per-island pressure is apportioned</b><p>Visitor pressure is published at state level. Island figures are scaled from each state's total, so read them as relative ordering, not independent measurements.</p></div>
+      <div class="mini"><b>Visitor counts stop at 2017</b><p>The scored islands use the Department of Marine Park Malaysia series, which ends in 2017 on the open portal. The score describes relative pressure, not today.</p></div>
+      <div class="mini"><b>Most capacity is state-level</b><p>Waste, water and resident base are the same for every island in a state. Only live coral cover is measured per island.</p></div>
+      <div class="mini"><b>Resident base is weak</b><p>Population is closer to a pressure measure than a capacity one. It stays for now because it is real and comparable; the research report suggests dropping or moving it.</p></div>
+      <div class="mini"><b>Weights are partly trained on illustration</b><p>The entropy weights use a mix of real and illustrative values, so they will shift as more indicators become real.</p></div>
+      <div class="mini"><b>A band is a prompt, not a verdict</b><p>Alert means a place warrants investigation, not that an ecological determination was made. Official statistics lag, so the newest score describes the latest observable year.</p></div>
+      <div class="mini"><b>Provisional scores are different</b><p>They compare visitors with a daily limit, not the six-indicator score, and the limits disagree between sources. Never compare them with the scored islands.</p></div>
+      <div class="mini"><b>Interest is not visits</b><p>The Seasonality calendar shows when people look places up. Most curves are nearly flat, so it says little about a visiting season.</p></div>
+      <div class="mini"><b>Language changes the answer</b><p>Malaysians search in Malay ("Pulau Redang"); English terms mostly show foreign travellers, and the two differ a lot in size and season. We sum English and Malay Wikipedia views and ask for Malay and English Google Trends terms in one chart. An English-only curve would understate local interest.</p></div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ============ PAGE 5: DATA QUALITY ============ -->
+<section class="page" id="p5" hidden>
+  <h2>Data quality</h2>
+  <p class="sub">What each number rests on and how far to trust it, which places are covered, what was corrected, and what is still missing. Nothing here is estimated to fill a gap.</p>
+
+  <div class="seg" role="tablist" aria-label="Data quality views" id="dqTabs" style="margin:16px 0">
+    <button type="button" role="tab" id="dqT1" aria-selected="true" aria-controls="dqP1" data-dq="dqP1">Coverage</button>
+    <button type="button" role="tab" id="dqT5" aria-selected="false" aria-controls="dqP5" data-dq="dqP5" tabindex="-1">Indicators and sources</button>
+    <button type="button" role="tab" id="dqT3" aria-selected="false" aria-controls="dqP3" data-dq="dqP3" tabindex="-1">Corrections</button>
+    <button type="button" role="tab" id="dqT4" aria-selected="false" aria-controls="dqP4" data-dq="dqP4" tabindex="-1">Gaps and places</button>
+  </div>
+
+  <div id="dqP1" role="tabpanel" aria-labelledby="dqT1">
+  <div class="card">
+    <h3>Coverage by destination</h3>
+    <p class="note" style="margin-top:0"><span class="cv own">Own</span> measured for this place. <span class="cv sh">Shared</span> a state or district figure, the same for every place in it, and larger than the place. <span class="cv pv">Provisional</span> a limit was found. <span class="cv no">none</span> nothing found.</p>
+    <input type="search" id="cvSearch" class="dsrch" placeholder="Search the table by place or state" autocomplete="off" aria-label="Search coverage table" style="margin-bottom:10px">
+    <p class="note" id="cvSummary"></p>
+    <p class="note" id="cvCount" aria-live="polite" style="margin:0 0 6px"></p>
+    <div class="table-wrap wide covWrap"><table class="cov lineage"><thead><tr><th>Destination</th><th>Visitors</th><th>Coral cover</th><th>Water</th><th>Waste</th><th>Income, population</th><th>Daily limit</th><th>Score</th></tr></thead><tbody id="cvBody"></tbody></table></div>
+    <p class="note" style="margin-bottom:0">Scored islands also use seasonality, occupancy and accommodation bars; their level, years and grade are on the Indicators and sources tab. Open an island on the Destination detail page to see which of its bars are real. Tracked places that are hidden on the maps (see the toggle on the overview) are listed here too.</p>
+  </div>
+  </div>
+
+  <div id="dqP3" role="tabpanel" aria-labelledby="dqT3" hidden>
+  <div class="card">
+    <h3>Corrections and rejected data</h3>
+    <ul class="plain">
+      <li><b>Payar, Lembu and Kaca map pins</b> were about 1 degree of longitude too far west (99.0 instead of 100.04), in the sea beyond Langkawi. Moved to the Atlas coordinates, which agree with the 2014 polygon file.</li>
+      <li><b>"Besar"</b> is Pulau Babi Besar, not another Pulau Besar: the Reef Check "Pulau Besar" location sits within 1 km of the Atlas point for Babi Besar.</li>
+      <li><b>"42 marine parks"</b> is the federal count: 39 in Terengganu, Pahang, Kedah and Johor plus 3 in Labuan. The Atlas lists 51 protected areas, 46 of them designated Marine Park, so use 42 only for the federal Marine Park Department.</li>
+      <li><b>Atlas page counts for Sabah and Sarawak</b> (5 and 3) differ from its own list (7 and 2). Neither is quoted.</li>
+      <li><b>Kuala Terengganu district</b> was left out for Redang and its neighbours: the 1994 gazette names a district that has since been split, so its figures would describe the wrong place.</li>
+      <li><b>"Only 100 visitors a day" (May 2020)</b> was a COVID rule for all Sabah parks, not a carrying capacity, so it is not used for any score.</li>
+      <li><b>548,598 visitors to 56 islands</b> (Kosmo, June 2026) has no stated year and no per-island split. It is context only.</li>
+      <li><b>State constituency data</b> (DOSM publishes it) was checked and rejected: the Pangkor and Tioman constituencies include mainland towns, so they would overstate the islands.</li>
+      <li><b>Sembilang map pin</b> was about 22 km east of the gazetted Pulau Sembilang (104.10 instead of 103.89); moved to the Atlas point.</li>
+      <li><b>OpenStreetMap accommodation zeros</b> are not trusted: Rawa has a resort that OSM does not tag, so a zero may only mean untagged. Islands with a zero keep their placeholder bar instead of scoring as having no accommodation.</li>
+      <li><b>Google Trends seasonality</b> was tested as the Seasonality bar and rejected: search interest is flat across months (about 10 to 12 effective months everywhere) and misses the monsoon closures, so real monthly visits from the Marine Park Department are used instead.</li>
+    </ul>
+  </div>
+  </div>
+
+  <div id="dqP4" role="tabpanel" aria-labelledby="dqT4" hidden>
+  <div class="card">
+    <h3>What would raise data quality most</h3>
+    <ul class="plain">
+      <li><b>Department of Marine Park Malaysia:</b> per-island visitor counts for 2018 to 2025 and any daily limits. Would replace the state-level series and the 2017 cut-off.</li>
+      <li><b>Sabah Parks:</b> the carrying-capacity study behind the 2019 visitor-limit panel. Would let Tun Sakaran and Pulau Tiga be scored (their visitor counts are already real).</li>
+      <li><b>Sarawak Forestry Corporation:</b> visitor counts for Miri-Sibuti and Talang-Satang, none of which is public.</li>
+      <li><b>Island sewage and waste:</b> published only as news and one resort survey (Perhentian), never as data. Needs a request to the state governments.</li>
+    </ul>
+  </div>
+
+  <div class="card" style="margin-top:16px">
+    <h3>Which places are covered</h3>
+    <div class="miniGrid dst">
+      <div class="mini"><b>Scored (<span id="nScored">15</span>)</b>
+        <p>The marine parks of Peninsular Malaysia that Reef Check actually surveys, in four clusters, plus Cameron Highlands as the highland comparison.</p>
+        <ul class="plain"><li>Terengganu: Perhentian, Redang, Lang Tengah, Kapas</li><li>Pahang: Tioman, Tulai, Sembilang</li><li>Kedah: Payar, Lembu, Kaca</li><li>Johor: Sibu, Tinggi, Besar, Rawa</li><li>Highland: Cameron Highlands</li></ul>
+        <p class="note">Going island-level is limited by ecological data, not by choice: Johor's park has roughly 20 islands but only four have a coral-cover series.</p></div>
+      <div class="mini"><b>Provisional score (<span id="nProv">3</span>)</b>
+        <p>Real visitor numbers compared with a daily limit. Different method; not comparable with the scored islands.</p>
+        <ul class="plain" id="destProv"></ul></div>
+      <div class="mini"><b>Tracked, not scored (<span id="nUns">4</span>)</b>
+        <p>On the map with the real data we have and what is missing, but no score.</p>
+        <ul class="plain"><li><b>Langkawi:</b> real arrivals (LADA), no limit or capacity figure found</li><li><b>Pangkor:</b> no usable visitor series</li><li><b>Fraser's Hill:</b> no usable visitor series; first set aside for low volume, now tracked as a second highland</li><li><b>Miri:</b> Sarawak data sit behind a manual download</li><li id="unsMore" hidden></li></ul></div>
+      <div class="mini"><b>Not tracked</b>
+        <ul class="plain"><li><b>Selangor, Penang:</b> no marine park, no Reef Check reef, no SWCorp waste column</li><li><b>Genting Highlands:</b> casino and resort-led; set aside</li><li><b>Labuan:</b> gazetted, no data verified yet</li></ul></div>
+    </div>
+  </div>
+  </div>
+  <!-- ===== Data and sources ===== -->
+  <div id="dqP5" role="tabpanel" aria-labelledby="dqT5" hidden>
+    <div class="card">
+      <h3>What each indicator is built from, and how far to trust it</h3>
+      <p class="note" style="margin-top:0"><span class="pill st-real">Real</span> fetched from a Malaysian open source. <span class="pill st-ill">Illustrative</span> a placeholder value, labelled on screen. <span class="pill st-ext">Outside the score</span> real data used for charts and provisional scores only. Grade: <b>A</b> official, <b>B</b> survey or academic, <b>C</b> registry or crowd-sourced, <b>D</b> news report.</p>
+      <div class="table-wrap wide"><table class="lineage">
+        <thead><tr><th style="width:14%">Indicator</th><th style="width:9%">Status</th><th style="width:8%">Grade</th><th style="width:17%">Source</th><th style="width:12%">Level and years</th><th style="width:16%">How it was checked</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr class="grp"><td colspan="7">Pressure (six indicators)</td></tr>
+          <tr><td>Marine park visitors</td><td><span class="pill st-real">Real</span></td><td><span class="pill st-real">A, official</span></td><td>Department of Marine Park Malaysia, via archive.data.gov.my</td><td>State, 2000 to 2017 (2015 to 2017 average used)</td><td>Totals recomputed from the monthly file; the park list matched to the Atlas by name</td><td>Domestic plus foreign counts. 2018 to 2023 are not published on this portal. The per-island split is apportioned, not measured.</td></tr>
+          <tr><td>Cost-of-living pressure</td><td><span class="pill st-real">Real</span></td><td><span class="pill st-real">A, official</span></td><td>DOSM household income survey (<code>hh_income_district</code>)</td><td>District, 2019 to 2024</td><td>All 297 catalogue entries listed and screened; datasets opened and districts matched by name</td><td>Per-island values are apportioned from the district figure. Cannot tell you visitors or anything below district level.</td></tr>
+          <tr><td>Hotel guest arrivals</td><td><span class="pill st-ill">Illustrative</span></td><td>&ndash;</td><td>Tourism Malaysia hotel survey (state series exists)</td><td>State, yearly 2015 to 2022</td><td>&ndash;</td><td>A state-level series exists on archive.data.gov.my, but it does not describe islands, so every island keeps a placeholder. Pahang is dominated by Genting Highlands (about 11.0M guests in 2017 against 1.8M for Terengganu), which has nothing to do with Tioman or Cameron; Terengganu and Johor city hotels hide the busy islands. Shown as context only.</td></tr>
+          <tr><td>Accommodation density</td><td><span class="pill st-ill">Partly real</span></td><td><span class="pill st-ill">C, crowd-sourced</span></td><td>OpenStreetMap, via Overpass</td><td>Box around the island, October 2026</td><td>Not independently verified</td><td>Count of tagged hotels, resorts and chalets, log-scaled to the busiest island. OpenStreetMap undercounts, so read it as a rough ranking. Islands without a successful fetch keep a placeholder. Rooms and beds are rarely tagged.</td></tr>
+          <tr><td>Occupancy</td><td><span class="pill st-real">Real</span></td><td><span class="pill st-real">A, official</span></td><td>Tourism Malaysia paid accommodation survey, via archive.data.gov.my</td><td>State, 2015 to 2019 average</td><td>&ndash;</td><td>Hotels in the whole state, not the island. 2020 to 2022 are left out as COVID years.</td></tr>
+          <tr><td>Seasonality</td><td><span class="pill st-ill">Partly real</span></td><td><span class="pill st-real">A, official</span></td><td>Department of Marine Park Malaysia monthly visitors, 2017</td><td>State, one year</td><td>Same monthly file as the visitors row</td><td>How concentrated real marine park visits were across the months (monsoon closures show up). Cameron Highlands keeps a placeholder. The search-interest curves on the Early warning page are a separate, descriptive view.</td></tr>
+          <tr class="grp"><td colspan="7">Capacity (four indicators, plus river water quality for Cameron Highlands)</td></tr>
+          <tr><td>Live coral cover</td><td><span class="pill st-real">Real</span></td><td><span class="pill st-real">B, survey</span></td><td>Reef Check Malaysia, interactive-map data file</td><td>Island or site, 2025 to 2026</td><td>Each location matched to the Atlas point by distance (all within 7 km); single-site values (Pulau Lima 88.8%, Pulau Pinang, Yu Besar, Yu Kecil) rest on one survey site and are flagged on their pages</td><td>The one real per-island measurement. 13 of 14 islands; Tulai has no matching site and stays a placeholder. Reef health beyond hard and soft coral cover is not measured.</td></tr>
+          <tr><td>Waste handling</td><td><span class="pill st-real">Real</span></td><td><span class="pill st-real">A, official</span></td><td>SWCorp facility directory, via archive.data.gov.my</td><td>State, 2020</td><td>Counts matched to the state</td><td>Count of managed facilities, identical for every island in a state. The directory has no column for Sabah, Sarawak, Selangor, Penang or Kelantan. Says nothing about the capacity or sewage of any island.</td></tr>
+          <tr><td>Water headroom</td><td><span class="pill st-real">Real</span></td><td><span class="pill st-real">A, official</span></td><td>SPAN, via data.gov.my</td><td>State, 2022</td><td>Datasets opened and districts matched by name</td><td>Production minus consumption. The dataset says no further updates are planned.</td></tr>
+          <tr><td>Resident base</td><td><span class="pill st-real">Real</span></td><td><span class="pill st-real">A, official</span></td><td>DOSM <code>population_district</code></td><td>District or state, 2025</td><td>Datasets opened and districts matched by name</td><td>A weak capacity measure: see Method, Limits.</td></tr>
+          <tr><td>River water quality (Cameron only)</td><td><span class="pill st-ill">Illustrative</span></td><td>&ndash;</td><td>Department of Environment</td><td>River basin</td><td>&ndash;</td><td>Placeholder; the real DOE index is not extracted yet.</td></tr>
+          <tr class="grp"><td colspan="7">Used for charts, the calendar and provisional scores</td></tr>
+          <tr><td>Park visitors in Sabah</td><td><span class="pill st-ext">Outside the score</span></td><td><span class="pill st-real">A, official</span></td><td>Sabah Parks public dashboard</td><td>Park, 2020 to 2025</td><td>Read directly from the dashboard's own data feed</td><td>Tunku Abdul Rahman Park, Sipadan and Kinabalu. Daily limits are not in it; COVID years are depressed.</td></tr>
+          <tr><td>Mount Kinabalu climbers</td><td><span class="pill st-ext">Outside the score</span></td><td><span class="pill st-real">A, official</span></td><td>Sabah Parks</td><td>Month, 2023 to 2025 average</td><td>&ndash;</td><td>Provisional score and the calendar.</td></tr>
+          <tr><td>Langkawi arrivals</td><td><span class="pill st-ext">Outside the score</span></td><td>&ndash;</td><td>Langkawi Development Authority statistics page</td><td>Island, 2021 to 2025</td><td>&ndash;</td><td>Counts every arrival, not park visitors; chart only.</td></tr>
+          <tr><td>Interest curves</td><td><span class="pill st-ext">Outside the score</span></td><td>&ndash;</td><td>Wikipedia pageviews in English and Malay (Wikimedia API); Google Trends exports with Malay and English terms</td><td>Article or search term, 2016 to 2025</td><td>&ndash;</td><td>When people look a place up, not when they visit. Malay and English are summed because Malaysians search in Malay.</td></tr>
+          <tr><td>Daily visitor limits</td><td><span class="pill st-ext">Outside the score</span></td><td><span class="pill st-ext">D, report</span> <span class="pill st-real">B, academic</span></td><td>News and an academic study (Maidin, 2022)</td><td>Sipadan, Kinabalu, Tunku Abdul Rahman Park</td><td>Cross-read between articles; disagreements shown as a range</td><td>Reported limits that disagree and have changed; shown as ranges. Maidin 2022 and Nasir 2022 are abstracts only (the full thesis was not read) and the time unit of the capacity figures is assumed to be per day. Nasir also supplies the reference weights for Perhentian and Tioman.</td></tr>
+          <tr><td>Weather forecast log</td><td><span class="pill st-ext">Outside the score</span></td><td>&ndash;</td><td>MET Malaysia, via data.gov.my</td><td>Daily, from October 2026</td><td>&ndash;</td><td>Recorded by us because the open API keeps no history; correlation needs 26 weeks.</td></tr>
+          <tr class="grp"><td colspan="7">Reference data (which parks exist and where)</td></tr>
+          <tr><td>Park list and locations</td><td><span class="pill st-ext">Reference</span></td><td><span class="pill st-ill">C, registry</span></td><td>Coral Triangle Atlas, MPA list</td><td>Park; list refreshed May 2026, boundaries 2014</td><td>Counts reconciled to the 42 federal parks; points compared with the polygon file</td><td>Says nothing about management, zoning or effectiveness (unrated for 49 of 51) or visitors.</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+
+    <div class="card" style="margin-top:16px"><details class="dtl"><summary>Source links</summary>
+      <div class="srcGrid">
+        <a href="https://reefcheck.org.my/reports" target="_blank" rel="noopener"><b>Reef Check Malaysia</b><span>Annual survey reports and coral cover</span></a>
+        <a href="https://open.dosm.gov.my/data-catalogue" target="_blank" rel="noopener"><b>OpenDOSM</b><span>Population, household income, water</span></a>
+        <a href="https://archive.data.gov.my" target="_blank" rel="noopener"><b>data.gov.my archive</b><span>Marine park visitors, SWCorp facilities, hotel occupancy</span></a>
+        <a href="https://dashboard.sabahparks.org.my/" target="_blank" rel="noopener"><b>Sabah Parks dashboard</b><span>Park visitors and Kinabalu climbers</span></a>
+        <a href="https://www.lada.gov.my/en/statistics" target="_blank" rel="noopener"><b>LADA statistics</b><span>Langkawi visitor arrivals</span></a>
+        <a href="https://eprints.ums.edu.my/id/eprint/41212" target="_blank" rel="noopener"><b>Maidin, 2022 (UMS)</b><span>Carrying capacity, Tunku Abdul Rahman Park</span></a>
+        <a href="https://irep.iium.edu.my/74120/" target="_blank" rel="noopener"><b>Nasir, 2022 (IIUM)</b><span>AHP weights, Perhentian and Tioman</span></a>
+        <a href="https://api.data.gov.my/weather/forecast" target="_blank" rel="noopener"><b>MET Malaysia forecast API</b><span>Daily forecast, logged by us</span></a>
+        <a href="https://www.geoboundaries.org/" target="_blank" rel="noopener"><b>geoBoundaries</b><span>Map outlines (OpenStreetMap contributors, ODbL)</span></a>
+        <a href="https://wikitech.wikimedia.org/wiki/Analytics/AQS/Pageviews" target="_blank" rel="noopener"><b>Wikimedia pageviews API</b><span>Monthly article views</span></a>
+      </div>
+    </details></div>
+  </div>
+
+
+  </section>
+
+</div></main>
+
+<!-- ============ ASK AMBANG: floating data chatbot ============ -->
+<button id="chatFab" class="chatFab" type="button" aria-label="Ask AMBANG about this data" aria-expanded="false">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+</button>
+
+<div id="chatPanel" class="chatPanel" hidden>
+  <div class="chatHead">
+    <div>
+      <h3>Ask AMBANG</h3>
+      <div class="sub2">Answers from the data on screen.</div>
+    </div>
+    <div class="chatHeadBtns">
+      <button id="chatNew" class="linkbtn" type="button" style="white-space:nowrap" title="Start a fresh conversation">New chat</button>
+      <button id="chatExport" class="linkbtn" type="button" style="white-space:nowrap" title="Download this conversation as a timestamped text log">Export log</button>
+      <button id="chatClose" class="chatClose" type="button" aria-label="Close chat">&times;</button>
+    </div>
+  </div>
+  <div id="chatBody" class="chatBody" role="log" aria-live="polite" aria-label="Conversation with Ask AMBANG"></div>
+  <div id="chatChips" class="chatChips"></div>
+  <div class="chatInputRow">
+    <textarea id="chatInput" rows="1" aria-label="Ask a question" placeholder="Ask about a place or the method…"></textarea>
+    <button id="chatSend" class="chatSend" type="button" aria-label="Send">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+    </button>
+  </div>
+</div>
+
+<!-- Map data as JSON, inlined so the file still works opened straight from disk (the page's CSP blocks fetching at runtime).
+     "land": SVG path per state, pre-projected to the view box (equirectangular, 50 units per degree from lon0/lat1), simplified.
+     "pins": lat/lon per destination, snapped to the real island polygon where one exists, otherwise approximate (Payar group has no polygon in the source).
+     Boundaries: geoBoundaries gbOpen MYS ADM1 (OpenStreetMap contributors, ODbL). -->
+<div id="boot" role="status" aria-live="polite">
+  <div class="spin" aria-hidden="true"></div>
+  <div class="msg">Loading the dashboard…</div>
+  <div class="err"><p>Could not load the dashboard data. Check your connection and try again.</p><button type="button" id="bootRetry">Try again</button></div>
+</div>
+<noscript><p style="padding:24px">This dashboard needs JavaScript.</p></noscript>
+<script src="boot.js?v=56" data-v="48" data-chart="1" data-scripts="core.js,ai.js,app.js"></script>
+</body>
+</html>

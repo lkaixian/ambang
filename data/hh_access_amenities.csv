@@ -1,0 +1,233 @@
+destination,date,state,district,piped_water,sanitation,electricity
+Terengganu marine parks,2016-01-01,Terengganu,All Districts,96.0,99.96,100.0
+Terengganu marine parks,2019-01-01,Terengganu,All Districts,96.2,100.0,100.0
+Terengganu marine parks,2022-01-01,Terengganu,All Districts,98.5,100.0,100.0
+Terengganu marine parks,2024-01-01,Terengganu,All Districts,99.9,100.0,100.0
+Terengganu marine parks,2016-01-01,Terengganu,Besut,95.5,100.0,100.0
+Terengganu marine parks,2019-01-01,Terengganu,Besut,83.4,100.0,100.0
+Terengganu marine parks,2022-01-01,Terengganu,Besut,93.8,100.0,100.0
+Terengganu marine parks,2024-01-01,Terengganu,Besut,100.0,100.0,100.0
+Terengganu marine parks,2016-01-01,Terengganu,Dungun,94.7,100.0,100.0
+Terengganu marine parks,2019-01-01,Terengganu,Dungun,98.1,100.0,100.0
+Terengganu marine parks,2022-01-01,Terengganu,Dungun,99.4,100.0,100.0
+Terengganu marine parks,2024-01-01,Terengganu,Dungun,98.99,100.0,100.0
+Terengganu marine parks,2016-01-01,Terengganu,Hulu Terengganu,98.0,100.0,100.0
+Terengganu marine parks,2019-01-01,Terengganu,Hulu Terengganu,99.2,100.0,100.0
+Terengganu marine parks,2022-01-01,Terengganu,Hulu Terengganu,99.4,100.0,100.0
+Terengganu marine parks,2024-01-01,Terengganu,Hulu Terengganu,100.0,100.0,100.0
+Terengganu marine parks,2016-01-01,Terengganu,Kemaman,99.7,99.8,100.0
+Terengganu marine parks,2019-01-01,Terengganu,Kemaman,99.8,100.0,100.0
+Terengganu marine parks,2022-01-01,Terengganu,Kemaman,100.0,100.0,100.0
+Terengganu marine parks,2024-01-01,Terengganu,Kemaman,100.0,100.0,100.0
+Terengganu marine parks,2016-01-01,Terengganu,Kuala Nerus,,,
+Terengganu marine parks,2019-01-01,Terengganu,Kuala Nerus,96.2,100.0,100.0
+Terengganu marine parks,2022-01-01,Terengganu,Kuala Nerus,99.4,100.0,100.0
+Terengganu marine parks,2024-01-01,Terengganu,Kuala Nerus,100.0,100.0,100.0
+Terengganu marine parks,2016-01-01,Terengganu,Kuala Terengganu,95.7,100.0,100.0
+Terengganu marine parks,2019-01-01,Terengganu,Kuala Terengganu,97.9,100.0,100.0
+Terengganu marine parks,2022-01-01,Terengganu,Kuala Terengganu,98.6,100.0,100.0
+Terengganu marine parks,2024-01-01,Terengganu,Kuala Terengganu,100.0,100.0,100.0
+Terengganu marine parks,2016-01-01,Terengganu,Marang,94.4,100.0,100.0
+Terengganu marine parks,2019-01-01,Terengganu,Marang,97.3,100.0,100.0
+Terengganu marine parks,2022-01-01,Terengganu,Marang,99.4,100.0,100.0
+Terengganu marine parks,2024-01-01,Terengganu,Marang,100.0,100.0,100.0
+Terengganu marine parks,2016-01-01,Terengganu,Setiu,89.1,100.0,100.0
+Terengganu marine parks,2019-01-01,Terengganu,Setiu,98.5,100.0,100.0
+Terengganu marine parks,2022-01-01,Terengganu,Setiu,97.2,100.0,100.0
+Terengganu marine parks,2024-01-01,Terengganu,Setiu,100.0,100.0,100.0
+Cameron Highlands,2016-01-01,Pahang,Cameron Highlands,93.6,100.0,100.0
+Cameron Highlands,2019-01-01,Pahang,Cameron Highlands,96.1,100.0,100.0
+Cameron Highlands,2022-01-01,Pahang,Cameron Highlands,94.5,100.0,100.0
+Cameron Highlands,2024-01-01,Pahang,Cameron Highlands,90.82,100.0,100.0
+Pahang marine parks,2016-01-01,Pahang,All Districts,97.8,99.75,100.0
+Pahang marine parks,2019-01-01,Pahang,All Districts,97.9,99.98,100.0
+Pahang marine parks,2022-01-01,Pahang,All Districts,98.3,99.4,99.51
+Pahang marine parks,2024-01-01,Pahang,All Districts,98.8,99.9,100.0
+Pahang marine parks,2016-01-01,Pahang,Bentong,94.9,100.0,100.0
+Pahang marine parks,2019-01-01,Pahang,Bentong,99.5,100.0,100.0
+Pahang marine parks,2022-01-01,Pahang,Bentong,98.9,100.0,100.0
+Pahang marine parks,2024-01-01,Pahang,Bentong,91.83,100.0,100.0
+Pahang marine parks,2016-01-01,Pahang,Bera,94.9,96.0,100.0
+Pahang marine parks,2019-01-01,Pahang,Bera,99.4,100.0,100.0
+Pahang marine parks,2022-01-01,Pahang,Bera,98.7,100.0,100.0
+Pahang marine parks,2024-01-01,Pahang,Bera,100.0,99.4,100.0
+Pahang marine parks,2016-01-01,Pahang,Cameron Highlands,93.6,100.0,100.0
+Pahang marine parks,2019-01-01,Pahang,Cameron Highlands,96.1,100.0,100.0
+Pahang marine parks,2022-01-01,Pahang,Cameron Highlands,94.5,100.0,100.0
+Pahang marine parks,2024-01-01,Pahang,Cameron Highlands,90.82,100.0,100.0
+Pahang marine parks,2016-01-01,Pahang,Jerantut,99.2,100.0,100.0
+Pahang marine parks,2019-01-01,Pahang,Jerantut,100.0,100.0,100.0
+Pahang marine parks,2022-01-01,Pahang,Jerantut,97.4,100.0,100.0
+Pahang marine parks,2024-01-01,Pahang,Jerantut,100.0,100.0,100.0
+Pahang marine parks,2016-01-01,Pahang,Kuantan,98.8,100.0,100.0
+Pahang marine parks,2019-01-01,Pahang,Kuantan,99.2,100.0,100.0
+Pahang marine parks,2022-01-01,Pahang,Kuantan,99.9,100.0,100.0
+Pahang marine parks,2024-01-01,Pahang,Kuantan,100.0,100.0,100.0
+Pahang marine parks,2016-01-01,Pahang,Lipis,99.2,100.0,100.0
+Pahang marine parks,2019-01-01,Pahang,Lipis,98.0,100.0,100.0
+Pahang marine parks,2022-01-01,Pahang,Lipis,84.3,91.1,93.5
+Pahang marine parks,2024-01-01,Pahang,Lipis,91.35,98.9,100.0
+Pahang marine parks,2016-01-01,Pahang,Maran,96.3,100.0,100.0
+Pahang marine parks,2019-01-01,Pahang,Maran,97.3,99.7,100.0
+Pahang marine parks,2022-01-01,Pahang,Maran,100.0,100.0,100.0
+Pahang marine parks,2024-01-01,Pahang,Maran,100.0,100.0,100.0
+Pahang marine parks,2016-01-01,Pahang,Pekan,96.7,99.6,100.0
+Pahang marine parks,2019-01-01,Pahang,Pekan,92.5,100.0,100.0
+Pahang marine parks,2022-01-01,Pahang,Pekan,96.7,100.0,100.0
+Pahang marine parks,2024-01-01,Pahang,Pekan,99.51,100.0,100.0
+Pahang marine parks,2016-01-01,Pahang,Raub,100.0,100.0,100.0
+Pahang marine parks,2019-01-01,Pahang,Raub,90.0,100.0,100.0
+Pahang marine parks,2022-01-01,Pahang,Raub,100.0,100.0,100.0
+Pahang marine parks,2024-01-01,Pahang,Raub,100.0,100.0,100.0
+Pahang marine parks,2016-01-01,Pahang,Rompin,95.3,99.6,100.0
+Pahang marine parks,2019-01-01,Pahang,Rompin,96.3,100.0,100.0
+Pahang marine parks,2022-01-01,Pahang,Rompin,97.0,98.3,97.8
+Pahang marine parks,2024-01-01,Pahang,Rompin,100.0,100.0,100.0
+Pahang marine parks,2016-01-01,Pahang,Temerloh,99.6,100.0,100.0
+Pahang marine parks,2019-01-01,Pahang,Temerloh,100.0,100.0,100.0
+Pahang marine parks,2022-01-01,Pahang,Temerloh,100.0,100.0,100.0
+Pahang marine parks,2024-01-01,Pahang,Temerloh,99.64,100.0,100.0
+Kedah marine parks,2016-01-01,Kedah,All Districts,98.7,99.98,100.0
+Kedah marine parks,2019-01-01,Kedah,All Districts,99.5,100.0,100.0
+Kedah marine parks,2022-01-01,Kedah,All Districts,99.6,100.0,100.0
+Kedah marine parks,2024-01-01,Kedah,All Districts,99.6,100.0,100.0
+Kedah marine parks,2016-01-01,Kedah,Baling,91.0,100.0,100.0
+Kedah marine parks,2019-01-01,Kedah,Baling,96.9,100.0,100.0
+Kedah marine parks,2022-01-01,Kedah,Baling,95.1,100.0,100.0
+Kedah marine parks,2024-01-01,Kedah,Baling,96.01,100.0,100.0
+Kedah marine parks,2016-01-01,Kedah,Bandar Baharu,99.3,100.0,100.0
+Kedah marine parks,2019-01-01,Kedah,Bandar Baharu,100.0,100.0,100.0
+Kedah marine parks,2022-01-01,Kedah,Bandar Baharu,100.0,100.0,100.0
+Kedah marine parks,2024-01-01,Kedah,Bandar Baharu,100.0,100.0,100.0
+Kedah marine parks,2016-01-01,Kedah,Kota Setar,100.0,100.0,100.0
+Kedah marine parks,2019-01-01,Kedah,Kota Setar,100.0,100.0,100.0
+Kedah marine parks,2022-01-01,Kedah,Kota Setar,100.0,100.0,100.0
+Kedah marine parks,2024-01-01,Kedah,Kota Setar,100.0,100.0,100.0
+Kedah marine parks,2016-01-01,Kedah,Kuala Muda,99.9,100.0,100.0
+Kedah marine parks,2019-01-01,Kedah,Kuala Muda,99.9,100.0,100.0
+Kedah marine parks,2022-01-01,Kedah,Kuala Muda,99.9,99.9,100.0
+Kedah marine parks,2024-01-01,Kedah,Kuala Muda,99.9,100.0,100.0
+Kedah marine parks,2016-01-01,Kedah,Kubang Pasu,99.2,100.0,100.0
+Kedah marine parks,2019-01-01,Kedah,Kubang Pasu,99.8,100.0,100.0
+Kedah marine parks,2022-01-01,Kedah,Kubang Pasu,99.9,100.0,100.0
+Kedah marine parks,2024-01-01,Kedah,Kubang Pasu,100.0,100.0,100.0
+Kedah marine parks,2016-01-01,Kedah,Kulim,99.9,100.0,100.0
+Kedah marine parks,2019-01-01,Kedah,Kulim,100.0,100.0,100.0
+Kedah marine parks,2022-01-01,Kedah,Kulim,100.0,100.0,100.0
+Kedah marine parks,2024-01-01,Kedah,Kulim,100.0,100.0,100.0
+Kedah marine parks,2016-01-01,Kedah,Langkawi,97.8,100.0,100.0
+Kedah marine parks,2019-01-01,Kedah,Langkawi,99.5,100.0,100.0
+Kedah marine parks,2022-01-01,Kedah,Langkawi,99.8,100.0,100.0
+Kedah marine parks,2024-01-01,Kedah,Langkawi,100.0,100.0,100.0
+Kedah marine parks,2016-01-01,Kedah,Padang Terap,100.0,99.4,100.0
+Kedah marine parks,2019-01-01,Kedah,Padang Terap,100.0,100.0,100.0
+Kedah marine parks,2022-01-01,Kedah,Padang Terap,100.0,100.0,100.0
+Kedah marine parks,2024-01-01,Kedah,Padang Terap,100.0,100.0,100.0
+Kedah marine parks,2016-01-01,Kedah,Pendang,99.4,100.0,100.0
+Kedah marine parks,2019-01-01,Kedah,Pendang,100.0,100.0,100.0
+Kedah marine parks,2022-01-01,Kedah,Pendang,100.0,100.0,100.0
+Kedah marine parks,2024-01-01,Kedah,Pendang,100.0,100.0,100.0
+Kedah marine parks,2016-01-01,Kedah,Pokok Sena,99.4,100.0,100.0
+Kedah marine parks,2019-01-01,Kedah,Pokok Sena,100.0,100.0,100.0
+Kedah marine parks,2022-01-01,Kedah,Pokok Sena,100.0,100.0,100.0
+Kedah marine parks,2024-01-01,Kedah,Pokok Sena,100.0,100.0,100.0
+Kedah marine parks,2016-01-01,Kedah,Sik,91.5,100.0,100.0
+Kedah marine parks,2019-01-01,Kedah,Sik,91.9,100.0,100.0
+Kedah marine parks,2022-01-01,Kedah,Sik,100.0,100.0,100.0
+Kedah marine parks,2024-01-01,Kedah,Sik,98.28,100.0,100.0
+Kedah marine parks,2016-01-01,Kedah,Yan,95.1,100.0,100.0
+Kedah marine parks,2019-01-01,Kedah,Yan,100.0,100.0,100.0
+Kedah marine parks,2022-01-01,Kedah,Yan,100.0,100.0,100.0
+Kedah marine parks,2024-01-01,Kedah,Yan,100.0,100.0,100.0
+Johor marine parks,2016-01-01,Johor,All Districts,99.9,99.99,100.0
+Johor marine parks,2019-01-01,Johor,All Districts,99.9,99.9,100.0
+Johor marine parks,2022-01-01,Johor,All Districts,99.6,100.0,100.0
+Johor marine parks,2024-01-01,Johor,All Districts,99.8,100.0,100.0
+Johor marine parks,2016-01-01,Johor,Batu Pahat,99.9,100.0,100.0
+Johor marine parks,2019-01-01,Johor,Batu Pahat,100.0,100.0,100.0
+Johor marine parks,2022-01-01,Johor,Batu Pahat,100.0,100.0,100.0
+Johor marine parks,2024-01-01,Johor,Batu Pahat,100.0,100.0,100.0
+Johor marine parks,2016-01-01,Johor,Johor Bahru,100.0,100.0,100.0
+Johor marine parks,2019-01-01,Johor,Johor Bahru,100.0,100.0,100.0
+Johor marine parks,2022-01-01,Johor,Johor Bahru,100.0,100.0,100.0
+Johor marine parks,2024-01-01,Johor,Johor Bahru,99.99,100.0,100.0
+Johor marine parks,2016-01-01,Johor,Kluang,99.7,100.0,99.1
+Johor marine parks,2019-01-01,Johor,Kluang,100.0,100.0,100.0
+Johor marine parks,2022-01-01,Johor,Kluang,99.7,100.0,100.0
+Johor marine parks,2024-01-01,Johor,Kluang,98.73,100.0,100.0
+Johor marine parks,2016-01-01,Johor,Kota Tinggi,98.9,100.0,100.0
+Johor marine parks,2019-01-01,Johor,Kota Tinggi,98.8,99.0,100.0
+Johor marine parks,2022-01-01,Johor,Kota Tinggi,100.0,99.85,100.0
+Johor marine parks,2024-01-01,Johor,Kota Tinggi,99.83,100.0,100.0
+Johor marine parks,2016-01-01,Johor,Kulai,100.0,100.0,100.0
+Johor marine parks,2019-01-01,Johor,Kulai,100.0,100.0,100.0
+Johor marine parks,2022-01-01,Johor,Kulai,100.0,100.0,100.0
+Johor marine parks,2024-01-01,Johor,Kulai,100.0,100.0,100.0
+Johor marine parks,2016-01-01,Johor,Mersing,99.5,100.0,100.0
+Johor marine parks,2019-01-01,Johor,Mersing,98.3,100.0,100.0
+Johor marine parks,2022-01-01,Johor,Mersing,83.5,100.0,100.0
+Johor marine parks,2024-01-01,Johor,Mersing,95.39,100.0,100.0
+Johor marine parks,2016-01-01,Johor,Muar,100.0,100.0,100.0
+Johor marine parks,2019-01-01,Johor,Muar,99.5,100.0,100.0
+Johor marine parks,2022-01-01,Johor,Muar,100.0,100.0,100.0
+Johor marine parks,2024-01-01,Johor,Muar,100.0,100.0,100.0
+Johor marine parks,2016-01-01,Johor,Pontian,100.0,100.0,100.0
+Johor marine parks,2019-01-01,Johor,Pontian,100.0,100.0,100.0
+Johor marine parks,2022-01-01,Johor,Pontian,100.0,100.0,100.0
+Johor marine parks,2024-01-01,Johor,Pontian,100.0,100.0,100.0
+Johor marine parks,2016-01-01,Johor,Segamat,100.0,100.0,100.0
+Johor marine parks,2019-01-01,Johor,Segamat,100.0,100.0,100.0
+Johor marine parks,2022-01-01,Johor,Segamat,98.7,100.0,100.0
+Johor marine parks,2024-01-01,Johor,Segamat,99.54,100.0,100.0
+Johor marine parks,2016-01-01,Johor,Tangkak,100.0,100.0,100.0
+Johor marine parks,2019-01-01,Johor,Tangkak,99.8,100.0,100.0
+Johor marine parks,2022-01-01,Johor,Tangkak,100.0,100.0,100.0
+Johor marine parks,2024-01-01,Johor,Tangkak,100.0,100.0,100.0
+Sipadan / Mabul,2016-01-01,Sabah,Semporna,73.8,88.4,99.7
+Sipadan / Mabul,2019-01-01,Sabah,Semporna,90.3,87.2,99.7
+Sipadan / Mabul,2022-01-01,Sabah,Semporna,71.8,84.15,100.0
+Sipadan / Mabul,2024-01-01,Sabah,Semporna,70.19,91.29,98.91
+Tunku Abdul Rahman Park,2016-01-01,Sabah,Kota Kinabalu,93.1,98.2,100.0
+Tunku Abdul Rahman Park,2019-01-01,Sabah,Kota Kinabalu,93.5,99.1,99.9
+Tunku Abdul Rahman Park,2022-01-01,Sabah,Kota Kinabalu,93.9,99.62,99.8
+Tunku Abdul Rahman Park,2024-01-01,Sabah,Kota Kinabalu,96.19,99.01,100.0
+Kinabalu / Kundasang,2016-01-01,Sabah,Ranau,37.8,99.2,99.1
+Kinabalu / Kundasang,2019-01-01,Sabah,Ranau,35.3,94.8,100.0
+Kinabalu / Kundasang,2022-01-01,Sabah,Ranau,47.4,99.04,94.7
+Kinabalu / Kundasang,2024-01-01,Sabah,Ranau,46.48,100.0,95.86
+Langkawi,2016-01-01,Kedah,Langkawi,97.8,100.0,100.0
+Langkawi,2019-01-01,Kedah,Langkawi,99.5,100.0,100.0
+Langkawi,2022-01-01,Kedah,Langkawi,99.8,100.0,100.0
+Langkawi,2024-01-01,Kedah,Langkawi,100.0,100.0,100.0
+Pangkor,2016-01-01,Perak,Manjung,100.0,100.0,100.0
+Pangkor,2019-01-01,Perak,Manjung,99.9,100.0,100.0
+Pangkor,2022-01-01,Perak,Manjung,100.0,100.0,100.0
+Pangkor,2024-01-01,Perak,Manjung,100.0,100.0,100.0
+Fraser's Hill,2016-01-01,Pahang,Raub,100.0,100.0,100.0
+Fraser's Hill,2019-01-01,Pahang,Raub,90.0,100.0,100.0
+Fraser's Hill,2022-01-01,Pahang,Raub,100.0,100.0,100.0
+Fraser's Hill,2024-01-01,Pahang,Raub,100.0,100.0,100.0
+Miri,2016-01-01,Sarawak,Miri,94.8,99.9,99.8
+Miri,2019-01-01,Sarawak,Miri,99.0,99.9,99.7
+Miri,2022-01-01,Sarawak,Miri,98.5,99.91,96.3
+Miri,2024-01-01,Sarawak,Miri,99.38,100.0,99.91
+Besut parks,2016-01-01,Terengganu,Besut,95.5,100.0,100.0
+Besut parks,2019-01-01,Terengganu,Besut,83.4,100.0,100.0
+Besut parks,2022-01-01,Terengganu,Besut,93.8,100.0,100.0
+Besut parks,2024-01-01,Terengganu,Besut,100.0,100.0,100.0
+Dungun parks,2016-01-01,Terengganu,Dungun,94.7,100.0,100.0
+Dungun parks,2019-01-01,Terengganu,Dungun,98.1,100.0,100.0
+Dungun parks,2022-01-01,Terengganu,Dungun,99.4,100.0,100.0
+Dungun parks,2024-01-01,Terengganu,Dungun,98.99,100.0,100.0
+Rompin parks,2016-01-01,Pahang,Rompin,95.3,99.6,100.0
+Rompin parks,2019-01-01,Pahang,Rompin,96.3,100.0,100.0
+Rompin parks,2022-01-01,Pahang,Rompin,97.0,98.3,97.8
+Rompin parks,2024-01-01,Pahang,Rompin,100.0,100.0,100.0
+Mersing parks,2016-01-01,Johor,Mersing,99.5,100.0,100.0
+Mersing parks,2019-01-01,Johor,Mersing,98.3,100.0,100.0
+Mersing parks,2022-01-01,Johor,Mersing,83.5,100.0,100.0
+Mersing parks,2024-01-01,Johor,Mersing,95.39,100.0,100.0
+Kota Setar parks,2016-01-01,Kedah,Kota Setar,100.0,100.0,100.0
+Kota Setar parks,2019-01-01,Kedah,Kota Setar,100.0,100.0,100.0
+Kota Setar parks,2022-01-01,Kedah,Kota Setar,100.0,100.0,100.0
+Kota Setar parks,2024-01-01,Kedah,Kota Setar,100.0,100.0,100.0

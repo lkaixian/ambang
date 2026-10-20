@@ -1,0 +1,420 @@
+{
+ "Cameron Highlands": {
+  "term": "Cameron_Highlands + Tanah_Tinggi_Cameron",
+  "source": "Wikipedia pageviews in English and Malay (Wikimedia REST API), 2016-2025 excluding 2020-21",
+  "ms_share": 0.16,
+  "languages": [
+   "en",
+   "ms"
+  ],
+  "n_months": 96,
+  "median_monthly_views": 7821,
+  "reliable": true,
+  "month_share": [
+   0.094,
+   0.0879,
+   0.0917,
+   0.0851,
+   0.0785,
+   0.0787,
+   0.0832,
+   0.083,
+   0.0791,
+   0.0809,
+   0.0777,
+   0.0803
+  ],
+  "peak_month": "Jan",
+  "peak_share": 0.094,
+  "effective_months": 12.0,
+  "top3_share": 0.274
+ },
+ "Fraser's Hill": {
+  "term": "Bukit_Fraser + Fraser's_Hill",
+  "source": "Wikipedia pageviews in English and Malay (Wikimedia REST API), 2016-2025 excluding 2020-21",
+  "ms_share": 0.21,
+  "languages": [
+   "en",
+   "ms"
+  ],
+  "n_months": 96,
+  "median_monthly_views": 3078,
+  "reliable": true,
+  "month_share": [
+   0.082,
+   0.0822,
+   0.0817,
+   0.085,
+   0.0862,
+   0.0859,
+   0.0817,
+   0.0837,
+   0.086,
+   0.0799,
+   0.0768,
+   0.0889
+  ],
+  "peak_month": "Dec",
+  "peak_share": 0.089,
+  "effective_months": 12.0,
+  "top3_share": 0.261
+ },
+ "Kapas": {
+  "term": "Kapas_Island + Pulau_Kapas",
+  "source": "Wikipedia pageviews in English and Malay (Wikimedia REST API), 2016-2025 excluding 2020-21",
+  "ms_share": 0.23,
+  "languages": [
+   "en",
+   "ms"
+  ],
+  "n_months": 96,
+  "median_monthly_views": 1042,
+  "reliable": true,
+  "month_share": [
+   0.0676,
+   0.0714,
+   0.0864,
+   0.0917,
+   0.1049,
+   0.095,
+   0.104,
+   0.1112,
+   0.0944,
+   0.0689,
+   0.0499,
+   0.0545
+  ],
+  "peak_month": "Aug",
+  "peak_share": 0.111,
+  "effective_months": 11.4,
+  "top3_share": 0.32
+ },
+ "Lang Tengah": {
+  "term": "Pulau_Lang_Tengah",
+  "source": "Wikipedia pageviews in English and Malay (Wikimedia REST API), 2016-2025 excluding 2020-21",
+  "ms_share": 1.0,
+  "languages": [
+   "ms"
+  ],
+  "n_months": 96,
+  "median_monthly_views": 50,
+  "reliable": false,
+  "month_share": [
+   0.0691,
+   0.0616,
+   0.0849,
+   0.0762,
+   0.1606,
+   0.1088,
+   0.102,
+   0.087,
+   0.0687,
+   0.0687,
+   0.0543,
+   0.058
+  ],
+  "peak_month": "May",
+  "peak_share": 0.161,
+  "effective_months": 10.8,
+  "top3_share": 0.371
+ },
+ "Langkawi": {
+  "term": "Langkawi",
+  "source": "Wikipedia pageviews in English and Malay (Wikimedia REST API), 2016-2025 excluding 2020-21",
+  "ms_share": 0.08,
+  "languages": [
+   "en",
+   "ms"
+  ],
+  "n_months": 96,
+  "median_monthly_views": 25561,
+  "reliable": true,
+  "month_share": [
+   0.0923,
+   0.0789,
+   0.0886,
+   0.08,
+   0.0809,
+   0.0757,
+   0.0798,
+   0.082,
+   0.0853,
+   0.0842,
+   0.0868,
+   0.0855
+  ],
+  "peak_month": "Jan",
+  "peak_share": 0.092,
+  "effective_months": 12.0,
+  "top3_share": 0.268
+ },
+ "Pangkor": {
+  "term": "Pangkor_Island + Pulau_Pangkor",
+  "source": "Wikipedia pageviews in English and Malay (Wikimedia REST API), 2016-2025 excluding 2020-21",
+  "ms_share": 0.45,
+  "languages": [
+   "en",
+   "ms"
+  ],
+  "n_months": 96,
+  "median_monthly_views": 3296,
+  "reliable": true,
+  "month_share": [
+   0.097,
+   0.0857,
+   0.0825,
+   0.0794,
+   0.0765,
+   0.0747,
+   0.0764,
+   0.0832,
+   0.0842,
+   0.0908,
+   0.0835,
+   0.0861
+  ],
+  "peak_month": "Jan",
+  "peak_share": 0.097,
+  "effective_months": 11.9,
+  "top3_share": 0.274
+ },
+ "Payar": {
+  "term": "Pulau_Payar",
+  "source": "Wikipedia pageviews in English and Malay (Wikimedia REST API), 2016-2025 excluding 2020-21",
+  "ms_share": 1.0,
+  "languages": [
+   "ms"
+  ],
+  "n_months": 96,
+  "median_monthly_views": 94,
+  "reliable": false,
+  "month_share": [
+   0.0836,
+   0.0648,
+   0.0822,
+   0.0463,
+   0.0502,
+   0.1098,
+   0.0795,
+   0.0909,
+   0.1839,
+   0.0886,
+   0.0614,
+   0.0588
+  ],
+  "peak_month": "Sep",
+  "peak_share": 0.184,
+  "effective_months": 10.2,
+  "top3_share": 0.385
+ },
+ "Perhentian": {
+  "term": "Perhentian_Islands + Pulau_Perhentian + Pulau_Perhentian_Besar + Pulau_Perhentian_Kecil",
+  "source": "Wikipedia pageviews in English and Malay (Wikimedia REST API), 2016-2025 excluding 2020-21",
+  "ms_share": 0.14,
+  "languages": [
+   "en",
+   "ms"
+  ],
+  "n_months": 96,
+  "median_monthly_views": 4580,
+  "reliable": true,
+  "month_share": [
+   0.0757,
+   0.0745,
+   0.095,
+   0.0929,
+   0.0957,
+   0.0993,
+   0.1032,
+   0.1003,
+   0.0856,
+   0.0658,
+   0.0572,
+   0.0549
+  ],
+  "peak_month": "Jul",
+  "peak_share": 0.103,
+  "effective_months": 11.5,
+  "top3_share": 0.303
+ },
+ "Redang": {
+  "term": "Pulau_Redang + Redang_Island",
+  "source": "Wikipedia pageviews in English and Malay (Wikimedia REST API), 2016-2025 excluding 2020-21",
+  "ms_share": 0.2,
+  "languages": [
+   "en",
+   "ms"
+  ],
+  "n_months": 96,
+  "median_monthly_views": 4900,
+  "reliable": true,
+  "month_share": [
+   0.0765,
+   0.0726,
+   0.0911,
+   0.0965,
+   0.1024,
+   0.0943,
+   0.1005,
+   0.0985,
+   0.0859,
+   0.0701,
+   0.0573,
+   0.0543
+  ],
+  "peak_month": "May",
+  "peak_share": 0.102,
+  "effective_months": 11.6,
+  "top3_share": 0.301
+ },
+ "Sibu": {
+  "term": "Pulau_Sibu + Sibu_Island",
+  "source": "Wikipedia pageviews in English and Malay (Wikimedia REST API), 2016-2025 excluding 2020-21",
+  "ms_share": 0.14,
+  "languages": [
+   "en",
+   "ms"
+  ],
+  "n_months": 96,
+  "median_monthly_views": 464,
+  "reliable": true,
+  "month_share": [
+   0.0786,
+   0.0795,
+   0.0931,
+   0.0929,
+   0.0935,
+   0.0838,
+   0.0927,
+   0.0949,
+   0.0868,
+   0.0764,
+   0.0632,
+   0.0647
+  ],
+  "peak_month": "Aug",
+  "peak_share": 0.095,
+  "effective_months": 11.8,
+  "top3_share": 0.282
+ },
+ "Sipadan / Mabul": {
+  "term": "Pulau_Sipadan + Sipadan",
+  "source": "Wikipedia pageviews in English and Malay (Wikimedia REST API), 2016-2025 excluding 2020-21",
+  "ms_share": 0.15,
+  "languages": [
+   "en",
+   "ms"
+  ],
+  "n_months": 96,
+  "median_monthly_views": 3506,
+  "reliable": true,
+  "month_share": [
+   0.0866,
+   0.0771,
+   0.0837,
+   0.0847,
+   0.0878,
+   0.085,
+   0.0883,
+   0.0992,
+   0.0848,
+   0.0814,
+   0.0732,
+   0.0683
+  ],
+  "peak_month": "Aug",
+  "peak_share": 0.099,
+  "effective_months": 11.9,
+  "top3_share": 0.275
+ },
+ "Tinggi": {
+  "term": "Pulau_Tinggi + Tinggi_Island",
+  "source": "Wikipedia pageviews in English and Malay (Wikimedia REST API), 2016-2025 excluding 2020-21",
+  "ms_share": 0.28,
+  "languages": [
+   "en",
+   "ms"
+  ],
+  "n_months": 96,
+  "median_monthly_views": 206,
+  "reliable": false,
+  "month_share": [
+   0.0799,
+   0.0741,
+   0.0956,
+   0.0949,
+   0.0905,
+   0.0872,
+   0.0955,
+   0.0951,
+   0.0798,
+   0.0752,
+   0.0709,
+   0.0613
+  ],
+  "peak_month": "Mar",
+  "peak_share": 0.096,
+  "effective_months": 11.8,
+  "top3_share": 0.286
+ },
+ "Tioman": {
+  "term": "Pulau_Tioman + Tioman_Island",
+  "source": "Wikipedia pageviews in English and Malay (Wikimedia REST API), 2016-2025 excluding 2020-21",
+  "ms_share": 0.27,
+  "languages": [
+   "en",
+   "ms"
+  ],
+  "n_months": 96,
+  "median_monthly_views": 6818,
+  "reliable": true,
+  "month_share": [
+   0.0778,
+   0.0792,
+   0.0875,
+   0.0899,
+   0.0929,
+   0.092,
+   0.0992,
+   0.098,
+   0.0884,
+   0.0734,
+   0.0618,
+   0.0599
+  ],
+  "peak_month": "Jul",
+  "peak_share": 0.099,
+  "effective_months": 11.7,
+  "top3_share": 0.29
+ },
+ "Tunku Abdul Rahman Park": {
+  "term": "Taman_Tunku_Abdul_Rahman + Tunku_Abdul_Rahman_Park",
+  "source": "Wikipedia pageviews in English and Malay (Wikimedia REST API), 2016-2025 excluding 2020-21",
+  "ms_share": 0.45,
+  "languages": [
+   "en",
+   "ms"
+  ],
+  "n_months": 96,
+  "median_monthly_views": 20,
+  "reliable": false,
+  "month_share": [
+   0.0808,
+   0.0671,
+   0.0693,
+   0.1258,
+   0.0998,
+   0.0768,
+   0.0799,
+   0.0751,
+   0.0954,
+   0.0786,
+   0.0808,
+   0.0706
+  ],
+  "peak_month": "Apr",
+  "peak_share": 0.126,
+  "effective_months": 11.6,
+  "top3_share": 0.321
+ }
+}

@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Malaysia - Coral Triangle Atlas</title>
+    <meta content="coral triangle atlas" name="keywords">
+    <meta content="coral triangle atlas" name="description">
+    <link href="/images/favicon.png" rel="icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+    <link href="/lib/twitter-bootstrap/css/bootstrap.min.css?v=YLGeXaapI0_5IgZopewRJcFXomhRMlYYjugPLSyNjTY" rel="stylesheet" />
+    <link href="/lib/font-awesome/css/font-awesome.min.css?v=eZrrJcwDc_3uDhsdt61sL2oOBY362qM3lon1gyExkL0" rel="stylesheet" />
+    <link href="/lib/animate.css/animate.min.css?v=PHcOkPmOshsMBC-vtJdVr5Mwb7r0LkSVJPlPrp_IMpU" rel="stylesheet" />
+    <link href="/lib/OwlCarousel2/assets/owl.carousel.min.css?v=UhQQ4fxEeABh4JrcmAJ1-16id_1dnlOEVCFOxDef9Lw" rel="stylesheet" />
+    <link href="/lib/lightbox2/css/lightbox.min.css?v=tBxlolRHP9uMsEFKVk-hk__ekOlXOixLKvye5W2WR5c" rel="stylesheet" />
+    <link href="/lib/Chart.js/Chart.min.css?v=aa0xaJgmK_X74WM224KMQeNQC2xYKwlAt08oZqjeF0E" rel="stylesheet" />
+    <link href="/lib/jqueryui/themes/base/jquery-ui.min.css?v=sEGfrwMkIjbgTBwGLVK38BG_XwIiNC_EAG9Rzsfda6A" rel="stylesheet" />
+    <link href="/css/style.css?v=wT0YdvpUYbRxAqLbM1sAuvwavmYqsUc8nlkM171PTl0" rel="stylesheet">
+
+    
+    <link href="/lib/OpenLayers/ol.css?v=Cbpe6l8VKCLFD8ty-tFQfkSy8T8mNb_9yYgjq8h6Rxg" rel="stylesheet" />
+
+    <style>
+         
+        .ol-scale-line {
+            left: unset;
+            right: 0px;
+            bottom: 20px;
+        }
+
+        .ol-mouse-position {
+            right: 10px;
+            opacity: 1;
+        }
+           
+        .map {
+            width: 100%; 
+            height: 500px;
+            margin-top: 10px;
+            margin-bottom: 50px; 
+            border: 1px solid #888; 
+        }
+         
+    </style>
+
+
+    
+    <script src="/lib/OpenLayers/ol.js?v=cDvaHDvKE8_9OifT1jAB1G2AvJ11ho5rXAI6-ExnnhU"></script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.3/FileSaver.min.js"></script>
+
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-97WMDWT5ZP"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-97WMDWT5ZP');
+        </script>
+
+</head>
+<body>
+    <header id="header">
+        <div class="container-fluid">
+            <div id="logo" class="pull-left">
+                <a class="scrollto d-none d-lg-block" href="/"><img src="/images/ctatlas-logo-small.png" alt="" title="" /></a>
+
+                <h1 class="d-lg-none">
+                    <a class="scrollto" href="/">
+                        CT Atlas
+                    </a>
+                </h1>
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="menu-has-children">
+                        <a href="#">About</a>
+                        <ul>
+                            <li><a href="/About">About Coral Triangle</a></li>
+                            <li><a href="/About/CTI">About Coral Triangle Initiative</a></li>
+                            <li><a href="/About/CTAtlas">About Coral Triangle Atlas</a></li>
+                            <li class="d-none d-md-block" ><hr /></li>
+                            <li><a href="/About/Partners">Partners</a></li>
+                            <li><a href="/About/Team">Coral Triangle Team</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-has-children">
+                        <a href="#">Countries</a>
+                        <ul>
+                            <li><a href="/Country/Index/IDN">Indonesia</a></li>
+                            <li><a href="/Country/Index/MYS">Malaysia</a></li>
+                            <li><a href="/Country/Index/PNG">Papua New Guinea</a></li>
+                            <li><a href="/Country/Index/PHL">Philippines</a></li>
+                            <li><a href="/Country/Index/SLB">Solomon Islands</a></li>
+                            <li><a href="/Country/Index/TLS">Timor-Leste</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-has-children">
+                        <a href="#">Database</a>
+                        <ul>
+                            <li><a href="/Map?layers=1&amp;lon=130&amp;lat=5&amp;zoom=4">Interactive Map</a></li>
+                            <li><a href="/MPA">Marine Protected Areas</a></li>
+                            <li class="d-none d-md-block"><hr /></li>
+                            <li><a href="/CCA?c=r">Regional CCA Policies</a></li>
+                            <li><a href="/CCA?c=n">National CCA Policies</a></li>
+                            <li><a href="/CCA/Local">Local CCA Implementations</a></li>
+                            <li class="d-none d-md-block"><hr /></li>
+                            <li><a href="/Dataset">Search &amp; Download Spatial Data</a></li>
+                            <li><a href="/ContributeData">Contribute Spatial Data</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-has-children">
+                        <a href="#">M&amp;E</a>
+                        <ul>
+                            <li><a href="/RPOA">RPOA</a></li>
+                            <li><a href="/RPOA/RPOA2">RPOA 2.0</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-has-children">
+                        <a href="#">Resources</a>
+                        <ul>
+                            <li><a href="/MapGallery">Map Gallery</a></li> 
+                            <li><a href="/ImageGallery">Image Gallery</a></li>
+                            <li><a href="/Publication">Publications</a></li>
+                            <li class="d-none d-md-block"><hr /></li>
+                            <li><a href="/UseOfContent">Use of Content</a></li>
+                            <li><a href="/FAQ">FAQ</a></li>
+                        </ul>
+                    </li>
+                    
+
+    <li class="">
+        <a href="/Account/Register">Register</a>
+    </li>
+    <li class="">
+        <a href="/Account/Login">Login</a>
+    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+
+        <div class="page-background">
+
+        </div>
+    <div id="cookieConsent" class="text-center consent">
+        This website uses cookies to ensure you get the best experience on our website.
+        &nbsp;
+        <button type="button" class="btn btn-sm btn-outline-secondary" data-cookie-string=".AspNet.Consent=yes; expires=Thu, 07 Oct 2027 16:20:17 GMT; path=/; secure; samesite=lax">Got it</button>
+    </div>
+    <script>
+        (function () {
+            document.querySelector("#cookieConsent button[data-cookie-string]").addEventListener("click", function (el) {
+                document.cookie = el.target.dataset.cookieString;
+                $(".consent").addClass("d-none");
+            }, false);
+        })();
+    </script>
+
+
+    
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-97WMDWT5ZP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-97WMDWT5ZP');
+</script>
+
+ 
+<main id="main">
+    <section id="country">
+        <div class="container text-center">
+            <div class="section-header">
+                <h3>
+                    <img src="/images/flag/icon_MYS_flag.png" class="country-flag" />
+                    Malaysia
+                </h3>
+            </div>
+
+            <div class="row text-justify">
+                <div id="map" class="map"></div>
+                <div id="mouse-position"></div>
+                <div id="popup" class="ol-popup">
+                    <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                    <div id="popup-content"></div>
+                </div> 
+                 
+
+                <p>
+                        <span>
+                            Marine Protected Areas are not a new concept for Malaysia. With a high concentration of biodiversity and islands supporting 1,687 square kilometers of reefs, Malaysia depends on the economic activity provided by fisheries. In the 1980s, areas around 22 islands were declared prohibited areas and later declared by law as marine parks.
+                            <br /><br />
+                            Today, Malaysia's marine protected areas are spread over both Peninsular Malaysia and Malaysian Borneo, which comprises the states of Sabah and Sarawak. Depending on their location, these MPAs fall under different jurisdictions:
+                        </span>
+                        <ul>
+                            <li>
+                                In Peninsular Malaysia, the 42 marine parks are managed by the Marine Park Department of the Ministry of Natural Resources and Environment. These are mostly islands declared as marine parks
+                                and comprise both terrestrial and marine components.
+                            </li>
+                            <li>
+                                In Sabah, the five marine parks are under the Sabah Parks Enactment.The first marine park was established in 1974.Other marine protected area is Sugud Islands Marine Conservation Area(SIMCA). This is the first private managed marine conservation area in Malaysia managed by Reef Guardian.SIMCA was officially established in 2001 as a Category II conservation area under the IUCN Protected Area.
+                                The US CTI Support Program is also supporting the establishment of the proposed one million-hectare Tun Mustapha Park which home to endangered marine animals, such as green sea turtles and dugongs making it a strategic area for sustainable ecotourism. It is also source of livelihood for 80,000 coastal inhabitants of diverse ethnic groups.
+                            </li>
+                            <li>
+                                In Sarawak, three marine parks are gazetted under the National Park and Reserve Ordinance.
+                            </li>
+                        </ul>
+                        <span>
+                            These marine parks are not necessarily established just for fisheries conservation; many also target the conservation of biodiversity, such as sea turtles or other vulnerable species.
+                            <br /><br />
+                            One of Malaysia's most famous parks is Sipadan, located in Sabah. It is the country's only oceanic island, and it formed over millennia as corals slowly covered an extinct volcano.Located in the Celebes Sea, it marks one of the world's richest spots for marine diversity.
+                        </span>
+                </p>
+            </div>
+
+            <div class="d-flex flex-row-reverse">
+
+                    <a href="/dataset/getdocumentfile/70" class="btn btn-sm btn-primary" target="_blank">
+                        <i class="fa fa-cloud-download"></i> Download MPA Polygons
+                    </a>
+
+                &nbsp;
+
+                <a id="btnExport" class="btn btn-sm btn-primary" href="/Country/Export/MYS">
+                    <i class="fa fa-cloud-download"></i> Download MPA Points
+                </a>
+
+                &nbsp;
+
+                <span class="text-primary">
+                    <strong>
+                        Last updated on 19 May 2026
+                    </strong>
+                </span>
+
+                &nbsp; 
+            </div>
+
+            <br />
+
+            <section id="country-facts" class="wow fadeIn">
+                <div class="container">
+                    <header class="section-header">
+                        <h3>Statistics</h3>
+                    </header>
+
+                    <div class="row counters">
+                            <div class="col-lg-3 col-6 text-center">
+                                <span data-toggle="counter-up">198,200</span>
+                                <p>Marine Area (km2)</p>
+                            </div>
+                            <div class="col-lg-3 col-6 text-center">
+                                <span data-toggle="counter-up">3,856</span>
+                                <p>MPA Area (km2)</p>
+                            </div>
+                            <div class="col-lg-3 col-6 text-center">
+                                <span data-toggle="counter-up">51</span>
+                                <p>Number of MPA</p>
+                            </div>
+                            <div class="col-lg-3 col-6 text-center">
+                                <span data-toggle="counter-up">4,675</span>
+                                <p>Coastline (km)</p>
+                            </div>
+                            <div class="col-lg-3 col-6 text-center">
+                                <span data-toggle="counter-up">1,687</span>
+                                <p>Coral Reef Area (km2)</p>
+                            </div>
+                            <div class="col-lg-3 col-6 text-center">
+                                <span data-toggle="counter-up">7,041</span>
+                                <p>Mangrove Area (km2)</p>
+                            </div>
+                            <div class="col-lg-3 col-6 text-center">
+                                <span data-toggle="counter-up">11</span>
+                                <p>Publication</p>
+                            </div>
+                            <div class="col-lg-3 col-6 text-center">
+                                <span data-toggle="counter-up">11</span>
+                                <p>Photo</p>
+                            </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section id="country-image-gallery" class="">
+        <div class="container">
+            <div class="section-header">
+                <h3>Image Gallery</h3>
+            </div>
+
+            <div class="row">
+                    <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-duration="0.5s">
+                        <div class="image">
+                            <a href="/ImageGallery/getimage/47" data-lightbox="image-00047" data-title="Malaysia Caption 00005 Malaysia<br />Malaysia Photographer 00005">
+                                <img src="/ImageGallery/getimage/47?size=s" class="cache img-fluid" alt="" />
+                                <div class="image-info">
+                                    <div class="image-info-content">
+                                        <h4>Malaysia Photographer 00005</h4>
+                                        <span>Malaysia Caption 00005 Malaysia</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="download"><a href="/ImageGallery/downloadimage/47"><i class="fa fa-cloud-download"></i> Download</a></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-duration="0.5s">
+                        <div class="image">
+                            <a href="/ImageGallery/getimage/34" data-lightbox="image-00034" data-title="Malaysia Caption 00004 Malaysia<br />Malaysia Photographer 00004">
+                                <img src="/ImageGallery/getimage/34?size=s" class="cache img-fluid" alt="" />
+                                <div class="image-info">
+                                    <div class="image-info-content">
+                                        <h4>Malaysia Photographer 00004</h4>
+                                        <span>Malaysia Caption 00004 Malaysia</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="download"><a href="/ImageGallery/downloadimage/34"><i class="fa fa-cloud-download"></i> Download</a></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-duration="0.5s">
+                        <div class="image">
+                            <a href="/ImageGallery/getimage/33" data-lightbox="image-00033" data-title="Malaysia Caption 00006 Malaysia<br />Malaysia Photographer 00006">
+                                <img src="/ImageGallery/getimage/33?size=s" class="cache img-fluid" alt="" />
+                                <div class="image-info">
+                                    <div class="image-info-content">
+                                        <h4>Malaysia Photographer 00006</h4>
+                                        <span>Malaysia Caption 00006 Malaysia</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="download"><a href="/ImageGallery/downloadimage/33"><i class="fa fa-cloud-download"></i> Download</a></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-duration="0.5s">
+                        <div class="image">
+                            <a href="/ImageGallery/getimage/30" data-lightbox="image-00030" data-title="Malaysia Caption 00009 Malaysia<br />Malaysia Photographer 00009">
+                                <img src="/ImageGallery/getimage/30?size=s" class="cache img-fluid" alt="" />
+                                <div class="image-info">
+                                    <div class="image-info-content">
+                                        <h4>Malaysia Photographer 00009</h4>
+                                        <span>Malaysia Caption 00009 Malaysia</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="download"><a href="/ImageGallery/downloadimage/30"><i class="fa fa-cloud-download"></i> Download</a></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-duration="0.5s">
+                        <div class="image">
+                            <a href="/ImageGallery/getimage/28" data-lightbox="image-00028" data-title="Malaysia Caption 00007 Malaysia<br />Malaysia Photographer 00007">
+                                <img src="/ImageGallery/getimage/28?size=s" class="cache img-fluid" alt="" />
+                                <div class="image-info">
+                                    <div class="image-info-content">
+                                        <h4>Malaysia Photographer 00007</h4>
+                                        <span>Malaysia Caption 00007 Malaysia</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="download"><a href="/ImageGallery/downloadimage/28"><i class="fa fa-cloud-download"></i> Download</a></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-duration="0.5s">
+                        <div class="image">
+                            <a href="/ImageGallery/getimage/27" data-lightbox="image-00027" data-title="Malaysia Caption 00001 Malaysia<br />Malaysia Photographer 00001">
+                                <img src="/ImageGallery/getimage/27?size=s" class="cache img-fluid" alt="" />
+                                <div class="image-info">
+                                    <div class="image-info-content">
+                                        <h4>Malaysia Photographer 00001</h4>
+                                        <span>Malaysia Caption 00001 Malaysia</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="download"><a href="/ImageGallery/downloadimage/27"><i class="fa fa-cloud-download"></i> Download</a></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-duration="0.5s">
+                        <div class="image">
+                            <a href="/ImageGallery/getimage/21" data-lightbox="image-00021" data-title="Malaysia Caption 00010 Malaysia<br />Malaysia Photographer 00010">
+                                <img src="/ImageGallery/getimage/21?size=s" class="cache img-fluid" alt="" />
+                                <div class="image-info">
+                                    <div class="image-info-content">
+                                        <h4>Malaysia Photographer 00010</h4>
+                                        <span>Malaysia Caption 00010 Malaysia</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="download"><a href="/ImageGallery/downloadimage/21"><i class="fa fa-cloud-download"></i> Download</a></div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-duration="0.5s">
+                        <div class="image">
+                            <a href="/ImageGallery/getimage/15" data-lightbox="image-00015" data-title="Malaysia Caption 00002 Malaysia<br />Malaysia Photographer 00002">
+                                <img src="/ImageGallery/getimage/15?size=s" class="cache img-fluid" alt="" />
+                                <div class="image-info">
+                                    <div class="image-info-content">
+                                        <h4>Malaysia Photographer 00002</h4>
+                                        <span>Malaysia Caption 00002 Malaysia</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="download"><a href="/ImageGallery/downloadimage/15"><i class="fa fa-cloud-download"></i> Download</a></div>
+                    </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <a class="btn btn-primary" href="/ImageGallery?countrycode=MYS">View more images</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="country-map-gallery" class="">
+        <div class="container">
+            <div class="section-header">
+                <h3>Map Gallery</h3>
+            </div>
+
+            <div id="gallery" class="row">
+                    <div class="col-lg-4 col-md-6 wow fadeIn" data-wow-duration="0.5s">
+                        <div class="image">
+                            <a href="/MapGallery/getimage/6" data-lightbox="map-00006" data-title="Marine Protected Areas (MPAs) in Malaysia<br />Coral Triangle Atlas Team">
+                                <img src="/MapGallery/getimage/6?size=s" class="cache img-fluid" alt="" />
+                                <div class="image-info">
+                                    <div class="image-info-content">
+                                        <h4>Coral Triangle Atlas Team</h4>
+                                        <span>Marine Protected Areas (MPAs) in Malaysia</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="download"><a href="/MapGallery/GetDocumentFile/6" target="_blank"><i class="fa fa-cloud-download"></i> Download</a></div>
+                    </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <a class="btn btn-primary" href="/MapGallery?countrycode=MYS">View more maps</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6 footer-info">
+                        <h3>
+                            CT Atlas
+                        </h3>
+                        <p>
+                            The Coral Triangle Atlas is an online GIS database, providing governments, NGOs and researchers with a view of spatial data at the regional scale.
+                            This CT Atlas project will improve the efficiency of management and conservation planning in the region by giving researchers and managers access to spatial information while encouraging them to share their data to complete the gaps.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-contact">
+                        <h4>Contact Us</h4>
+                        <p>
+                            Manado Office<br />
+                            Coral Triangle Initiative on Coral Reefs,<br />Fisheries, and Food Security Secretariat Building<br />
+                            Jl. A.A. Maramis Kayuwatu, Kairagi II<br />
+                            Manado, North Sulawesi 95254<br />
+                            Indonesia<br />
+                            <i class="fa fa-phone"></i> +62 431 724 1927<br />
+                            <i class="fa fa-phone"></i> +62 4317 242 026<br />
+                            <i class="fa fa-envelope"></i> regional.secretariat@cticff.org
+                        </p>
+
+                        <div class="social-links">
+                            <a href="http://twitter.com/CTICFF" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="http://facebook.com/CTICFF" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/cticff/" class="instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/channel/UC-eq50vOXHnEP3-BAAo8KfA" class="google-plus"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Use of Content</h4>
+                        <p>By accessing and using any of the datasets distributed by the Coral Triangle Atlas, you acknowledge that you have read, understood, and agree to comply with the terms and conditions contained within this license agreement. The Coral Triangle Atlas may amend these terms and conditions at any time. Your continued use of this data constitutes acceptance of the terms and conditions stated at the time of your use. You should contact the Coral Triangle Atlas to determine the current terms and conditions to which you are bound. <a href="/UseOfContent">more...</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong>Coral Triangle Atlas</strong>. All Rights Reserved<br />
+                This website is developed by <a href="https://www.worldfishcenter.org" target="_blank">WorldFish</a>.
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <script src="/lib/jquery/dist/jquery.min.js?v=T-aPohYXbm0fRYDpJLr-zJ9RmYTswGsahAoIsNiMld4"></script>
+    <script src="/lib/twitter-bootstrap/js/bootstrap.bundle.min.js?v=fzFFyH01cBVPYzl16KT40wqjhgPtq6FFUB6ckN2-GGw"></script>
+    <script src="/lib/jquery-easing/jquery.easing.min.js?v=H3cjtrm_ztDeuhCN9I4yh4iN2Ybx_y1RM7rMmAesA0k"></script>
+    <script src="/lib/superfish/js/superfish.min.js?v=7OVlofZqMjR9_tg1YsQo_3c2ZI3nKwAn3Y8ODyfgwyc"></script>
+    <script src="/lib/wow/wow.min.js?v=z6FznuNG1jo9PP3_jBjL6P3tvLMtSwiVAowZPOgo56U"></script>
+    <script src="/lib/waypoints/jquery.waypoints.min.js?v=jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE"></script>
+    <script src="/lib/counterup/counterup.min.js?v=z_xYR8yWHm047eCUf54OllDJJSFmA2BGhkfVmUSnVjg"></script>
+    <script src="/lib/OwlCarousel2/owl.carousel.min.js?v=pTxD-DSzIwmwhOqTFN-DB-nHjO4iAsbgfyFq5K5bcE0"></script>
+    <script src="/lib/lightbox2/js/lightbox.min.js?v=CtKylYan-AJuoH8jrMht1-1PMhMqrKnB8K5g012WN5I"></script>
+    <script src="/lib/Chart.js/Chart.min.js?v=Uv9BNBucvCPipKQ2NS9wYpJmi8DTOEfTA_nH2aoJALw"></script>
+    <script src="/lib/moment.js/moment.min.js?v=4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ"></script>
+    <script src="/lib/jqueryui/jquery-ui.min.js?v=KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM"></script>
+    <script src="/js/main.js"></script>
+
+
+    
+    <script src="/js/map.js?v=SOmZSdp7i-oFeP3zjpMl867n_DNRcfju8UuFySjhgDw"></script>
+
+    <script>
+        var wmsLayer = [];
+
+        wmsLayer[0] = new ol.layer.Tile({
+            source: new ol.source.TileWMS({
+                url: 'http://52.187.169.215:8080/geoserver/ctatlas/wms',
+                params: { tiled: true, 'LAYERS': 'ctatlas:coral_triangle_boundary_line' },
+                crossOrigin: 'anonymous'
+            })
+        });
+
+        wmsLayer[1] = new ol.layer.Tile({
+            source: new ol.source.TileWMS({
+                url: 'http://52.187.169.215:8080/geoserver/ctatlas/wms',
+                params: { tiled: true, 'LAYERS': 'ctatlas:cti_cff_implementation_area' },
+                crossOrigin: 'anonymous'
+            })
+        });
+
+        wmsLayer[2] = new ol.layer.Tile({
+            source: new ol.source.TileWMS({
+                url: 'http://52.187.169.215:8080/geoserver/ctatlas/wms',
+                params: { tiled: true, 'LAYERS': 'ctatlas:mpas_idn_polygon' },
+                crossOrigin: 'anonymous'
+            })
+        });
+
+        wmsLayer[3] = new ol.layer.Vector({
+            source: new ol.source.Vector({
+                url: 'http://ctatlas.coraltriangleinitiative.org/map/GetKMLFile?layername=mpa&country=IDN',
+                format: new ol.format.KML()
+            })
+        });
+
+        wmsLayer[4] = new ol.layer.Tile({
+            source: new ol.source.TileWMS({
+                url: 'http://52.187.169.215:8080/geoserver/ctatlas/wms',
+                params: { tiled: true, 'LAYERS': 'ctatlas:mpas_mys_polygon' },
+                crossOrigin: 'anonymous'
+            })
+        });
+
+        wmsLayer[5] = new ol.layer.Vector({
+            source: new ol.source.Vector({
+                url: 'http://ctatlas.coraltriangleinitiative.org/map/GetKMLFile?layername=mpa&country=MYS',
+                format: new ol.format.KML()
+            })
+        });
+
+        wmsLayer[6] = new ol.layer.Tile({
+            source: new ol.source.TileWMS({
+                url: 'http://52.187.169.215:8080/geoserver/ctatlas/wms',
+                params: { tiled: true, 'LAYERS': 'ctatlas:mpas_png_polygon' },
+                crossOrigin: 'anonymous'
+            })
+        });
+
+        wmsLayer[7] = new ol.layer.Vector({
+            source: new ol.source.Vector({
+                url: 'http://ctatlas.coraltriangleinitiative.org/map/GetKMLFile?layername=mpa&country=PNG',
+                format: new ol.format.KML()
+            })
+        });
+
+        wmsLayer[8] = new ol.layer.Tile({
+            source: new ol.source.TileWMS({
+                url: 'http://52.187.169.215:8080/geoserver/ctatlas/wms',
+                params: { tiled: true, 'LAYERS': 'ctatlas:mpas_phl_polygon' },
+                crossOrigin: 'anonymous'
+            })
+        });
+
+        wmsLayer[9] = new ol.layer.Vector({
+            source: new ol.source.Vector({
+                url: 'http://ctatlas.coraltriangleinitiative.org/map/GetKMLFile?layername=mpa&country=PHL',
+                format: new ol.format.KML()
+            })
+        });
+
+        wmsLayer[10] = new ol.layer.Tile({
+            source: new ol.source.TileWMS({
+                url: 'http://52.187.169.215:8080/geoserver/ctatlas/wms',
+                params: { tiled: true, 'LAYERS': 'ctatlas:mpas_slb_polygon' },
+                crossOrigin: 'anonymous'
+            })
+        });
+
+        wmsLayer[11] = new ol.layer.Vector({
+            source: new ol.source.Vector({
+                url: 'http://ctatlas.coraltriangleinitiative.org/map/GetKMLFile?layername=mpa&country=SLB',
+                format: new ol.format.KML()
+            })
+        });
+
+        wmsLayer[12] = new ol.layer.Tile({
+            source: new ol.source.TileWMS({
+                url: 'http://52.187.169.215:8080/geoserver/ctatlas/wms',
+                params: { tiled: true, 'LAYERS': 'ctatlas:mpas_tls_polygon' },
+                crossOrigin: 'anonymous'
+            })
+        });
+
+        wmsLayer[13] = new ol.layer.Vector({
+            source: new ol.source.Vector({
+                url: 'http://ctatlas.coraltriangleinitiative.org/map/GetKMLFile?layername=mpa&country=TLS',
+                format: new ol.format.KML()
+            })
+        });
+
+
+        function flyTo(location, finalZoom, done) {
+            var duration = 2000;
+            var zoom = map.getView().getZoom();
+
+            var parts = 2;
+            var called = false;
+            function callback(complete) {
+                --parts;
+                if (called) {
+                    return;
+                }
+                if (parts === 0 || !complete) {
+                    called = true;
+                    done(complete);
+                }
+            }
+            map.getView().animate({
+                center: location,
+                duration: duration,
+                zoom: finalZoom 
+            }, callback);
+            map.getView().animate({
+                zoom: zoom - 1,
+                duration: duration / 2
+            }, {
+                    zoom: zoom,
+                    duration: duration / 2
+                }, callback);
+        }
+
+
+
+
+        $(function () {
+            map.addLayer(wmsLayer[0]); 
+            map.addLayer(wmsLayer[1]); 
+
+
+                    map.addLayer(wmsLayer[4]);
+                    map.addLayer(wmsLayer[5]);
+                    var location = ol.proj.fromLonLat([109.0, 4.5]);
+                    var finalZoom = 6;
+                    var newExtent = ol.proj.transformExtent([80.00, -19.35, 179.85, 28.8], 'EPSG:4326', 'EPSG:3857');
+                
+            map.once('postrender', function (event) {
+                flyTo(location, finalZoom, function () {
+                    var newView = new ol.View({
+                        projection: map.getView().getProjection(),
+                        maxZoom: map.getView().getMaxZoom(),
+                        minZoom: finalZoom,
+                        center: map.getView().getCenter(),
+                        extent: map.getView().calculateExtent(),
+                        resolution: map.getView().getResolution()
+                    })
+
+                    map.setView(newView);
+                });
+            }) 
+        });
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+destination,state,district,date,income_mean,income_median
+Terengganu marine parks,Terengganu,Besut,2019-01-01,5819,4527
+Terengganu marine parks,Terengganu,Besut,2022-01-01,6285,4743
+Terengganu marine parks,Terengganu,Besut,2024-01-01,6747,5820
+Terengganu marine parks,Terengganu,Dungun,2019-01-01,7564,6044
+Terengganu marine parks,Terengganu,Dungun,2022-01-01,7902,6356
+Terengganu marine parks,Terengganu,Dungun,2024-01-01,8055,7156
+Terengganu marine parks,Terengganu,Hulu Terengganu,2019-01-01,5363,4368
+Terengganu marine parks,Terengganu,Hulu Terengganu,2022-01-01,5821,5090
+Terengganu marine parks,Terengganu,Kemaman,2019-01-01,7854,6592
+Terengganu marine parks,Terengganu,Kemaman,2022-01-01,8381,6425
+Terengganu marine parks,Terengganu,Kemaman,2024-01-01,8973,7709
+Terengganu marine parks,Terengganu,Kuala Nerus,2019-01-01,7647,6730
+Terengganu marine parks,Terengganu,Kuala Nerus,2022-01-01,7983,6800
+Terengganu marine parks,Terengganu,Kuala Nerus,2024-01-01,8385,7304
+Terengganu marine parks,Terengganu,Kuala Terengganu,2019-01-01,6691,5614
+Terengganu marine parks,Terengganu,Kuala Terengganu,2022-01-01,7109,5872
+Terengganu marine parks,Terengganu,Kuala Terengganu,2024-01-01,7279,6615
+Terengganu marine parks,Terengganu,Marang,2019-01-01,5928,5060
+Terengganu marine parks,Terengganu,Marang,2022-01-01,6357,5291
+Terengganu marine parks,Terengganu,Marang,2024-01-01,6807,6246
+Terengganu marine parks,Terengganu,Setiu,2019-01-01,5600,4231
+Terengganu marine parks,Terengganu,Setiu,2022-01-01,6030,5211
+Terengganu marine parks,Terengganu,Setiu,2024-01-01,6359,6125
+Terengganu marine parks,Terengganu,Hulu,2024-01-01,6360,6134
+Cameron Highlands,Pahang,Cameron Highlands,2019-01-01,6576,5729
+Cameron Highlands,Pahang,Cameron Highlands,2022-01-01,6265,5221
+Cameron Highlands,Pahang,Cameron Highlands,2024-01-01,6895,5655
+Pahang marine parks,Pahang,Bentong,2019-01-01,5300,4220
+Pahang marine parks,Pahang,Bentong,2022-01-01,5563,4691
+Pahang marine parks,Pahang,Bentong,2024-01-01,6278,5015
+Pahang marine parks,Pahang,Bera,2019-01-01,4566,3636
+Pahang marine parks,Pahang,Bera,2022-01-01,4567,3866
+Pahang marine parks,Pahang,Bera,2024-01-01,4997,4269
+Pahang marine parks,Pahang,Cameron Highlands,2019-01-01,6576,5729
+Pahang marine parks,Pahang,Cameron Highlands,2022-01-01,6265,5221
+Pahang marine parks,Pahang,Cameron Highlands,2024-01-01,6895,5655
+Pahang marine parks,Pahang,Jerantut,2019-01-01,4452,3781
+Pahang marine parks,Pahang,Jerantut,2022-01-01,4537,3781
+Pahang marine parks,Pahang,Jerantut,2024-01-01,5220,4231
+Pahang marine parks,Pahang,Kuantan,2019-01-01,7071,5654
+Pahang marine parks,Pahang,Kuantan,2022-01-01,6938,5926
+Pahang marine parks,Pahang,Kuantan,2024-01-01,7008,5520
+Pahang marine parks,Pahang,Lipis,2019-01-01,4504,3646
+Pahang marine parks,Pahang,Lipis,2022-01-01,4959,4115
+Pahang marine parks,Pahang,Lipis,2024-01-01,5276,4611
+Pahang marine parks,Pahang,Maran,2019-01-01,4678,3671
+Pahang marine parks,Pahang,Maran,2022-01-01,5036,4319
+Pahang marine parks,Pahang,Maran,2024-01-01,5088,4470
+Pahang marine parks,Pahang,Pekan,2019-01-01,5026,4092
+Pahang marine parks,Pahang,Pekan,2022-01-01,4780,4053
+Pahang marine parks,Pahang,Pekan,2024-01-01,5098,4344
+Pahang marine parks,Pahang,Raub,2019-01-01,5005,3805
+Pahang marine parks,Pahang,Raub,2022-01-01,5445,4375
+Pahang marine parks,Pahang,Raub,2024-01-01,5940,4427
+Pahang marine parks,Pahang,Rompin,2019-01-01,4641,3579
+Pahang marine parks,Pahang,Rompin,2022-01-01,5103,4148
+Pahang marine parks,Pahang,Rompin,2024-01-01,5429,4760
+Pahang marine parks,Pahang,Temerloh,2019-01-01,5205,4173
+Pahang marine parks,Pahang,Temerloh,2022-01-01,5180,4283
+Pahang marine parks,Pahang,Temerloh,2024-01-01,5521,4595
+Kedah marine parks,Kedah,Baling,2019-01-01,4313,3583
+Kedah marine parks,Kedah,Baling,2022-01-01,4263,3400
+Kedah marine parks,Kedah,Baling,2024-01-01,4345,3367
+Kedah marine parks,Kedah,Bandar Baharu,2019-01-01,4959,4022
+Kedah marine parks,Kedah,Bandar Baharu,2022-01-01,4565,3922
+Kedah marine parks,Kedah,Bandar Baharu,2024-01-01,4835,4310
+Kedah marine parks,Kedah,Kota Setar,2019-01-01,5773,4532
+Kedah marine parks,Kedah,Kota Setar,2022-01-01,5959,4751
+Kedah marine parks,Kedah,Kota Setar,2024-01-01,6034,5208
+Kedah marine parks,Kedah,Kuala Muda,2019-01-01,5656,4247
+Kedah marine parks,Kedah,Kuala Muda,2022-01-01,5624,4200
+Kedah marine parks,Kedah,Kuala Muda,2024-01-01,5729,4953
+Kedah marine parks,Kedah,Kubang Pasu,2019-01-01,6291,4814
+Kedah marine parks,Kedah,Kubang Pasu,2022-01-01,6221,5201
+Kedah marine parks,Kedah,Kubang Pasu,2024-01-01,6313,5312
+Kedah marine parks,Kedah,Kulim,2019-01-01,5476,4489
+Kedah marine parks,Kedah,Kulim,2022-01-01,5636,4498
+Kedah marine parks,Kedah,Kulim,2024-01-01,6395,5236
+Kedah marine parks,Kedah,Langkawi,2019-01-01,6737,5905
+Kedah marine parks,Kedah,Langkawi,2022-01-01,6087,5250
+Kedah marine parks,Kedah,Langkawi,2024-01-01,6278,5083
+Kedah marine parks,Kedah,Padang Terap,2019-01-01,4781,3722
+Kedah marine parks,Kedah,Padang Terap,2022-01-01,4858,3902
+Kedah marine parks,Kedah,Padang Terap,2024-01-01,5062,3954
+Kedah marine parks,Kedah,Pendang,2019-01-01,4680,3765
+Kedah marine parks,Kedah,Pendang,2022-01-01,4986,3801
+Kedah marine parks,Kedah,Pendang,2024-01-01,5464,4592
+Kedah marine parks,Kedah,Pokok Sena,2019-01-01,5046,4246
+Kedah marine parks,Kedah,Pokok Sena,2022-01-01,5494,4668
+Kedah marine parks,Kedah,Pokok Sena,2024-01-01,5736,5163
+Kedah marine parks,Kedah,Sik,2019-01-01,4960,4094
+Kedah marine parks,Kedah,Sik,2022-01-01,5053,3703
+Kedah marine parks,Kedah,Sik,2024-01-01,5107,4438
+Kedah marine parks,Kedah,Yan,2019-01-01,4397,3502
+Kedah marine parks,Kedah,Yan,2022-01-01,4637,4080
+Kedah marine parks,Kedah,Yan,2024-01-01,5272,4695
+Johor marine parks,Johor,Batu Pahat,2019-01-01,7392,6504
+Johor marine parks,Johor,Batu Pahat,2022-01-01,7419,6347
+Johor marine parks,Johor,Batu Pahat,2024-01-01,9006,7555
+Johor marine parks,Johor,Johor Bahru,2019-01-01,9315,7342
+Johor marine parks,Johor,Johor Bahru,2022-01-01,9869,8232
+Johor marine parks,Johor,Johor Bahru,2024-01-01,10975,8977
+Johor marine parks,Johor,Kluang,2019-01-01,5953,4933
+Johor marine parks,Johor,Kluang,2022-01-01,6461,5204
+Johor marine parks,Johor,Kluang,2024-01-01,6616,6158
+Johor marine parks,Johor,Kota Tinggi,2019-01-01,6982,5475
+Johor marine parks,Johor,Kota Tinggi,2022-01-01,7529,6227
+Johor marine parks,Johor,Kota Tinggi,2024-01-01,8106,6284
+Johor marine parks,Johor,Kulai,2019-01-01,8602,7536
+Johor marine parks,Johor,Kulai,2022-01-01,9177,7460
+Johor marine parks,Johor,Kulai,2024-01-01,10296,8406
+Johor marine parks,Johor,Mersing,2019-01-01,4937,3896
+Johor marine parks,Johor,Mersing,2022-01-01,5426,4445
+Johor marine parks,Johor,Mersing,2024-01-01,6014,5335
+Johor marine parks,Johor,Muar,2019-01-01,7540,5963
+Johor marine parks,Johor,Muar,2022-01-01,7572,5724
+Johor marine parks,Johor,Muar,2024-01-01,8401,7334
+Johor marine parks,Johor,Pontian,2019-01-01,6776,5585
+Johor marine parks,Johor,Pontian,2022-01-01,6913,5616
+Johor marine parks,Johor,Pontian,2024-01-01,7011,5685
+Johor marine parks,Johor,Segamat,2019-01-01,6431,5595
+Johor marine parks,Johor,Segamat,2022-01-01,6578,5318
+Johor marine parks,Johor,Segamat,2024-01-01,7348,6451
+Johor marine parks,Johor,Tangkak,2019-01-01,6659,5561
+Johor marine parks,Johor,Tangkak,2022-01-01,7093,5622
+Johor marine parks,Johor,Tangkak,2024-01-01,7524,6374
+Sipadan / Mabul,Sabah,Semporna,2019-01-01,5933,3542
+Sipadan / Mabul,Sabah,Semporna,2022-01-01,5098,4093
+Sipadan / Mabul,Sabah,Semporna,2024-01-01,5604,4059
+Tunku Abdul Rahman Park,Sabah,Kota Kinabalu,2019-01-01,7665,6004
+Tunku Abdul Rahman Park,Sabah,Kota Kinabalu,2022-01-01,8388,5957
+Tunku Abdul Rahman Park,Sabah,Kota Kinabalu,2024-01-01,8715,5896
+Kinabalu / Kundasang,Sabah,Ranau,2019-01-01,4756,3571
+Kinabalu / Kundasang,Sabah,Ranau,2022-01-01,5270,4058
+Kinabalu / Kundasang,Sabah,Ranau,2024-01-01,5330,3470
+Langkawi,Kedah,Langkawi,2019-01-01,6737,5905
+Langkawi,Kedah,Langkawi,2022-01-01,6087,5250
+Langkawi,Kedah,Langkawi,2024-01-01,6278,5083
+Pangkor,Perak,Manjung,2019-01-01,6137,4636
+Pangkor,Perak,Manjung,2022-01-01,6318,5135
+Pangkor,Perak,Manjung,2024-01-01,6612,5380
+Fraser's Hill,Pahang,Raub,2019-01-01,5005,3805
+Fraser's Hill,Pahang,Raub,2022-01-01,5445,4375
+Fraser's Hill,Pahang,Raub,2024-01-01,5940,4427
+Miri,Sarawak,Miri,2019-01-01,7235,5763
+Miri,Sarawak,Miri,2022-01-01,7932,6449
+Miri,Sarawak,Miri,2024-01-01,8166,6600
+Besut parks,Terengganu,Besut,2019-01-01,5819,4527
+Besut parks,Terengganu,Besut,2022-01-01,6285,4743
+Besut parks,Terengganu,Besut,2024-01-01,6747,5820
+Dungun parks,Terengganu,Dungun,2019-01-01,7564,6044
+Dungun parks,Terengganu,Dungun,2022-01-01,7902,6356
+Dungun parks,Terengganu,Dungun,2024-01-01,8055,7156
+Rompin parks,Pahang,Rompin,2019-01-01,4641,3579
+Rompin parks,Pahang,Rompin,2022-01-01,5103,4148
+Rompin parks,Pahang,Rompin,2024-01-01,5429,4760
+Mersing parks,Johor,Mersing,2019-01-01,4937,3896
+Mersing parks,Johor,Mersing,2022-01-01,5426,4445
+Mersing parks,Johor,Mersing,2024-01-01,6014,5335
+Kota Setar parks,Kedah,Kota Setar,2019-01-01,5773,4532
+Kota Setar parks,Kedah,Kota Setar,2022-01-01,5959,4751
+Kota Setar parks,Kedah,Kota Setar,2024-01-01,6034,5208

@@ -1,0 +1,62 @@
+#provRoot{display:block}
+.pvLede{margin:0 0 16px;color:var(--ink-2);font-size:14px;max-width:70ch}
+.pvGrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.pvCard{--c:var(--ink-2);--cb:var(--paper);all:unset;box-sizing:border-box;display:flex;flex-direction:column;gap:6px;padding:14px;cursor:pointer;border:2px dashed var(--c);border-radius:12px;background:repeating-linear-gradient(135deg,var(--cb) 0 7px,var(--surface) 7px 14px);transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s}
+.pvCard:hover{transform:translateY(-3px);box-shadow:var(--card-shadow)}
+.pvCard:focus-visible,.pvName2:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+.pvTop{display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap}
+.pvTag{display:inline-block;font:600 11px/1 "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.06em;border:1px dashed var(--ink-2);border-radius:99px;padding:4px 8px;background:var(--surface);color:var(--ink-2)}
+.pvSt,.pvNot,.pvScore span{font-size:12px;color:var(--ink-3)}
+.pvName{font-weight:600;font-size:16px;color:var(--ink)}
+.pvScore{display:flex;align-items:baseline;gap:10px}
+.pvScore b{font-size:30px;color:var(--c);font-weight:500}
+.pvRow{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.pvGo{font-size:13px;color:var(--teal);display:inline-flex;gap:6px;white-space:nowrap}
+.pvGo i{font-style:normal;transition:transform .3s cubic-bezier(.2,.8,.2,1)}
+.pvCard:hover .pvGo i{transform:translateX(4px)}
+
+/* contents of the side window */
+.pvDr .pvHero{--c:var(--ink-2);--cb:var(--paper);display:flex;align-items:center;gap:12px;margin:6px 0 10px;padding:4px 10px;min-height:36px;border:1.5px dashed var(--c);border-radius:10px;background:repeating-linear-gradient(135deg,var(--cb) 0 7px,var(--surface) 7px 14px)}
+.pvDr .pvHero .pvScore{gap:8px;align-items:baseline}
+.pvDr .pvHero .pvScore b{font-size:22px;line-height:1}
+.pvDr .pvHero .pvTag{font-size:10px;padding:3px 7px}
+.pvDr .pvHero .pvMeta{margin-left:auto;font-size:12px;color:var(--ink-3);text-align:right}
+.pvWarn{display:flex;gap:12px;align-items:flex-start;margin:0 0 12px;padding:12px 14px;border:1px solid var(--amber);border-left-width:5px;border-radius:10px;background:var(--amber-bg);color:var(--ink)}
+.pvWarn svg{flex:none;margin-top:1px;color:var(--amber)}
+.pvWarn b{display:block;font-size:14.5px;font-weight:600}
+.pvWarn p{margin:4px 0 0;font-size:13px;line-height:1.5;color:var(--ink-2)}
+.pvNote{margin:8px 0;line-height:1.5;color:var(--ink-2);font-size:14px}
+.pvScroll{overflow-x:auto}
+.pvTbl{width:100%;border-collapse:collapse;font-size:13px}
+.pvTbl th,.pvTbl td{text-align:left;padding:6px 8px 6px 0;border-bottom:1px solid var(--line);white-space:nowrap}
+.pvTbl th{color:var(--ink-3);font-weight:500;font-size:12px}
+.pvReal,.pvCaps{list-style:none;margin:0;padding:0}
+.pvReal li{display:grid;grid-template-columns:1fr auto auto;gap:10px;padding:5px 0;border-bottom:1px solid var(--line);font-size:13px;color:var(--ink-2)}
+.pvReal i{font-style:normal;color:var(--ink-3);min-width:4ch;text-align:right}
+.pvCaps li{margin:6px 0;font-size:13px;color:var(--ink-2)}
+.pvFil{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 12px}
+.pvFil .chip[aria-pressed=true]{background:var(--fill-btn);color:var(--on-fill);border-color:var(--fill-btn)}
+.pvList{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.pvList li{border:1px dashed var(--line-2);border-radius:10px;padding:10px 12px;min-width:0}
+.pvList li[hidden]{display:none}
+.pvRh{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-bottom:4px;color:var(--ink)}
+.pvRh span{font-size:12px;color:var(--ink-3)}
+@media (prefers-reduced-motion:no-preference){ .pvCard{animation:rise .5s cubic-bezier(.2,.8,.2,1) backwards;animation-delay:calc(var(--i,0)*70ms)} }
+@media(max-width:560px){.pvGrid{grid-template-columns:1fr}}
+
+/* the other parks: names only, filtered by state */
+.pvParks{margin-top:22px}
+.pvParksHead{display:flex;align-items:center;justify-content:space-between;gap:10px 16px;flex-wrap:wrap;margin-bottom:12px}
+.pvParksHead h3{margin:0;font-size:15px;font-weight:600;color:var(--ink)}
+.pvParks .pvFil{margin:0}
+.pvNames{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+.pvNames li[hidden]{display:none}
+.pvName2{all:unset;box-sizing:border-box;display:block;width:100%;padding:9px 12px;border:1px dashed var(--line-2);border-radius:10px;background:var(--surface);color:var(--ink);font-size:13.5px;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;transition:background-color .25s,border-color .25s,transform .25s cubic-bezier(.2,.8,.2,1)}
+.pvName2:hover{background:var(--track);border-color:var(--ink-3);transform:translateY(-1px)}
+.pvName2:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+.pvMetaLine{margin:2px 0 12px;font-size:13px;color:var(--ink-3)}
+.pvNone{margin:0 0 12px;padding:12px 14px;border:1px dashed var(--line-2);border-radius:10px;background:var(--surface)}
+.pvNone b{display:block;font-size:14px}.pvNone p{margin:4px 0 0;font-size:13px;color:var(--ink-2);line-height:1.5}
+@media (prefers-reduced-motion:no-preference){ .pvNames li{animation:rise .45s cubic-bezier(.2,.8,.2,1) backwards;animation-delay:calc(var(--i,0)*18ms)} }
+@media (max-width:560px){ .pvNames{grid-template-columns:repeat(2,minmax(0,1fr))} }
+.pvNames{max-height:260px;overflow-y:auto;padding:10px;border:1px solid var(--line);border-radius:12px;background:var(--surface);overscroll-behavior:contain}

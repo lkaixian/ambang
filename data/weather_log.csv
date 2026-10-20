@@ -1,0 +1,71 @@
+location_id,location,date,summary,min_temp,max_temp,rain
+Rc001,Langkawi,2026-10-07,Ribut petir,24,31,True
+Rc001,Langkawi,2026-10-08,Ribut petir,24,31,True
+Rc001,Langkawi,2026-10-09,Ribut petir,24,31,True
+Rc001,Langkawi,2026-10-10,Ribut petir,24,30,True
+Rc001,Langkawi,2026-10-11,Ribut petir,24,30,True
+Rc001,Langkawi,2026-10-12,Ribut petir,24,30,True
+Rc001,Langkawi,2026-10-13,Ribut petir,24,30,True
+Rc007,Pulau Perhentian,2026-10-07,Ribut petir,23,33,True
+Rc007,Pulau Perhentian,2026-10-08,Ribut petir,23,33,True
+Rc007,Pulau Perhentian,2026-10-09,Ribut petir,23,33,True
+Rc007,Pulau Perhentian,2026-10-10,Ribut petir,23,33,True
+Rc007,Pulau Perhentian,2026-10-11,Ribut petir,23,33,True
+Rc007,Pulau Perhentian,2026-10-12,Ribut petir,23,33,True
+Rc007,Pulau Perhentian,2026-10-13,Ribut petir,23,33,True
+Rc008,Cameron Highland,2026-10-07,Tiada Hujan,17,24,False
+Rc008,Cameron Highland,2026-10-08,Ribut petir,17,24,True
+Rc008,Cameron Highland,2026-10-09,Ribut petir,17,24,True
+Rc008,Cameron Highland,2026-10-10,Ribut petir,17,24,True
+Rc008,Cameron Highland,2026-10-11,Ribut petir,17,24,True
+Rc008,Cameron Highland,2026-10-12,Ribut petir,17,24,True
+Rc008,Cameron Highland,2026-10-13,Ribut petir,17,24,True
+Rc009,Pulau Redang,2026-10-07,Ribut petir,23,33,True
+Rc009,Pulau Redang,2026-10-08,Ribut petir,23,33,True
+Rc009,Pulau Redang,2026-10-09,Ribut petir,23,33,True
+Rc009,Pulau Redang,2026-10-10,Ribut petir,23,33,True
+Rc009,Pulau Redang,2026-10-11,Ribut petir,23,33,True
+Rc009,Pulau Redang,2026-10-12,Ribut petir,23,33,True
+Rc009,Pulau Redang,2026-10-13,Ribut petir,23,33,True
+Rc015,Pulau Kapas,2026-10-07,Ribut petir,23,33,True
+Rc015,Pulau Kapas,2026-10-08,Ribut petir,23,33,True
+Rc015,Pulau Kapas,2026-10-09,Ribut petir,23,33,True
+Rc015,Pulau Kapas,2026-10-10,Ribut petir,23,33,True
+Rc015,Pulau Kapas,2026-10-11,Ribut petir,23,33,True
+Rc015,Pulau Kapas,2026-10-12,Ribut petir,23,33,True
+Rc015,Pulau Kapas,2026-10-13,Ribut petir,23,33,True
+Rc024,Pulau Tioman,2026-10-07,Jerebu,24,35,False
+Rc024,Pulau Tioman,2026-10-08,Jerebu,24,35,False
+Rc024,Pulau Tioman,2026-10-09,Ribut petir,24,35,True
+Rc024,Pulau Tioman,2026-10-10,Ribut petir,24,35,True
+Rc024,Pulau Tioman,2026-10-11,Ribut petir,24,35,True
+Rc024,Pulau Tioman,2026-10-12,Ribut petir,24,35,True
+Rc024,Pulau Tioman,2026-10-13,Ribut petir,24,35,True
+Rc025,Pulau Sibu,2026-10-07,Jerebu,24,34,False
+Rc025,Pulau Sibu,2026-10-08,Jerebu,24,34,False
+Rc025,Pulau Sibu,2026-10-09,Ribut petir,24,34,True
+Rc025,Pulau Sibu,2026-10-10,Ribut petir,24,34,True
+Rc025,Pulau Sibu,2026-10-11,Ribut petir,24,34,True
+Rc025,Pulau Sibu,2026-10-12,Ribut petir,24,34,True
+Rc025,Pulau Sibu,2026-10-13,Ribut petir,24,34,True
+Rc502,Pulau Sipadan,2026-10-07,Ribut petir,24,32,True
+Rc502,Pulau Sipadan,2026-10-08,Ribut petir,24,32,True
+Rc502,Pulau Sipadan,2026-10-09,Hujan,24,32,True
+Rc502,Pulau Sipadan,2026-10-10,Ribut petir,24,32,True
+Rc502,Pulau Sipadan,2026-10-11,Hujan,24,32,True
+Rc502,Pulau Sipadan,2026-10-12,Ribut petir,24,32,True
+Rc502,Pulau Sipadan,2026-10-13,Tiada Hujan,24,32,False
+Rc503,Kundasang,2026-10-07,Hujan,12,30,True
+Rc503,Kundasang,2026-10-08,Ribut petir,12,30,True
+Rc503,Kundasang,2026-10-09,Hujan,12,30,True
+Rc503,Kundasang,2026-10-10,Hujan,12,30,True
+Rc503,Kundasang,2026-10-11,Hujan,12,30,True
+Rc503,Kundasang,2026-10-12,Ribut petir,12,30,True
+Rc503,Kundasang,2026-10-13,Hujan,12,30,True
+Rc511,Taman Tunku Abdul Rahman,2026-10-07,Ribut petir,24,32,True
+Rc511,Taman Tunku Abdul Rahman,2026-10-08,Ribut petir,24,32,True
+Rc511,Taman Tunku Abdul Rahman,2026-10-09,Hujan,24,32,True
+Rc511,Taman Tunku Abdul Rahman,2026-10-10,Hujan,24,32,True
+Rc511,Taman Tunku Abdul Rahman,2026-10-11,Hujan,24,32,True
+Rc511,Taman Tunku Abdul Rahman,2026-10-12,Tiada Hujan,24,32,False
+Rc511,Taman Tunku Abdul Rahman,2026-10-13,Tiada Hujan,24,32,False

@@ -1,0 +1,786 @@
+[
+ {
+  "scheme": "ewm",
+  "about": "",
+  "q": "Which regions are closest to their limit?",
+  "status": 200,
+  "cache": "HIT",
+  "text": "Based on the current AMBANG scores, the regions closest to their limit are **Terengganu** and **Pahang**.\n\n*   **Terengganu** has an average score of **74** (Alert band), with four destinations. The highest-scoring islands, Perhentian (79) and Redang (78), are in the Critical band and have pressure values above 0.70 for multiple indicators, with Marine park visitors being the dominant weighted input.\n*   **Pahang** has an average score of **44** (Normal band), but its only scored destination, Cameron Highlands, is in the Alert band at **68**. It shows a significant pressure-to-capacity gap, with pressure values for accommodation density and occupancy exceeding capacity values for Resident base.\n\nJohor (average 58) and Kedah (average 17) are further from their respective limits."
+ },
+ {
+  "scheme": "ewm",
+  "about": "",
+  "q": "Who needs attention first?",
+  "status": 200,
+  "cache": "HIT",
+  "text": "Based on the current AMBANG scores, the destinations that need the most urgent attention are the four Terengganu islands in the **Critical** band: Perhentian (79), Redang (78), Lang Tengah (71), and Kapas (68). These scores indicate that pressure far exceeds capacity, with the binding constraint being **waste handling** for all of them. The region average for Terengganu is 74, which is the highest among the four states tracked.\n\nThe next priority is **Cameron Highlands** in Pahang, which is in the **Alert** band at 68. Its binding constraint is the **resident base**, and it shows the largest increase in score since 2018 (+6). Johor destinations are in the **Warning** band (59–53), while Pahang’s other scored islands are in the **Normal** band (47–31)."
+ },
+ {
+  "scheme": "ewm",
+  "about": "",
+  "q": "What here is real data and what is a placeholder?",
+  "status": 200,
+  "cache": "HIT",
+  "text": "Based on the data provided, here is the breakdown of what is real versus placeholder:\n\n**Real Data (fetched from Malaysian open data sources)**\n*   **Marine park visitors:** Archive from archive.data.gov.my (Marine Park Malaysia), state-level, 2015–17 average.\n*   **Occupancy:** Real.\n*   **Cost-of-living pressure:** DOSM HIES, district-level, annual.\n*   **Waste handling:** Archive from archive.data.gov.my (SWCorp facility counts), state-level, 2020.\n*   **Water headroom:** data.gov.my water production minus water consumption, state-level, 2022.\n*   **Resident base:** DOSM population_district, state-level, 2025.\n*   **Live coral cover:** Real for 13 of 14 places from reefcheck.org.my interactive map, per-site, 2025/26.\n*   **Interest curves:** Combined English and Malay Wikipedia pageviews.\n*   **Region averages:** Mean of scored destinations.\n*   **Score history direction:** Rescaled from state-level series.\n*   **Specific demographic and infrastructure figures** for the \"Not Scored\" destinations (e.g., population, income, water/sanitation percentages, water headroom, waste facilities) are presented as real data.\n\n**Partly Real (real for some places, placeholder for others)**\n*   **Accommodation density:** Real for 8 of 15 scored places; placeholder for the rest.\n*   **Seasonality:** Real for 14 of 15 scored places; placeholder for the rest.\n*   **Live coral cover:** Real for 13 of 14 places; placeholder for the rest.\n\n**Illustrative Placeholders**\n*   **Hotel guest arrivals:** Placeholder (no open district-level dataset found; Tourism Malaysia publishes state totals only).\n*   **District visitor/accommodation activity:** Placeholder.\n*   **River water quality:** Placeholder (not fetched yet).\n*   **Per-island apportioning of state-level figures:** Placeholder.\n*   **The score history before the latest year:** Only its direction means anything.\n*   **Marine park visitor counts:** Stop at 2017.\n*   **Per-island apportioning of state-level figures.**\n\n**Provisional Scores (Not Comparable)**\n*   Scores for Sipadan / Mabul, Tunku Abdul Rahman Park, and Kinabalu / Kundasang are marked as \"PROVISIONAL utilisation score\" and explicitly stated as **NOT comparable** with the scored islands. They are ranges based on average daily visitors against daily limits, but the limits and data sources are not confirmed on official pages."
+ },
+ {
+  "scheme": "ewm",
+  "about": "",
+  "q": "What does a region's colour mean?",
+  "status": 200,
+  "cache": "HIT",
+  "text": "In the AMBANG dashboard, a region's colour indicates its current carrying-capacity status based on the score bands:\n\n- **Normal** (below 45): Promote and absorb redirected demand.\n- **Warning** (45 to 60): Monitor monthly and prepare staged permit release.\n- **Alert** (60 to 75): Apply quota or pricing and prioritise infrastructure.\n- **Critical** (75 and up): Consider closure, moratorium, or ecological assessment.\n\nThe colour is derived from the AMBANG score, which is calculated as 100 × P/(P+C), where P is the weighted geometric mean of pressure indicators and C is the weighted geometric mean of capacity indicators."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Perhentian",
+  "q": "Why is Perhentian Critical?",
+  "status": 200,
+  "cache": "HIT",
+  "text": "Perhentian scores 79 on the AMBANG scale, which puts it in the **Critical** band (75 and above). This high score means pressure on the island far exceeds its capacity.\n\nThe main driver is **marine park visitors**, which accounts for about 50% of the weighted pressure inputs. This indicator is **real** (from the Marine Park Malaysia archive) and shows a pressure value of 0.95, indicating very high visitor numbers.\n\nA **binding capacity constraint** is Waste handling, with a capacity value of only 0.05. This means the island's waste management infrastructure cannot cope with the current load. Other pressure indicators like accommodation density and hotel guest arrivals are also high, while capacity indicators like resident base and live coral cover are low."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Perhentian",
+  "q": "What would improve Perhentian the most?",
+  "status": 200,
+  "cache": "HIT",
+  "text": "Based on the AMBANG data for Perhentian, the most effective improvement would be to address the binding capacity constraint on **Waste handling**, which has a capacity value of only 0.05 (very low). This is also the largest weighted input pressure (50% of the weighted inputs), driven by high Marine park visitors (0.95) and Accommodation density (0.97). Improving waste management infrastructure would directly reduce pressure and raise the carrying capacity score.\n\nOther significant constraints include **Resident base** (0.31) and **Live coral cover** (0.32), but waste handling is the most critical bottleneck currently limiting the score of 79 (Critical). Note that Marine park visitor counts are from an archive (2015–17 average) and are illustrative for trend direction."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Perhentian",
+  "q": "How real is the data for Perhentian?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "The data for Perhentian is **partly real** and partly illustrative.\n\n**Real data** includes:\n- Marine park visitor counts (from the Department of Marine Park Malaysia archive, 2015–17 average)\n- Occupancy figures\n- Cost-of-living pressure (from DOSM HIES)\n- Waste handling (from SWCorp facility counts)\n- Water headroom (from data.gov.my production vs consumption)\n- Resident base (from DOSM population data)\n\n**Illustrative placeholders** include:\n- Accommodation density (real for only 8 of 15 places, placeholder for Perhentian)\n- Seasonality (real for only 14 of 15 places, placeholder for Perhentian)\n- Live coral cover (real for only 13 of 14 places, placeholder for Perhentian)\n- Hotel guest arrivals\n- District visitor/accommodation activity\n- River water quality (not applicable to marine parks)\n- Per-island apportioning of state-level figures\n\nThe score history before the latest year is rescaled from state-level series, so only its direction is meaningful. Marine park visitor counts stop at 2017."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Redang",
+  "q": "Why is Redang Critical?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Redang is rated **Critical (score 78)** because its pressure on the environment exceeds its capacity. The main driver is **marine park visitors**, which accounts for about **56% of the weighted pressure inputs** and shows a high pressure value of **0.92**. This pressure is not matched by sufficient capacity; the **waste handling capacity is extremely low at 0.05**, making it a binding constraint. Other pressure indicators like accommodation density and hotel guest arrivals are also high, while capacity indicators such as water headroom and resident base are modest."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Redang",
+  "q": "What would improve Redang the most?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the AMBANG data for Redang, the most effective improvement would be to address the binding capacity constraint on **Waste handling**, which has a capacity value of only 0.05 (very low). This is the primary bottleneck limiting Redang's score of 78 (Critical). \n\nTo improve this, you would need to increase the capacity of waste handling infrastructure or reduce the pressure from marine park visitors, which is the largest weighted input (56% of the weighted inputs). \n\nOther indicators show moderate capacity headroom (Water headroom at 0.46, Resident base at 0.31, Live coral cover at 0.26), but waste handling is the critical constraint. \n\nNote: Waste handling data is real (SWCorp facility counts), while Marine park visitor counts are from an archive (2015–17 average)."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Redang",
+  "q": "How real is the data for Redang?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "The data for Redang is **partly real** with illustrative placeholders.\n\n**Real indicators** include:\n- Marine park visitors (from the Department of Marine Park Malaysia archive, 2015–17 average)\n- Waste handling (from SWCorp facility counts, state-level, 2020)\n- Water headroom (from data.gov.my water production minus consumption, state-level, 2022)\n- Resident base (from DOSM population district data, state-level, 2025)\n- Live coral cover (from Reef Check interactive map, per-site, 2025/26)\n\n**Illustrative placeholders** are:\n- Accommodation density (real for 8 of 15 places, placeholder for Redang)\n- Seasonality (real for 14 of 15 places, placeholder for Redang)\n- Hotel guest arrivals (illustrative)\n- Cost-of-living pressure (illustrative)\n\nThe score history before the latest year is rescaled from state-level series, so only its direction means anything. The current reading shows Redang at **78 Critical**, with Marine park visitors as the largest weighted input (56% of the weighted inputs) and Waste handling as the binding capacity constraint."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Lang Tengah",
+  "q": "Why is Lang Tengah Alert?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Lang Tengah is in the **Alert band (score 71)** because its pressure on the environment exceeds its capacity, though not as severely as the Critical islands nearby.\n\nThe main driver is **marine park visitors**, which accounts for about **57% of the weighted pressure inputs**. This indicator is **real** (from the Marine Park Malaysia archive) and shows a pressure value of **0.67**, indicating significant visitor use.\n\nThe binding capacity constraint is **waste handling**, with a capacity value of only **0.05**. This is also **real** (from SWCorp facility counts) and is the same for every island in Terengganu.\n\nOther capacity indicators like water headroom and resident base are relatively higher, but the waste constraint and the overall pressure from visitors push the score into the Alert range."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Lang Tengah",
+  "q": "What would improve Lang Tengah the most?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the AMBANG data for Lang Tengah, the most impactful improvement would be to address the binding capacity constraint on **Waste handling**, which is rated at only 0.05 (very low) and is the limiting factor for the entire Terengganu region.\n\nHere is the breakdown of why this is the priority and what other factors are involved:\n\n*   **Waste handling is the binding constraint:** The data shows that Waste handling is the binding capacity constraint for Lang Tengah (and all other Terengganu islands). This means that even if you reduce pressure, the destination cannot function properly without better waste infrastructure.\n*   **Pressure is high relative to capacity:** Lang Tengah has a Pressure score of 0.50 and a Capacity score of 0.21, resulting in a Critical Alert score of 71. The largest weighted input is Marine park visitors (57% of the weighted inputs), indicating that visitor numbers are a major driver of pressure.\n*   **Other indicators are also constrained:** While Waste handling is the binding constraint, the Resident base is also very low at 0.31, which limits the local population's ability to support the destination sustainably.\n\n**Recommendation:** To improve Lang Tengah most effectively, the focus should be on upgrading waste management facilities and systems to raise the Waste handling capacity score. This would directly address the critical bottleneck preventing the destination from handling its current and projected visitor load."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Lang Tengah",
+  "q": "How real is the data for Lang Tengah?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "The data for Lang Tengah is **partly real**.\n\n*   **Real indicators:** Marine park visitors, seasonality, hotel guest arrivals, accommodation density, occupancy, cost-of-living pressure, waste handling, water headroom, resident base, and live coral cover are all listed as real or fetched from Malaysian open data sources.\n*   **Illustrative placeholders:** The score history before the latest year is rescaled from a state-level series, so only its direction means anything. Marine park visitor counts stop at 2017, and the per-island apportioning of state-level figures is illustrative."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Kapas",
+  "q": "Why is Kapas Alert?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Kapas is in the **Alert band (score 68)** because its **pressure (P) exceeds its capacity (C)**, with P at 0.54 and C at 0.25. The score is driven by high **marine park visitors** (50% of weighted inputs) and **accommodation density**, both of which are real indicators. The binding capacity constraint is **waste handling**, which is at a very low value (0.05) and is a real indicator. The score has increased by 4 points since 2018."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Kapas",
+  "q": "What would improve Kapas the most?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the AMBANG data for Kapas, the most impactful improvement would be to address the binding capacity constraint on **Waste handling**, which is rated at only 0.05 (very low). This is the primary bottleneck limiting Kapas's carrying capacity score of 68 (Alert).\n\nTo improve Kapas, you should focus on increasing the Waste handling indicator. The data shows this is the binding constraint across all Terengganu marine parks in this analysis.\n\nIf you want a more detailed breakdown of which pressure indicators are driving the high pressure score of 0.54, I can provide that."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Kapas",
+  "q": "How real is the data for Kapas?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "The data for Kapas is **partly real**. The score, pressure values, and capacity values are derived from the AMBANG calculation using the weighted indicators. The pressure values (Marine park visitors, Hotel guest arrivals, Accommodation density, Occupancy, Seasonality, Cost-of-living pressure) and capacity values (Waste handling, Water headroom, Resident base, Live coral cover) are based on the weighted geometric means described in the method, but some indicators are illustrative placeholders for Kapas. The change since 2018 (+4) is rescaled from a state-level series, so only its direction is meaningful. The largest weighted input is Marine park visitors (50% of the weighted inputs), and the binding capacity constraint is Waste handling (0.05)."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Tioman",
+  "q": "Why is Tioman Warning?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Tioman is in the Warning band because its AMBANG score is 47, which falls between 45 and 60. This indicates that pressure on the destination is approaching but not yet exceeding its capacity. The score is driven by high accommodation density and occupancy, which are binding capacity constraints. Note that the accommodation density and occupancy values are illustrative placeholders."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Tioman",
+  "q": "What would improve Tioman the most?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the AMBANG data for Tioman, the most impactful improvement would be to address the binding capacity constraint on **Resident base (weight 0.40)**, which is currently at its minimum value of 0.40. This is the lowest capacity indicator, meaning the island's ability to support tourism is a major bottleneck.\n\nTo improve this, you would need to increase the resident population or adjust the scoring method, as the current data uses district-level figures that may overstate the island's base. Additionally, the **Accommodation density** pressure is at its maximum of 1.00, indicating that current lodging levels are already at the limit of what the island can sustain.\n\nOther factors to consider:\n- **Hotel guest arrivals** pressure is high at 0.60, suggesting demand is outpacing supply.\n- The **Occupancy** is high at 0.78, indicating the island is operating near full capacity.\n- The **Seasonality** pressure is moderate at 0.38, but the **Cost-of-living pressure** is also notable at 0.58.\n\nImproving the resident base or managing accommodation density would likely have the most significant effect on raising Tioman's score out of the Warning band."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Tioman",
+  "q": "How real is the data for Tioman?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "The data for Tioman is **partly real** and partly illustrative.\n\nReal data includes:\n- Marine park visitors (from the Department of Marine Park Malaysia archive, 2015–17 average)\n- Occupancy (illustrative placeholder)\n- Cost-of-living pressure (from DOSM HIES)\n- Waste handling, water headroom, and resident base (from Malaysian open data)\n\nIllustrative placeholders include:\n- Hotel guest arrivals\n- Accommodation density (real for 8 of 15 places, placeholder for the rest)\n- Seasonality (real for 14 of 15 places, placeholder for the rest)\n- Live coral cover (real for 13 of 14 places, placeholder for the rest)\n\nThe score history before the latest year is rescaled from state-level series, so only its direction means anything."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Tulai",
+  "q": "Why is Tulai Normal?",
+  "status": 200,
+  "cache": "HIT",
+  "text": "Tulai scores **31 Normal** because its pressure (P) is low at 0.27 and its capacity (C) is relatively high at 0.62, giving a score well below the 45 threshold. The largest weighted input is Marine park visitors at 40%, but its pressure value is only 0.25. The binding capacity constraint is Resident base at 0.40, which is not fully binding. All indicators are real data from Malaysian open sources."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Tulai",
+  "q": "What would improve Tulai the most?",
+  "status": 200,
+  "cache": "HIT",
+  "text": "Based on the AMBANG data for Tulai, the most effective improvement would be to address the binding capacity constraint of **Resident base (0.40)**. This is the limiting factor preventing Tulai from moving out of the Normal band, even though its pressure indicators are low.\n\nTo improve Tulai, you should focus on:\n- **Increasing the Resident base** (e.g., supporting local employment or housing) to raise the capacity score.\n- **Reducing pressure on Accommodation density**, which is a weighted input (36% of weighted inputs) and currently at 0.20, though this is not a binding constraint.\n- **Improving Live coral cover** (not binding but illustrative), as it is a capacity indicator that could support tourism quality.\n\nThe current score is 31 (Normal), with a change since 2018 of +2. The largest weighted input is Marine park visitors (40%), but pressure values are low (e.g., Marine park visitors at 0.25). Waste handling, water headroom, and resident base are the main capacity indicators, with resident base being the bottleneck."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Tulai",
+  "q": "How real is the data for Tulai?",
+  "status": 200,
+  "cache": "HIT",
+  "text": "The data for Tulai is **partly real** and **illustrative placeholders** for some indicators.\n\nReal data includes:\n- Marine park visitors (2015–17 average from Marine Park Malaysia archive)\n- Seasonality (real for 14 of 15 places, placeholder for Tulai)\n- Occupancy (real)\n- Cost-of-living pressure (real from DOSM HIES)\n\nIllustrative placeholders include:\n- Hotel guest arrivals\n- Accommodation density (real for 8 of 15 places, placeholder for Tulai)\n- Live coral cover (real for 13 of 14 places, placeholder for Tulai)\n- District visitor/accommodation activity\n- River water quality\n\nThe score history before the latest year is rescaled from state-level series, so only its direction means anything. The current Tulai score of 31 Normal is based on these mixed inputs."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Sembilang",
+  "q": "Why is Sembilang Normal?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Sembilang has a Normal score of 30 because its pressure (P) is low at 0.26 and its capacity (C) is relatively high at 0.60, resulting in an AMBANG score of 100 × 0.26 / (0.26 + 0.60) = 30. The largest weighted input is Marine park visitors at 37%, but the pressure values for all indicators are low. The binding capacity constraint is Live coral cover at 0.38, which is the limiting factor for capacity. All indicators used are illustrative placeholders, as noted in the data status."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Sembilang",
+  "q": "What would improve Sembilang the most?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the AMBANG data for Sembilang, the most impactful improvement would be to address the binding capacity constraint on **Live coral cover**, which is currently at 0.38 (illustrative placeholder data). Since this is a key capacity indicator, increasing coral health would directly raise the capacity score and move Sembilang out of the Normal band.\n\nOther critical constraints include **Resident base** (0.40) and **Waste handling** (0.95), but coral cover is the most limiting factor for this destination."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Sembilang",
+  "q": "How real is the data for Sembilang?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "The data for Sembilang is **partly real** and partly illustrative.\n\n**Real data includes:**\n- Designation as a Marine Park (IUCN category II, 1994)\n- Resident population (104,000, 2025)\n- Median household income (RM 4,760/month, 2024)\n- Households with piped water and sanitation (100%/100%, 2024)\n- Reported park area (4,520 ha, 1994)\n\n**Illustrative placeholders include:**\n- Visitor counts (no series found on open portals; the scored islands use the Department of Marine Park Malaysia archive, which only covers Terengganu, Pahang, Kedah and Johor marine parks)\n- Hotel guest arrivals, accommodation density, and occupancy (no open district-level dataset found; Tourism Malaysia publishes state totals only)\n- Waste handling (not fetched)\n- Live coral cover (not provided)\n- Management effectiveness, zoning, and management plan (Atlas records them as Unknown or Unrated)\n\nThe AMBANG score for Sembilang is **30 Normal**, with a change since 2018 of +2. The largest weighted input is Marine park visitors (37% of the weighted inputs), and the binding capacity constraint is Live coral cover (0.38)."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Payar",
+  "q": "Why is Payar Normal?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Payar is scored as Normal (22) because its Pressure (P) is low at 0.16, while its Capacity (C) is relatively high at 0.57. The Pressure is driven mainly by Accommodation density (36% of weighted inputs) and Hotel guest arrivals, both of which are moderate. The Capacity is supported by high Waste handling (0.50), Water headroom (0.95), Resident base (0.52), and Live coral cover (0.42). The binding capacity constraint is Live coral cover at 0.42, but this still leaves enough room to keep the overall AMBANG score below the 45 warning threshold."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Payar",
+  "q": "What would improve Payar the most?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the AMBANG data for Payar, the most effective improvement would be to address the binding capacity constraint on **Live coral cover**, which is rated as **illustrative** (placeholder data). This is the limiting factor preventing Payar from moving out of the Normal band, even though its pressure indicators are relatively low.\n\nTo improve the score, you should focus on:\n- **Live coral cover**: This is the binding constraint (0.42). Improving coral health would directly raise capacity.\n- **Accommodation density**: This is the largest weighted pressure input (36% of weighted inputs) and is real. Reducing density or improving infrastructure to support it would lower pressure.\n\nOther indicators are either well within capacity (Waste handling, Water headroom, Resident base) or have lower weight."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Payar",
+  "q": "How real is the data for Payar?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "The data for Payar is **partly real**. The AMBANG method uses real data from Malaysian open portals for waste handling, water headroom, and resident base, which are the same for every island in Kedah. However, several key indicators are **illustrative placeholders**: marine park visitors (archive stops at 2017), accommodation density (placeholder for this location), seasonality (placeholder), and live coral cover (placeholder). The score itself is derived from these mixed inputs, so its reliability is limited by the illustrative components."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Lembu",
+  "q": "Why is Lembu Normal?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Lembu scores 16, which falls in the Normal band (below 45). This means pressure is lower than capacity. The main pressure indicators are Marine park visitors (0.03), Hotel guest arrivals (0.45), Accommodation density (0.32), Occupancy (0.57), Seasonality (0.10), and Cost-of-living pressure (0.40). The capacity indicators are Waste handling (0.50), Water headroom (0.95), Resident base (0.52), and Live coral cover (0.52). The binding capacity constraint is Waste handling at 0.50. Several indicators are illustrative placeholders, so the score direction is what matters."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Lembu",
+  "q": "What would improve Lembu the most?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the AMBANG data for Lembu, the most impactful improvement would be to address the binding capacity constraint of **Waste handling**, which has a capacity value of only 0.50. This is the lowest capacity value among all indicators for Lembu and is a major factor in keeping its score at 16 (Normal). Increasing waste management infrastructure or capacity would directly raise the denominator in the AMBANG formula.\n\nOther indicators show higher capacity values, such as Water headroom (0.95) and Resident base (0.52), so they are not currently binding constraints. The pressure values for Marine park visitors (0.03) and Accommodation density (0.32) are also low, suggesting that visitor pressure is not the primary issue. Therefore, improving waste handling is the most logical intervention to raise Lembu's carrying capacity score."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Lembu",
+  "q": "How real is the data for Lembu?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "The data for Lembu is **partly real** and **partly illustrative**.\n\n*   **Real data** includes: Resident population (DOSM, 2025), median household income (DOSM, 2024), households with piped water and sanitation (DOSM, 2024), water headroom (data.gov.my, 2022), and managed waste facilities (SWCorp, 2020).\n*   **Illustrative placeholders** apply to: Marine park visitors (no series found on open portals), hotel guest arrivals, accommodation density, occupancy, seasonality, and cost-of-living pressure. The score itself is based on these illustrative inputs."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Kaca",
+  "q": "Why is Kaca Normal?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Kaca has a Normal score of 14 because its pressure (P) is low at 0.10 and capacity (C) is relatively high at 0.61, resulting in an AMBANG score of 14. The largest weighted input is accommodation density at 28%, and the binding capacity constraint is waste handling at 0.50. All indicators are based on real data from Malaysian open sources."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Kaca",
+  "q": "What would improve Kaca the most?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the AMBANG data for Kaca, the most effective improvement would be to address the binding capacity constraint of **Waste handling**, which has a capacity value of only 0.50. This is a real indicator from SWCorp facility counts. Since the current score is 14 (Normal), the priority is to increase waste handling capacity to relieve pressure, though the data also shows accommodation density is a significant pressure input (0.25). Other indicators like water headroom and resident base are currently strong (0.95 and 0.52), so they are not the limiting factors."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Kaca",
+  "q": "How real is the data for Kaca?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "The data for Kaca is **partly real** and **illustrative** in several areas.\n\n*   **Real data:** Resident base (DOSM population for the district), water headroom (data.gov.my production minus consumption), and live coral cover (Reef Check interactive map) are real.\n*   **Illustrative placeholders:** Accommodation density, seasonality, hotel guest arrivals, and occupancy are placeholders for this destination. The marine park visitor counts are illustrative apportionments of state-level figures, and the score history before the latest year is rescaled from a state-level series.\n*   **Status:** Kaca is currently scored as **Normal (14)** with a pressure value of 0.10 and capacity value of 0.61. The binding capacity constraint is Waste handling (0.50)."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Sibu",
+  "q": "Why is Sibu Alert?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Sibu is currently in the **Alert band (score 62)**, which means pressure exceeds capacity but is not yet critical. The score is driven by **marine park visitors** (53% of weighted inputs), which is the largest pressure factor. The **binding capacity constraint** is **water headroom**, which is at its lowest level (0.05). Pressure indicators like **occupancy (0.60)** and **accommodation density (0.42)** are also notable, while capacity values for waste handling and resident base are relatively higher. This combination pushes the score into the Alert range, requiring monthly monitoring and preparation for staged permit releases."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Sibu",
+  "q": "What would improve Sibu the most?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the AMBANG data for Sibu, the most impactful improvement would be addressing the **Water headroom** constraint, which is currently the binding capacity limit with a value of 0.05.\n\nThe current score is 62 (Alert), and the pressure values show that while Marine park visitors are the largest weighted input, the capacity is being exceeded by water supply. Improving water production or reducing consumption would directly raise the capacity side of the equation.\n\nOther areas needing attention include **Waste handling** (capacity 0.20), which is also a binding constraint, and **Hotel guest arrivals** (pressure 0.38), which contributes to the overall pressure. These are illustrative placeholders as no open district-level dataset was found for Sibu."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Sibu",
+  "q": "How real is the data for Sibu?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "The data for Sibu is **partly real** and partly illustrative.\n\nThe **real** components include:\n- **Pressure indicators**: Marine park visitors, hotel guest arrivals, accommodation density, occupancy, seasonality, and cost-of-living pressure (all from Malaysian open data sources).\n- **Capacity indicators**: Waste handling, water headroom, resident base, and live coral cover (from DOSM, SWCorp, and data.gov.my).\n\nThe **illustrative** components are:\n- The **weighted inputs** (e.g., Marine park visitors at 53% of the weighted inputs) and the **binding capacity constraint** (Water headroom at 0.05), which are derived from the entropy-weighted scheme and not directly sourced from open portals.\n- The **score calculation** (AMBANG score of 62) uses the weighted geometric mean method, where only the direction of historical scores matters.\n\nThe visitor count series for Sibu is not available on the open portals checked, as the scored islands rely on the Department of Marine Park Malaysia archive, which only covers Terengganu, Pahang, Kedah, and Johor marine parks."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Tinggi",
+  "q": "Why is Tinggi Warning?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Tinggi is in the **Warning band (score 56)** because its pressure (P) is 0.34 and capacity (C) is 0.27, giving an AMBANG score of 56. The largest weighted input is **Marine park visitors (58% of the weighted inputs)**, which is a real indicator. The binding capacity constraint is **Water headroom (0.05)**, which is a real indicator. The score has increased by **1 point since 2018**."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Tinggi",
+  "q": "What would improve Tinggi the most?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the AMBANG data for Tinggi, the most impactful improvement would be to address the binding capacity constraint on **Water headroom**, which is at 0.05 (critical). This is the primary bottleneck limiting the island's carrying capacity.\n\nTo improve this, you would need to increase water production or reduce consumption. The data notes that water headroom is a state-level figure, so improvements would likely require infrastructure investment or stricter water conservation measures on the island.\n\nOther constraints are less binding. The **Waste handling** capacity is at 0.20, which is moderate, and **Live coral cover** is at 0.53, indicating some ecological health. The pressure indicators show that **Marine park visitors** are the largest weighted input (58%) and are at 0.48, suggesting visitor management could also help, but water availability is the immediate limiting factor."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Tinggi",
+  "q": "How real is the data for Tinggi?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "The data for Tinggi is **partly real** and **illustrative** in key areas.\n\n*   **Real data:** The region-level resident base, cost-of-living pressure, and seasonality are real for Johor (state-level). The live coral cover is real for this island.\n*   **Illustrative placeholders:** The marine park visitor counts, hotel guest arrivals, accommodation density, and occupancy are illustrative placeholders. The score itself is derived from weighted inputs where the largest contributor is marine park visitors (58% of the weighted inputs), but the visitor series is not a real open dataset for this specific island.\n\nThe binding capacity constraint is water headroom, which is real for the state."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Besar",
+  "q": "Why is Besar Warning?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Besar is in the **Warning band (59)** because its pressure on the environment is moderate but its capacity is constrained, pushing the AMBANG score above the 45 threshold.\n\nThe main driver is **Marine park visitors**, which accounts for about 50% of the weighted pressure inputs. This indicator is **real** (from the Marine Park Malaysia archive) and shows a pressure value of 0.42. The other pressure indicators—hotel guest arrivals, accommodation density, occupancy, seasonality, and cost-of-living pressure—are also **real** but contribute less to the weighted total.\n\nThe critical constraint is **Water headroom**, which is binding at 0.05. This capacity indicator is **real** (calculated from water production minus consumption) and is the same for every island in Johor. Because the pressure is not yet high enough to trigger an Alert or Critical status, the destination remains in the Warning band, where the recommendation is to **monitor monthly and prepare staged permit release**."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Besar",
+  "q": "What would improve Besar the most?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the AMBANG data for Besar, the most impactful improvement would be to address the binding capacity constraint of **Water headroom**, which is at 0.05 (critical). Since this is a state-level indicator shared across Johor islands, improving water production or reducing consumption in the district would raise the capacity score the most.\n\nOther key constraints include **Waste handling** (0.20) and **Live coral cover** (0.43), but water headroom is the limiting factor for the current score of 59 (Warning). The pressure indicators are driven largely by Marine park visitors (50% weight), so reducing visitor pressure would also help, but capacity constraints are the primary bottleneck."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Besar",
+  "q": "How real is the data for Besar?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "The data for Besar is **partly real**.\n\nThe **pressure indicators** (Marine park visitors, Hotel guest arrivals, Accommodation density, Occupancy, Seasonality, Cost-of-living pressure) are **illustrative placeholders** for this destination. Only the **capacity indicators** (Waste handling, Water headroom, Resident base, Live coral cover) are real, sourced from Malaysian open data.\n\nThe score itself is based on these illustrative inputs, so its absolute value should be interpreted with caution. The current reading is **59 (Warning)** with a change since 2018 of **+0**."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Rawa",
+  "q": "Why is Rawa Warning?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Rawa is in the **Warning band (score 53)** because its **Pressure (P) is higher than its Capacity (C)**, but not critically so.\n\nThe main driver is **Marine park visitors**, which accounts for about **51% of the weighted pressure inputs**. This indicator is real and shows significant pressure on the island. The **binding capacity constraint** is **Water headroom**, which is at a low value of **0.05**, indicating limited water resources.\n\nOther pressure indicators like **Hotel guest arrivals** and **Accommodation density** also contribute, but the overall score remains below the **Alert threshold of 60**. This places Rawa in a state where it needs monitoring and preparation for staged permit releases, rather than immediate quota or pricing measures."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Rawa",
+  "q": "What would improve Rawa the most?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the AMBANG data for Rawa, the most effective improvement would be to address the binding capacity constraint on **Water headroom**, which is at 0.05 (the lowest capacity value among all indicators). This is a real indicator from data.gov.my (water production minus consumption for the state). Since the current score is 53 (Warning), improving water availability would likely raise the capacity side of the equation and move the destination toward the Normal band.\n\nTo support this, you should also monitor the **Marine park visitors** pressure indicator (51% of the weighted inputs), which is derived from the Marine Park Malaysia archive (real data, 2015–17 average). If visitor numbers rise, this pressure will increase and could push the score into the Alert range. The other indicators are illustrative placeholders for this destination."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Rawa",
+  "q": "How real is the data for Rawa?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "The data for Rawa is **partly real** and **illustrative** for several indicators.\n\n*   **Real data:** Resident population, median household income, piped water and sanitation access, and cost-of-living pressure come from DOSM district-level figures.\n*   **Illustrative placeholders:** Marine park visitors, hotel guest arrivals, accommodation density, occupancy, seasonality, waste handling, water headroom, resident base, and live coral cover are either placeholders or illustrative estimates, as noted in the data status section.\n*   **Score context:** The score of 53 (Warning) is based on these illustrative inputs, so only its direction matters, not the precise number."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Cameron Highlands",
+  "q": "Why is Cameron Highlands Alert?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Cameron Highlands is in the Alert band (score 68) because its pressure (P = 0.73) exceeds its capacity (C = 0.35), pushing the AMBANG score above the 60 threshold. The largest weighted input is District visitor/accommodation activity (43% of the weighted inputs), and the binding capacity constraint is Resident base (0.05). All pressure and capacity values are real, except the district visitor/accommodation activity indicator which is illustrative."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Cameron Highlands",
+  "q": "What would improve Cameron Highlands the most?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the AMBANG data for Cameron Highlands, the most effective improvement would be to address the binding capacity constraint on **Resident base**, which is currently at 0.05 (critical). The pressure on this indicator is high, driven by **District visitor/accommodation activity** (0.70) and **Accommodation density** (0.83). Increasing the resident population or improving the distribution of residents relative to tourism infrastructure would directly raise the capacity score.\n\nOther critical constraints include **Seasonality** (pressure 0.64) and **Cost-of-living pressure** (0.66), which suggest that managing visitor flows and local economic pressures could also yield significant improvements. The **River water quality** capacity (0.35) is low, so monitoring and improving water management is also important. Note that **District visitor/accommodation activity** is an illustrative placeholder, while other indicators are real data."
+ },
+ {
+  "scheme": "ewm",
+  "about": "Cameron Highlands",
+  "q": "How real is the data for Cameron Highlands?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "The data for Cameron Highlands falls into three categories: **real** and **partly real** indicators, and **illustrative placeholders**.\n\n**Real data** comes from Malaysian open sources:\n- Resident base (population) from DOSM district figures for 2025.\n- Cost-of-living pressure from DOSM HIES, annual.\n- Waste handling from SWCorp facility counts for the state, 2020.\n- Water headroom from data.gov.my water production minus consumption, state-level, 2022.\n\n**Partly real data** includes:\n- Accommodation density (real for 8 of 15 places, placeholder for the rest).\n- Seasonality (real for 14 of 15 places, placeholder for the rest).\n- Live coral cover (real for 13 of 14 places, placeholder for the rest).\n\n**Illustrative placeholders** that are not real for Cameron Highlands:\n- Hotel guest arrivals.\n- District visitor/accommodation activity.\n- River water quality.\n- Per-island apportioning of state-level figures.\n\nThe score history before the latest year is rescaled from a state-level series, so only its direction means anything. The current reading shows a score of 68 (Alert) with a change since 2018 of +6."
+ },
+ {
+  "scheme": "equal",
+  "about": "",
+  "q": "Which regions are closest to their limit?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the current AMBANG scores, the regions closest to their limit are those in the **Alert** band, particularly **Terengganu** and **Pahang**.\n\n*   **Terengganu** has the highest regional average of **72 (Alert)**, driven by four destinations. The islands **Perhentian (76 Critical)** and **Redang (75 Critical)** are the closest to the limit, with scores above 75 and binding capacity constraints on waste handling.\n*   **Pahang** has a regional average of **47 (Warning)**, but its highland destination **Cameron Highlands (68 Alert)** is the most critical in the region, with a binding constraint on the resident base.\n\n**Johor** (average **57**) and **Kedah** (average **28**) are further from the limit, with Johor in the Warning band and Kedah in the Normal band."
+ },
+ {
+  "scheme": "equal",
+  "about": "",
+  "q": "Who needs attention first?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the current AMBANG scores, the destinations that need attention first are in the **Critical** band, which requires immediate action.\n\nThe top priority is **Perhentian** (Terengganu) with a score of **76 Critical**. It has the highest pressure (0.68) and the lowest capacity (0.22), with a binding constraint on waste handling (0.05). The next highest is **Redang** (Terengganu) at **75 Critical**, also facing a binding waste handling constraint and high marine park visitor pressure.\n\nThe **Alert** destinations—Cameron Highlands (Pahang), Kapas (Terengganu), and Sibu (Johor)—should be monitored monthly and prepared for staged permit releases. The **Warning** destinations (Johor islands and Tioman) require monitoring and preparation for quota or pricing measures."
+ },
+ {
+  "scheme": "equal",
+  "about": "",
+  "q": "What here is real data and what is a placeholder?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Here is a breakdown of what is real data versus placeholders in the AMBANG system, based on the information provided:\n\n**Real Data (fetched from Malaysian open data sources)**\nThese indicators have actual values pulled from official archives or published datasets:\n*   **Marine park visitors:** Archive from Marine Park Malaysia (state-level, 2015–17 average).\n*   **Occupancy:** Real figures.\n*   **Cost-of-living pressure:** DOSM Household Income and Expenditure Survey (HIES), district-level, annual.\n*   **Waste handling:** SWCorp facility counts (state-level, 2020).\n*   **Water headroom:** Data.gov.my water production minus water consumption (state-level, 2022).\n*   **Resident base:** DOSM population by district (state-level, 2025).\n*   **Live coral cover:** ReefCheck.org.my interactive map (per-site, 2025/26).\n*   **River water quality:** Included for Cameron Highlands (real).\n*   **Interest curves:** Combined English and Malay Wikipedia pageviews (measures search interest, not actual visits).\n\n**Partly Real (Real for some places, placeholders for others)**\nThese indicators have real values for some destinations but are placeholders for others:\n*   **Accommodation density:** Real for 8 of the 15 scored places; placeholders for the rest.\n*   **Seasonality:** Real for 14 of the 15 scored places; placeholders for the rest.\n*   **Hotel guest arrivals:** Illustrative placeholders for the scored destinations, though real data exists for the \"Tracked but not comparably scored\" items (e.g., Langkawi, Pangkor) where it is noted as missing.\n\n**Illustrative Placeholders**\nThese are explicitly marked as illustrative and do not represent real-time or verified open data for the scored destinations:\n*   **Hotel guest arrivals:** For the scored islands, this is an illustrative placeholder.\n*   **District visitor/accommodation activity:** For Cameron Highlands, this is an illustrative placeholder.\n*   **River water quality:** For Fraser's Hill, this is missing/not fetched yet.\n*   **Per-island apportioning of state-level figures:** The score history before the latest year is rescaled from state-level series, so only its direction means anything.\n*   **Marine park visitor counts:** Stop at 2017 for the scored islands.\n\n**Note on \"Tracked but not comparably scored\" items**\nFor the 40 items listed under this section, many have real data (e.g., resident population, income, coral cover) but are marked as missing for visitor counts, hotel arrivals, accommodation density, and occupancy because open district-level datasets were not found. These are not scored using the AMBANG formula and are noted as \"NOT comparable with the scored islands.\""
+ },
+ {
+  "scheme": "equal",
+  "about": "",
+  "q": "What does a region's colour mean?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "In the AMBANG dashboard, a region's colour indicates its current carrying-capacity band based on the AMBANG score:\n\n- **Normal** (below 45): Green. This means pressure is below capacity. Policy response is to promote the destination and absorb any redirected demand.\n- **Warning** (45 to 60): Yellow. Pressure is approaching capacity. You should monitor monthly and prepare for staged permit releases.\n- **Alert** (60 to 75): Orange. Pressure exceeds capacity. You should apply quotas or pricing and prioritise infrastructure.\n- **Critical** (75 and up): Red. Capacity is severely exceeded. You should consider closure, a moratorium, or an ecological assessment.\n\nThe colour is derived from the AMBANG score, which is calculated as 100 multiplied by the ratio of weighted pressure to weighted capacity (P/C)."
+ },
+ {
+  "scheme": "equal",
+  "about": "Perhentian",
+  "q": "Why is Perhentian Critical?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Perhentian is rated **Critical (score 76)** because its **pressure (P) is 0.68** while its **capacity (C) is only 0.22**, pushing the AMBANG score well above the 75 threshold.\n\nThe main drivers are:\n*   **Pressure indicators**: Marine park visitors (0.95), hotel guest arrivals (0.81), and accommodation density (0.97) are very high.\n*   **Binding capacity constraints**: Waste handling capacity is extremely low (0.05), and resident base capacity is also low (0.31), limiting how much more the destination can absorb.\n\nThese values are based on **real data** for pressure indicators and **illustrative placeholders** for some capacity indicators."
+ },
+ {
+  "scheme": "equal",
+  "about": "Perhentian",
+  "q": "What would improve Perhentian the most?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the AMBANG data for Perhentian, the most impactful improvement would be to address the binding capacity constraint on **Waste handling**, which has a score of only 0.05. This is the largest weighted input (22% of pressure) and is the primary reason the destination is in the **Critical** band (score 76). Increasing waste handling capacity would directly reduce the pressure score and help move the destination toward a safer level.\n\nOther critical constraints include **Resident base** (0.31) and **Live coral cover** (0.32), but waste handling is currently the most limiting factor. The pressure indicators, particularly **Marine park visitors** (0.95) and **Accommodation density** (0.97), are also very high and would benefit from visitor management or infrastructure limits."
+ },
+ {
+  "scheme": "equal",
+  "about": "Perhentian",
+  "q": "How real is the data for Perhentian?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "The data for Perhentian is **partly real** and partly illustrative.\n\n**Real data** includes:\n- Marine park visitor counts (from the Department of Marine Park Malaysia archive, state-level averages for 2015–17)\n- Occupancy and cost-of-living pressure (from DOSM HIES, district-level, annual)\n- Resident base (from DOSM population_district, state-level, 2025)\n\n**Illustrative placeholders** include:\n- Hotel guest arrivals (illustrative)\n- Accommodation density (real for only 8 of 15 places; Perhentian uses a placeholder)\n- Seasonality (real for only 14 of 15 places; Perhentian uses a placeholder)\n- Live coral cover (real for only 13 of 14 places; Perhentian uses a placeholder)\n\nThe score history before the latest year is rescaled from a state-level series, so only its direction is meaningful. The pressure and capacity values shown are derived from these inputs."
+ },
+ {
+  "scheme": "equal",
+  "about": "Redang",
+  "q": "Why is Redang Critical?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Redang is rated **Critical (score 75)** because its pressure on the destination exceeds its capacity. The **Pressure (P)** value is **0.61**, while **Capacity (C)** is only **0.21**, giving an AMBANG score of 75.\n\nThe main drivers are:\n*   **Marine park visitors** (24% of weighted inputs) at **0.92**, indicating very high visitation.\n*   **Hotel guest arrivals** at **0.80**.\n*   **Accommodation density** at **0.54**.\n\nThe critical constraint is **Waste handling**, which has a very low capacity value of **0.05**. This binding constraint, combined with high visitor pressure, pushes the score into the Critical band, which requires applying quotas or pricing and prioritising infrastructure."
+ },
+ {
+  "scheme": "equal",
+  "about": "Redang",
+  "q": "What would improve Redang the most?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the AMBANG data for Redang, the most effective improvement would be to address the binding capacity constraint on **Waste handling**, which has a value of only 0.05. This is the lowest capacity value among all indicators and is the primary reason Redang is in the **Critical** band with a score of 75. Increasing waste handling capacity would directly raise the denominator in the AMBANG formula and reduce the pressure on the island.\n\nOther significant pressure factors include **Marine park visitors** (0.92) and **Hotel guest arrivals** (0.80), which are the largest weighted inputs. However, these are driven by visitor demand rather than a local capacity limit, so improving waste infrastructure is the most direct intervention to restore balance."
+ },
+ {
+  "scheme": "equal",
+  "about": "Redang",
+  "q": "How real is the data for Redang?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "The data for Redang is **partly real**. The pressure indicators (Marine park visitors, Hotel guest arrivals, Accommodation density, Occupancy, Seasonality, Cost-of-living pressure) are **illustrative placeholders** for most of these, with Marine park visitors using the archive from 2015–17. The capacity indicators (Waste handling, Water headroom, Resident base, Live coral cover) are **real**, sourced from Malaysian open data (SWCorp, water production/consumption, DOSM population, and Reef Check). The score itself is calculated from these inputs."
+ },
+ {
+  "scheme": "equal",
+  "about": "Lang Tengah",
+  "q": "Why is Lang Tengah Alert?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Lang Tengah is in the **Alert band (score 69)** because its pressure on the environment exceeds its capacity, but not enough to trigger a Critical level.\n\nThe main driver is **marine park visitors**, which accounts for 23% of the weighted pressure inputs. This indicator is **real** (from the Marine Park Malaysia archive). The pressure value of 0.67 is high relative to the island's capacity.\n\nThe **binding capacity constraint** is **waste handling**, with a capacity value of only 0.05. This is a **real** indicator from SWCorp facility counts. The island cannot manage the waste generated by visitors effectively.\n\nOther pressure indicators, such as hotel guest arrivals and accommodation density, are also **illustrative placeholders** for this destination, but the real visitor data already pushes the score into the Alert range."
+ },
+ {
+  "scheme": "equal",
+  "about": "Lang Tengah",
+  "q": "What would improve Lang Tengah the most?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the data for Lang Tengah, the most effective improvement would be to address the binding capacity constraint on **waste handling**, which has a value of 0.05 (very low). This single indicator is the limiting factor for the island's carrying capacity score of 69 (Alert).\n\nTo improve the score, you would need to increase the waste handling capacity value significantly. The current pressure values show that marine park visitors are the largest weighted input (23% of the weighted inputs), so reducing visitor pressure through better waste management infrastructure would likely yield the best return on investment.\n\nThe data for waste handling is **real** (from SWCorp facility counts), but the other indicators like marine park visitors are **illustrative placeholders** for Lang Tengah, meaning their exact values are estimated rather than confirmed."
+ },
+ {
+  "scheme": "equal",
+  "about": "Lang Tengah",
+  "q": "How real is the data for Lang Tengah?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "The data for Lang Tengah is **partly real** and partly illustrative.\n\n**Real data** includes:\n- Marine park visitors (2015–17 average from the Department of Marine Park Malaysia archive)\n- Seasonality (real for Lang Tengah)\n- Live coral cover (real from Reef Check Malaysia)\n- Resident base, waste handling, water headroom, and cost-of-living pressure (state-level data from DOSM and other open portals)\n\n**Illustrative placeholders** include:\n- Hotel guest arrivals\n- Accommodation density (placeholder for Lang Tengah)\n- District visitor/accommodation activity\n\nThe score itself is derived from these inputs, so its reliability depends on the illustrative components. The binding capacity constraint is listed as Waste handling (0.05), which is a real state-level value."
+ },
+ {
+  "scheme": "equal",
+  "about": "Kapas",
+  "q": "Why is Kapas Alert?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Kapas is in the **Alert band (score 66)** because its **pressure (0.49) exceeds its capacity (0.25)**, pushing the AMBANG score above the Warning threshold.\n\nThe main driver is **marine park visitors**, which accounts for 20% of the weighted pressure inputs. This indicator is **real** (from the Marine Park Malaysia archive). Other pressure indicators like hotel guest arrivals and accommodation density are also **real**, but the capacity side is constrained by **waste handling**, which has a very low capacity value of 0.05 and is binding. Waste handling is **real** (from SWCorp facility counts). The score has increased by 4 points since 2018."
+ },
+ {
+  "scheme": "equal",
+  "about": "Kapas",
+  "q": "What would improve Kapas the most?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the AMBANG data for Kapas, the most effective improvement would be to address the binding capacity constraint of **Waste handling**, which has a score of only 0.05.\n\nThe current pressure indicators show that **Marine park visitors** (0.59) and **Hotel guest arrivals** (0.52) are the largest contributors to pressure, while **Live coral cover** (0.53) is the strongest capacity indicator. Since waste handling is the critical bottleneck, improving waste management infrastructure would likely have the greatest impact on raising Kapas's score from its current Alert level (66) toward a safer Warning level."
+ },
+ {
+  "scheme": "equal",
+  "about": "Kapas",
+  "q": "How real is the data for Kapas?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "The data for Kapas is **partly real**. The score, pressure values, and capacity values are derived from the scored destination list, where accommodation density and seasonality are placeholders for Kapas. Marine park visitors, hotel guest arrivals, and cost-of-living pressure are illustrative placeholders. Waste handling, water headroom, and resident base are real state-level figures shared with other Terengganu islands. Live coral cover is real for Kapas."
+ },
+ {
+  "scheme": "equal",
+  "about": "Tioman",
+  "q": "Why is Tioman Warning?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Tioman is in the **Warning band (score 49)** because its **pressure (P) is higher than its capacity (C)**, but not critically so.\n\nThe main driver is **Accommodation density**, which is at its maximum scale (1.00) and accounts for 27% of the weighted inputs. This creates a high pressure value of 0.59. While Tioman has strong capacity in waste handling and water headroom, its **Resident base is the binding constraint** at 0.40, limiting how much development the island can sustain. The score sits just below the Warning-to-Alert threshold of 60."
+ },
+ {
+  "scheme": "equal",
+  "about": "Tioman",
+  "q": "What would improve Tioman the most?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the AMBANG data for Tioman, the most effective improvement would be to address the binding capacity constraint on **Resident base**, which is currently at 0.40 (the lowest capacity value). This is the primary reason Tioman is in the **Warning** band despite high pressure indicators.\n\nTo improve Tioman, you should focus on:\n\n*   **Increasing the Resident base**: This is the limiting factor. Policies that encourage long-term residency or reduce the seasonal population influx could raise this capacity value.\n*   **Reducing Accommodation density**: This is the largest weighted pressure input (27%). Managing development limits or promoting lower-density tourism could lower this pressure value.\n*   **Improving Live coral cover**: While not currently binding, this capacity indicator is low (0.43). Conservation efforts here would support long-term ecological health.\n\nNote that **Waste handling** and **Water headroom** are not binding constraints for Tioman, so they are not the most critical areas for immediate intervention."
+ },
+ {
+  "scheme": "equal",
+  "about": "Tioman",
+  "q": "How real is the data for Tioman?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "The data for Tioman is **partly real** and partly illustrative.\n\n**Real data** includes:\n- Marine park visitors (from the Department of Marine Park Malaysia archive, Terengganu/Pahang, 2015–17 average)\n- Occupancy (real)\n- Cost-of-living pressure (from DOSM HIES, district, annual)\n- Waste handling (from SWCorp facility counts, state, 2020)\n- Water headroom (from data.gov.my water production minus consumption, state, 2022)\n- Resident base (from DOSM population district, state, 2025)\n\n**Illustrative placeholders** include:\n- Hotel guest arrivals (illustrative)\n- Accommodation density (real for 8 of 15 places, placeholder for the rest)\n- Seasonality (real for 14 of 15 places, placeholder for the rest)\n- Live coral cover (real for 13 of 14 places, placeholder for the rest)\n- District visitor/accommodation activity (illustrative)\n- River water quality (illustrative)\n\nThe score itself is derived from these inputs using the AMBANG method."
+ },
+ {
+  "scheme": "equal",
+  "about": "Tulai",
+  "q": "Why is Tulai Normal?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Tulai is scored as Normal (35) because its Pressure (P) is relatively low (0.33) compared to its Capacity (C) (0.62). The Pressure indicators are driven mainly by occupancy (35% of weighted inputs) and hotel guest arrivals, while the Capacity indicators—waste handling, water headroom, resident base, and live coral cover—are all high. The binding capacity constraint is Resident base (0.40), but the overall ratio keeps the score below the 45 Normal threshold. Note that accommodation density and seasonality are illustrative placeholders for this destination."
+ },
+ {
+  "scheme": "equal",
+  "about": "Tulai",
+  "q": "What would improve Tulai the most?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the AMBANG data for Tulai, the most impactful improvement would be to address the binding capacity constraint on **Resident base**, which is currently at 0.40. This is the lowest capacity value among the four indicators, and the pressure from accommodation density and occupancy is high (0.83 and 0.78 respectively). Increasing the resident population or adjusting the scoring methodology to better reflect the island's small scale would likely raise the capacity score the most.\n\nOther constraints are also tight. **Live coral cover** is at 0.42, which is a binding constraint for Sembilang but not Tulai, yet it remains a limiting factor for marine health. **Waste handling** is at 0.95, which is not binding, and **Water headroom** is at 0.91, also not binding. The pressure values show that **Marine park visitors** (0.25) and **Hotel guest arrivals** (0.30) are low, suggesting that visitor management is not the primary bottleneck at this time."
+ },
+ {
+  "scheme": "equal",
+  "about": "Tulai",
+  "q": "How real is the data for Tulai?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "The data for Tulai is **partly real** and partly illustrative.\n\nReal indicators include:\n- **Occupancy** (0.78) — from open tourism datasets.\n- **Seasonality** (0.38) and **Cost-of-living pressure** (0.32) — from open sources.\n- **Capacity values** for Waste handling, Water headroom, Resident base, and Live coral cover — these are state-level figures shared across destinations in the same state.\n\nIllustrative placeholders include:\n- **Marine park visitors** (0.25) and **Hotel guest arrivals** (0.30) — these are illustrative apportionments of state-level series.\n- **Accommodation density** (0.20) — placeholder for this destination.\n\nThe score itself (35 Normal) is derived from these inputs. The change since 2018 (+2) is based on rescaled historical series, so only the direction is meaningful."
+ },
+ {
+  "scheme": "equal",
+  "about": "Sembilang",
+  "q": "Why is Sembilang Normal?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Sembilang is scored as Normal (35) because its Pressure (P) is low (0.33) relative to its Capacity (C) of 0.60, resulting in an AMBANG score below the 45 threshold. The largest weighted input is Occupancy at 36%, and the binding capacity constraint is Live coral cover at 0.38. Note that occupancy and seasonality are illustrative placeholders for this destination."
+ },
+ {
+  "scheme": "equal",
+  "about": "Sembilang",
+  "q": "What would improve Sembilang the most?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the AMBANG data for Sembilang, the most impactful improvement would be to address its binding capacity constraint: **Live coral cover** (score 0.38). This is the limiting factor that keeps the score at 35 (Normal) despite high occupancy and accommodation density.\n\nTo improve Sembilang, you should focus on:\n1.  **Ecological protection**: Reduce physical damage to coral reefs from anchoring, trampling, or pollution.\n2.  **Water quality**: Improve waste handling and sewage treatment to prevent runoff that harms coral health.\n3.  **Visitor management**: Implement zoning to limit access to sensitive reef areas.\n\nNote that the **Live coral cover** value is an illustrative placeholder for this destination."
+ },
+ {
+  "scheme": "equal",
+  "about": "Sembilang",
+  "q": "How real is the data for Sembilang?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "The data for Sembilang is **partly real** and **illustrative** in key areas.\n\n*   **Real data:** Resident population (104,000), median household income (RM 4,760), piped water and sanitation coverage (100%), and coral cover (45.7%) are real figures from the provided records.\n*   **Illustrative placeholders:** Visitor counts, hotel guest arrivals, accommodation density, occupancy, and seasonality are listed as missing and are treated as illustrative placeholders, not open data.\n*   **No score:** Sembilang is listed under \"TRACKED BUT NOT COMPARABLY SCORED\" with no AMBANG score assigned."
+ },
+ {
+  "scheme": "equal",
+  "about": "Payar",
+  "q": "Why is Payar Normal?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Payar is scored as Normal because its AMBANG score of 33 falls below the 45 threshold. This indicates that pressure on the destination is lower than its capacity. The score is driven by relatively low pressure values, particularly in Marine park visitors (0.05) and Seasonality (0.10), alongside strong capacity indicators like Waste handling (0.50), Water headroom (0.95), and Resident base (0.52). Note that Live coral cover (0.42) is a binding capacity constraint, but it does not push the overall score into the Warning or Alert bands."
+ },
+ {
+  "scheme": "equal",
+  "about": "Payar",
+  "q": "What would improve Payar the most?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the AMBANG data for Payar, the most effective intervention would be to address the binding capacity constraint on **Live coral cover**, which is at 0.42 and is the limiting factor for this destination.\n\nHere is the breakdown of why this is the priority and what else needs attention:\n\n*   **Live coral cover (Capacity constraint):** This is the most critical bottleneck. Payar’s coral cover is low (0.42), and the pressure on it is moderate (0.43). Improving coral health through restoration or stricter protection would directly raise the capacity score and the overall AMBANG score.\n*   **Waste handling (Capacity constraint):** This is also a binding constraint at 0.50. Enhancing waste management infrastructure would help, but it is not the primary limiting factor compared to coral cover.\n*   **Hotel guest arrivals (Pressure):** This is the largest weighted pressure input (26%). Reducing visitor arrivals or improving the efficiency of tourism activities would lower pressure, but without addressing the coral capacity, the score will remain constrained.\n*   **Occupancy (Pressure):** This is the largest weighted pressure input (35%). While reducing occupancy would help, it is driven by the accommodation density and overall demand.\n\nTo improve Payar the most, focus on **coral conservation and restoration** to raise the capacity ceiling, supported by **waste management upgrades** and **visitor management** to reduce pressure."
+ },
+ {
+  "scheme": "equal",
+  "about": "Payar",
+  "q": "How real is the data for Payar?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "The data for Payar is **partly real** and **illustrative** in several key areas.\n\n*   **Real data:** Marine park visitors, hotel guest arrivals, accommodation density, occupancy, seasonality, cost-of-living pressure, waste handling, water headroom, resident base, and live coral cover are listed as real or partly real. The live coral cover value of 0.42 is real (from Reef Check), and the resident base and water headroom figures are real district-level data.\n*   **Illustrative placeholders:** The score itself (33) and the pressure and capacity values are illustrative placeholders. The \"largest weighted input\" and \"binding capacity constraint\" classifications are derived from these illustrative inputs.\n*   **Data status note:** The system notes that hotel guest arrivals, district visitor/accommodation activity, river water quality, and the per-island apportioning of state-level figures are illustrative placeholders."
+ },
+ {
+  "scheme": "equal",
+  "about": "Lembu",
+  "q": "Why is Lembu Normal?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Lembu is scored as Normal (27) because its Pressure (P) is low (0.22) relative to its Capacity (C) of 0.60. The main pressure drivers are Hotel guest arrivals (0.45) and Occupancy (0.57), both of which are moderate. The largest weighted input is Occupancy at 31%, and the binding capacity constraint is Waste handling at 0.50. All capacity indicators—Waste handling, Water headroom, Resident base, and Live coral cover—are relatively high, supporting the Normal band."
+ },
+ {
+  "scheme": "equal",
+  "about": "Lembu",
+  "q": "What would improve Lembu the most?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the AMBANG data for Lembu, the most impactful improvement would be to address the binding capacity constraint of **Waste handling**, which has a capacity value of only 0.50 (illustrative placeholder). This is the lowest capacity value among the indicators and is the primary reason Lembu is in the Normal band despite high occupancy pressure.\n\nOther significant constraints include **Live coral cover** (0.52) and **Resident base** (0.52), but waste handling is the most critical bottleneck for the current score of 27."
+ },
+ {
+  "scheme": "equal",
+  "about": "Lembu",
+  "q": "How real is the data for Lembu?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "The data for Lembu is a mix of real and illustrative sources.\n\nReal indicators include:\n- Resident base (DOSM population district, 2025)\n- Water headroom (data.gov.my water production minus consumption, 2022)\n- Waste handling (SWCorp facility counts, 2020)\n- Live coral cover (reefcheck.org.my, per-site, 2025/26)\n\nIllustrative placeholders are used for:\n- Marine park visitors (archive.data.gov.my, state, 2015–17 avg)\n- Hotel guest arrivals (illustrative placeholder)\n- Accommodation density (real for 8 of 15 places, placeholder for the rest)\n- Seasonality (real for 14 of 15 places, placeholder for the rest)\n- Cost-of-living pressure (DOSM HIES, district, annual)\n\nThe score itself is derived from these weighted inputs."
+ },
+ {
+  "scheme": "equal",
+  "about": "Kaca",
+  "q": "Why is Kaca Normal?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Kaca has a Normal score of 24 because its Pressure (P) is low at 0.20 and its Capacity (C) is relatively high at 0.61, resulting in an AMBANG score of 100 × 0.20 / (0.20 + 0.61) = 24. The largest weighted input is Occupancy at 34%, and the binding capacity constraint is Waste handling at 0.50. All indicators are illustrative placeholders except for the resident base, which is real data from DOSM."
+ },
+ {
+  "scheme": "equal",
+  "about": "Kaca",
+  "q": "What would improve Kaca the most?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the AMBANG data for Kaca, the most impactful improvement would be to address the binding constraint on **Waste handling**, which has a capacity value of only 0.50 (illustrative data). This is the largest weighted input (Occupancy at 34%) and directly limits the score. Additionally, improving **Live coral cover** (capacity 0.57) would help, as it is another binding constraint. Since accommodation density and occupancy are already high, reducing pressure on these indicators would also support better performance."
+ },
+ {
+  "scheme": "equal",
+  "about": "Kaca",
+  "q": "How real is the data for Kaca?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "The data for Kaca is **partly real**. The resident base, waste handling, water headroom, and live coral cover values are real (fetched from Malaysian open data sources). However, the pressure indicators—marine park visitors, hotel guest arrivals, accommodation density, occupancy, seasonality, and cost-of-living pressure—are **illustrative placeholders** for this destination. The score itself is derived from these inputs and is therefore illustrative rather than fully real."
+ },
+ {
+  "scheme": "equal",
+  "about": "Sibu",
+  "q": "Why is Sibu Alert?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Sibu is currently in the **Alert band (score 60)**, which means pressure on the destination exceeds capacity but has not yet reached the Critical level.\n\nAccording to the data, the **largest weighted input is Occupancy at 24%**, and the **binding capacity constraint is Water headroom at 0.05**. This indicates that while visitor activity is moderate, the available water resources are the limiting factor preventing the score from rising further.\n\nThe score has increased by only **1 point since 2018**, showing slow change. Note that **Hotel guest arrivals, accommodation density, and occupancy are illustrative placeholders** for this destination, as open district-level datasets were not found."
+ },
+ {
+  "scheme": "equal",
+  "about": "Sibu",
+  "q": "What would improve Sibu the most?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the AMBANG data for Sibu, the most effective improvement would be to address the binding capacity constraint of **Water headroom**, which is currently at 0.05 (very low). This is the largest weighted input (24% of pressure) and is the primary reason Sibu is in the **Alert** band (score 60).\n\nTo improve Sibu, you should prioritize **increasing water production or reducing consumption** to raise the water headroom score. Since the water headroom value is the same for every island in Johor, this requires a state-level infrastructure investment.\n\nOther indicators show room for improvement:\n*   **Waste handling** is also a binding constraint (0.20) and is a weighted pressure input.\n*   **Marine park visitors** (0.52) and **Hotel guest arrivals** (0.38) are moderate pressures that could be managed with visitor management or marketing adjustments.\n\nNote that the **Occupancy** value (0.60) is a weighted pressure input but is not a binding capacity constraint. The data for hotel guest arrivals, accommodation density, and occupancy is listed as illustrative placeholders."
+ },
+ {
+  "scheme": "equal",
+  "about": "Sibu",
+  "q": "How real is the data for Sibu?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "The data for Sibu is **partly real** and **illustrative** for some indicators.\n\nReal data includes:\n- **Resident base**: DOSM population for the district (81,400 in 2025).\n- **Cost-of-living pressure**: DOSM HIES district-level annual data.\n- **Live coral cover**: Reef Check data (0.53).\n\nIllustrative placeholders apply to:\n- **Marine park visitors**: State-level figures are used; no island-specific series is available.\n- **Hotel guest arrivals**: No open district-level dataset found; Tourism Malaysia state totals are used.\n- **Accommodation density**: Placeholder for this destination.\n- **Seasonality**: Placeholder for this destination.\n- **Occupancy**: Placeholder for this destination.\n- **Waste handling**: State-level SWCorp facility counts are used; no island-specific data.\n- **Water headroom**: State-level water production minus consumption is used.\n\nThe score itself (60 Alert) is derived from these mixed inputs."
+ },
+ {
+  "scheme": "equal",
+  "about": "Tinggi",
+  "q": "Why is Tinggi Warning?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the AMBANG data for Tinggi, the score is **Warning (55)** because the pressure on the island exceeds its capacity, placing it in the 45–60 band.\n\nThe main driver is **Occupancy**, which accounts for 28% of the weighted inputs and has a pressure value of 0.60. This is the largest weighted input, indicating that the current level of accommodation use is a significant factor pushing the score upward.\n\nThe island is constrained by **Water headroom**, which is at its lowest capacity value (0.05), meaning water supply is a binding limit. While Marine park visitors and other indicators show moderate pressure, the combination of high occupancy and limited water capacity results in the Warning status."
+ },
+ {
+  "scheme": "equal",
+  "about": "Tinggi",
+  "q": "What would improve Tinggi the most?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the AMBANG data for Tinggi, the most effective improvement would be to address the binding capacity constraint of **Water headroom**, which is at 0.05 (critical). This is the largest weighted input at 28% of the pressure score and is the primary reason for the current Warning status.\n\nTo improve Tinggi, you should focus on:\n- Increasing water production or reducing consumption to raise the headroom value.\n- Since Water headroom is a state-level indicator shared across Johor islands, coordination with Kedah state authorities is necessary.\n\nOther indicators are not binding constraints, though Occupancy is the largest weighted pressure input. Note that Occupancy, Accommodation density, and Seasonality are **illustrative placeholders** for Tinggi, while Marine park visitors, Hotel guest arrivals, and Cost-of-living pressure are real data."
+ },
+ {
+  "scheme": "equal",
+  "about": "Tinggi",
+  "q": "How real is the data for Tinggi?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "The data for Tinggi is **partly real** and partly illustrative.\n\nThe **real** indicators include:\n- Marine park visitors (from the Marine Park Malaysia archive)\n- Hotel guest arrivals (illustrative placeholder)\n- Accommodation density (illustrative placeholder)\n- Occupancy (illustrative placeholder)\n- Seasonality (illustrative placeholder)\n- Cost-of-living pressure (from DOSM HIES)\n- Waste handling (from SWCorp facility counts)\n- Water headroom (from data.gov.my)\n- Resident base (from DOSM population district)\n- Live coral cover (from Reef Check interactive map)\n\nThe **illustrative** placeholders are hotel guest arrivals, accommodation density, occupancy, seasonality, and the apportioning of state-level figures to the island. The score itself is derived from these inputs."
+ },
+ {
+  "scheme": "equal",
+  "about": "Besar",
+  "q": "Why is Besar Warning?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Besar is in the **Warning** band because its AMBANG score is **58**, which falls between 45 and 60. This indicates that pressure on the destination is approaching capacity, but it is not yet critical.\n\nThe score is driven by high **occupancy** (27% of weighted inputs), which is a real indicator. However, the destination faces a **binding capacity constraint on water headroom** (score 0.05), meaning water supply is a limiting factor. Other capacity indicators like waste handling and resident base are also low, which keeps the overall capacity score low despite the moderate pressure values."
+ },
+ {
+  "scheme": "equal",
+  "about": "Besar",
+  "q": "What would improve Besar the most?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the data for Besar, the most impactful improvement would be to address the binding capacity constraint on **water headroom**, which is at 0.05 (very low). This is the largest weighted input (27% of pressure) and the primary reason Besar is in the Warning band despite low overall pressure.\n\nTo improve this, you would need to increase water production or reduce consumption, as the current water headroom is critically low. Other binding constraints like waste handling (0.20) and live coral cover (0.43) also need attention, but water headroom is the immediate bottleneck.\n\nThe pressure indicators show that **occupancy** is the dominant driver (28% of pressure), so managing visitor flow to avoid overloading the water system would be the most effective policy action."
+ },
+ {
+  "scheme": "equal",
+  "about": "Besar",
+  "q": "How real is the data for Besar?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "The data for Besar is **partly real** and **illustrative** in key areas.\n\n*   **Real data:** Resident population, median household income, piped water and sanitation coverage, and water headroom figures come from DOSM and are real.\n*   **Illustrative placeholders:** Hotel guest arrivals, accommodation density, occupancy, seasonality, and cost-of-living pressure are listed as illustrative placeholders. Marine park visitors are also illustrative.\n*   **Missing data:** No official visitor limit was found, and the scored islands use a Department of Marine Park Malaysia archive that does not cover Johor marine parks, so visitor counts are unavailable."
+ },
+ {
+  "scheme": "equal",
+  "about": "Rawa",
+  "q": "Why is Rawa Warning?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Rawa has a score of 54, which falls in the **Warning band** (45 to 60). This means the pressure on the destination is slightly above its capacity.\n\nThe score is driven by high **occupancy** (60%), which is the largest weighted input at 31% of the pressure indicators. This high occupancy, combined with moderate pressure from accommodation density and hotel guest arrivals, pushes the destination into the Warning zone.\n\nThe capacity side is relatively healthy, with strong resident base and live coral cover, but the current pressure level is not yet critical enough to trigger an Alert."
+ },
+ {
+  "scheme": "equal",
+  "about": "Rawa",
+  "q": "What would improve Rawa the most?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the AMBANG data for Rawa, the most impactful improvement would be to address the binding capacity constraint on **water headroom**, which is at 0.05 (critical). This is the largest weighted input (31% of pressure) and the primary capacity bottleneck.\n\nTo improve Rawa, you should focus on:\n- Increasing water production or reducing consumption to raise the water headroom value.\n- Addressing the low occupancy (0.60) and seasonality (0.20) pressure indicators, which are also significant contributors to the weighted pressure.\n\nThe other capacity constraints (waste handling at 0.20 and resident base at 0.95) are not binding, so they are less urgent. Note that some indicators like accommodation density and seasonality are illustrative placeholders for Rawa."
+ },
+ {
+  "scheme": "equal",
+  "about": "Rawa",
+  "q": "How real is the data for Rawa?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "The data for Rawa is **partly real** and **illustrative** for several indicators.\n\nReal data includes:\n- **Live coral cover** (54%)\n- **Resident population** (81,400)\n- **Median household income** (RM 5,335/month)\n- **Piped water and sanitation access** (95% / 100%)\n- **Water headroom** (772 MLD, 55% of production)\n\nIllustrative placeholders apply to:\n- **Marine park visitors** (state-level figures are apportioned per island)\n- **Hotel guest arrivals, accommodation density, and occupancy** (no open district-level dataset found; Tourism Malaysia publishes state totals only)\n- **Waste handling** (same as other Johor islands, not specific to Rawa)\n\nThe AMBANG score for Rawa is **54 (Warning)**, with occupancy being the largest weighted input (31%) and water headroom as the binding capacity constraint."
+ },
+ {
+  "scheme": "equal",
+  "about": "Cameron Highlands",
+  "q": "Why is Cameron Highlands Alert?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Cameron Highlands is in the **Alert band (score 68)** because its pressure on the environment exceeds its capacity, though not yet at the Critical level.\n\nThe main driver is **Accommodation density**, which accounts for 19% of the weighted inputs and shows a pressure value of 0.83. This is coupled with high **Occupancy (0.78)** and **District visitor/accommodation activity (0.70)**, indicating intense use.\n\nThe critical binding capacity constraint is **Resident base (0.05)**, which is very low. This means the local population cannot support the current level of tourism activity. While other capacity indicators like waste handling and water headroom are strong, the low resident base is the limiting factor keeping the score in the Alert zone."
+ },
+ {
+  "scheme": "equal",
+  "about": "Cameron Highlands",
+  "q": "What would improve Cameron Highlands the most?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "Based on the AMBANG data for Cameron Highlands, the most impactful improvement would be addressing the binding capacity constraint on the **Resident base**, which is currently at 0.05 (very low). This constraint is the primary reason the destination is in the **Alert** band (score 68) rather than lower, and it is driven by high pressure values for **Accommodation density** (0.83) and **Occupancy** (0.78).\n\nTo improve this, the district would need to increase the local resident population or adjust the scoring methodology to better reflect the actual carrying capacity of the highland environment. Other capacity indicators like **Waste handling** (0.95) and **Water headroom** (0.91) are currently strong, so they are not the limiting factors. Note that the **River water quality** indicator is listed as illustrative and not yet fetched."
+ },
+ {
+  "scheme": "equal",
+  "about": "Cameron Highlands",
+  "q": "How real is the data for Cameron Highlands?",
+  "status": 200,
+  "cache": "MISS",
+  "text": "The data for Cameron Highlands is **partly real** and partly **illustrative**.\n\nReal data includes resident population (DOSM, 2025), median household income, households with piped water and sanitation, water headroom, and waste handling facilities (SWCorp, 2020). Illustrative placeholders include district visitor/accommodation activity, hotel guest arrivals, accommodation density, seasonality, and river water quality. The live coral cover is not applicable to a highland destination."
+ }
+]

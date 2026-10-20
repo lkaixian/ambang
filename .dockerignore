@@ -1,0 +1,9 @@
+node_modules
+.env
+data
+
+**/__pycache__
+*.md
+app/assets/logos/*_orig.png
+app/assets/logos/ambang.png
+app/assets/logos/README.txt

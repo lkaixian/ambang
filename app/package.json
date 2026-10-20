@@ -1,0 +1,9 @@
+{
+  "name": "ambang",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AMBANG dashboard + AI endpoint (ILMU), with optional Redis",
+  "scripts": { "start": "node server.js" },
+  "dependencies": { "redis": "^4.7.0" },
+  "engines": { "node": ">=18" }
+}
