@@ -30,4 +30,10 @@ Sources include DOSM, Sabah Parks, Marine Parks, OpenStreetMap, Google Trends an
 
 ## Team
 
-Add team names and the university here.
+**Spark Surge**, Universiti Tun Hussein Onn Malaysia (UTHM).
+
+<p>
+  <img src="photos/team-1.jpeg" width="32%">
+  <img src="photos/team-2.jpeg" width="32%">
+  <img src="photos/team-3.jpeg" width="32%">
+</p>
